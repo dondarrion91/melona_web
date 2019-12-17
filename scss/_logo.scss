@@ -1,0 +1,67 @@
+$color1: #95DF38;
+
+@media screen and (max-width:800px){
+    
+    .logo{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 700px;
+        
+        img{
+            position: absolute;
+            width: 40%;
+            height: 350px;
+            
+            padding-left: 35%;
+            
+        }
+        .melon{
+            padding-top: 100px;
+            z-index: 3;
+        }
+        img:nth-child(2){
+            transform: scaleX(-1);
+            z-index: 2;
+            padding-right: 15%;
+            padding-top: 50px;
+            
+        }
+        h1{
+            z-index: 4;
+            margin-top: 100px;
+            text-align: center;
+            font-size: 5rem;
+           
+        }
+        @mixin fotos{
+            position: static;
+            margin:0;
+            padding: 0;
+            height: 200px;
+            width: 80%;
+        }
+        .foto{
+            display: grid;
+            margin-top: 150px;
+            grid-template-columns:auto auto auto;
+            height: 150px;
+            justify-items: center;
+            .abuela{
+                @include fotos;
+            }
+            .pareja{
+                @include fotos;
+                
+            }
+            .niño{
+                @include fotos;
+                height: 150px;
+                align-self: flex-end;
+                transform: scaleX(1);
+        }
+        
+        }
+        
+    }
+}

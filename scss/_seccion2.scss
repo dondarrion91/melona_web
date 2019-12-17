@@ -1,0 +1,43 @@
+$color1: #95DF38;
+$color2: #FAF1D4;
+
+
+@mixin bloques{
+            background: $color1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            i{
+                font-size: 2rem;
+            }
+            h4{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+        
+}
+
+@media screen and (max-width:800px){
+    .seccion2{
+        article{
+            height: 200px;
+        }
+        article:nth-child(1){
+            @include bloques;
+        }
+        article:nth-child(2){
+            @include bloques;
+            background: $color2;
+            color: gray;
+            i{
+                color: $color1;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

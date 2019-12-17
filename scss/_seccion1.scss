@@ -1,0 +1,28 @@
+$primary: #95DF38;
+$secondary: #FAF2D1;
+
+
+
+@media screen and (max-width: 800px){
+    .seccion1{
+        background: white;
+        height: 600px;
+        .melon-pack{
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+        h4{
+            font-weight: bolder;
+            margin-top: 50px;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            color: gray;
+            padding-top: 50px;
+        }
+    }
+} 

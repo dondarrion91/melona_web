@@ -1,0 +1,87 @@
+$header: #FFFFFF;
+$letra: black;
+$hover: #D9E6AF;
+$nav: #BABABA;
+$bordernav: #CAEA69;
+
+
+header{
+    z-index: 5;
+    width: 100%;
+    nav{
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+        background: $header;
+        ul{
+            overflow: hidden;
+            list-style: none;+
+            li:hover{
+                background: $bordernav;
+            }
+            li{
+                float: left;
+                a{
+                    color: $letra;
+                    padding: 20px;
+                    display: block;
+                    text-decoration: none;
+                }
+                a:hover{
+                    background: $hover;
+                }
+            }
+        }
+    }
+}
+
+
+
+.menu_bar{
+    display: none;
+}
+
+@media screen and (max-width:800px){
+    header{
+        position: sticky;
+        top: 0;
+        nav{
+            width:80%;
+            height: 100%;
+            margin: 0;
+            position: fixed;
+            
+            ul{
+                li{
+                    display: block;
+                    float: none;
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .menu_bar{
+        display: flex;
+        justify-content: space-between;
+        background: $header;
+        
+        h4{
+            img{
+                width: 25%;
+            }
+            font-size: 2rem;
+            padding: 25px;
+        }
+        .bt-menu{
+            padding: 20px;
+            color: gray;
+            font-size: 2.5rem;
+        }
+        i{
+            font-size: 2rem;
+            color: $nav;
+        }
+    }
+}
