@@ -11,9 +11,14 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 @import "header";
 @import "logo";
 @import "seccion1";
 @import "seccion2";
+@import "carrousel";
+@import "mapa";
+@import "carrousel2";
+@import "formulario";
