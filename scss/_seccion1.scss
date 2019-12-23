@@ -3,13 +3,14 @@ $secondary: #FAF2D1;
 
 
 
-@media screen and (max-width: 800px){
+
     .seccion1{
         background: white;
         height: 600px;
         .melon-pack{
             display: block;
             margin: auto;
+            margin-top: 30px;
             width: 80%;
         }
         h4{
@@ -25,4 +26,25 @@ $secondary: #FAF2D1;
             padding-top: 50px;
         }
     }
-} 
+
+@media screen and (min-width:500px){
+    .seccion1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .melon-pack{
+            margin: 0;
+            width: 50%;
+        }
+        h4{
+            margin: 0;
+            width: 100%;
+            font-size: 3rem;
+        }
+        p{
+            padding:0;
+            width: 90%;
+        }
+    }
+}

@@ -32,36 +32,37 @@
 
     </header>
 
-    <main>
+    <main id="index">
         <section class="logo">
-            <img src="./img/melon-paleta.png" class="melon" alt="paleta de melon">
-            <img src="./img/frutilla-paleta.png" alt="paleta de frutilla">
-            <h1>Un Melona <br> para cada <br> persona</h1>
-            <div class="foto">
-                <img src="./img/abuela.svg" class="abuela" alt="abuela bailando">
-                <img src="./img/niño.svg" class="niño" alt="niño con paleta">
-                <img src="./img/pareja.svg" class="pareja" alt="pareja con helados"> 
+            <div class="paletas">
+                <img src="./img/melon-paleta.png" class="melon" alt="paleta de melon">
+                <img src="./img/frutilla-paleta.png" class="frutilla" alt="paleta de frutilla">
+                <h1>Un Melona para cada persona</h1>
+                <div class="foto">
+                    <img src="./img/abuela.svg" class="abuela" alt="abuela bailando">
+                    <img src="./img/niño.svg" class="niño" alt="niño con paleta">
+                    <img src="./img/pareja.svg" class="pareja" alt="pareja con helados"> 
+                </div>
             </div>
+            
+            
             
         </section>
 
         <section class="seccion1">
             <img src="./img/melon-pakaging.png" class="melon-pack" alt="melon packaging">
-            <h4>El helado <br>
-                que conquisto <br>
-                al mundo
-                </h4>
-                <p>Desde hace años Melona es una <br>
-                    marca Top 5 a nivel mundial en el<br>
-                    exigente mercado de los helados<br>
-                    de consumo masivo y esto no ha<br>
-                    sido mera casualidad, la verdad es<br>
-                    que hicimos algo que ninguna<br>
-                    otra marca de helados nunca<br>
-                    antes pudo hacer, hicimos del<br>
-                    melón un helado, pero no uno<br>
-                    cualquiera sino el más rico, el más<br>
-                    frutal, el más cremoso y accesible<br>
+            <h4>El helado que conquisto al mundo</h4>
+                <p>Desde hace años Melona es una 
+                    marca Top 5 a nivel mundial en el
+                    exigente mercado de los helados
+                    de consumo masivo y esto no ha
+                    sido mera casualidad, la verdad e
+                    que hicimos algo que ninguna
+                    otra marca de helados nunca
+                    antes pudo hacer, hicimos del
+                    melón un helado, pero no uno
+                    cualquiera sino el más rico, el más
+                    frutal, el más cremoso y accesible
                     que puedas probar.</p>
         </section>
         
@@ -77,65 +78,46 @@
                 <p>a nivel mundial</p>
             </article>
         </section>
-
         
-        <section id="slider-container">
-                <div id="slide-0" class="slide fade">
-                    <h4>Sabores que <br>
+        <section class="carrousel">
+            <div class="owl-carousel owl-theme">
+                <div class="item slide-0">
+                    <h4 style="margin: 0;">Sabores que
                         dan gusto
                     </h4>
-                    <p>Cuatro gustos frutales, una <br>
-                        característica común: El delicioso y <br>
+                    <p>Cuatro gustos frutales, una 
+                        característica común: El delicioso y 
                         único sabor Melona.
                     </p>
                     <img src="./img/melona-verde.svg" class="fondo" alt="melona">
-                    <img src="./img/melon-paleta-packaging.png" alt="0">
+                    <img src="./img/melon-paleta-packaging.png" class="helado"  alt="0">
                 </div>
-                
-                <div id="slide-1" class="slide fade">
-                    <h4>Sabores que <br>
+                <div class="item slide-1">
+                    <h4 style="margin: 0;">Sabores que 
                         dan gusto
                     </h4>
-                    <p>Cuatro gustos frutales, una <br>
-                        característica común: El delicioso y <br>
+                    <p>Cuatro gustos frutales, una 
+                        característica común: El delicioso y 
                         único sabor Melona.
                     </p>
                     <img src="./img/melona-rosa.svg" class="fondo" alt="melona">
-                    <img src="./img/frutilla-paleta-packaging.png" alt="1">
+                    <img src="./img/frutilla-paleta-packaging.png" class="helado" alt="1">
                 </div>
-        
-                <div id="slide-2" class="slide fade">
-                    <h4>Sabores que <br>
+                <div class="item slide-2">
+                    <h4 style="margin: 0;">Sabores que 
                         dan gusto
                     </h4>
-                    <p>Cuatro gustos frutales, una <br>
-                        característica común: El delicioso y <br>
+                    <p>Cuatro gustos frutales, una 
+                        característica común: El delicioso y 
                         único sabor Melona.
                     </p>
                     <img src="./img/melona-amarillo.svg" class="fondo" alt="melona">
-                    <img src="./img/banana-paleta-packaging.png" alt="2">
+                    <img src="./img/banana-paleta-packaging.png" class="helado" alt="2">
                 </div>
-        
-                <div id="arrows-wrapper">
-                    <p id="arrow-prev" class="slider-arrow center_y">
-                        &#10094
-                    </p>
-        
-                    <p id="arrow-next" class="slider-arrow center_y">
-                        &#10095
-                    </p>
-        
-                    
-                </div>
-        
-                <div id="dots-wrapper" class="center-x">
-                    <div class="dot-nav"></div>
-                    <div class="dot-nav"></div>
-                    <div class="dot-nav"></div>
-                </div>
-            
+            </div>
         </section>
-        
+
+
         <section class="mapa">
             <div class="head">
                 <h4>Encontranos!</h4>
@@ -149,11 +131,14 @@
             <div class="banner">
                 
                 <img src="./img/mario.jpg" alt="">
-                <h4>Almacen de Mario</h4>
-                <p>Dirección</p>
-                <p>Dean Funes 163 Local 3</p>
-                <p>Localidad</p>
-                <p>Córdoba Capital</p>      
+                <article>
+                    <h4>Almacen de Mario</h4>
+                    <p>Dirección</p>
+                    <p>Dean Funes 163 Local 3</p>
+                    <p>Localidad</p>
+                    <p>Córdoba Capital</p>   
+                </article>
+                    
             </div>
         </section>
 
@@ -207,7 +192,48 @@
             <button type="submit">Enviar</button>
         </form>
 
+        <section class="proveedores">
+            <h4>Familia Melona</h4>
+            <div class="cuadros">
+                <img src="./img/Proveedores b_n/logo-01.png" alt="centro cultural coreano">
+                <img src="./img/Proveedores b_n/logo-010.png" alt="logo">
+                <img src="./img/Proveedores b_n/logo-011.png" alt="tina&co">
+                <img src="./img/Proveedores b_n/logo-011b.png" alt="embajada de corea">
+                <img src="./img/Proveedores b_n/logo-012.png" alt="japan food track">
+                <img src="./img/Proveedores b_n/logo-013-1.png" alt="panda">
+                <img src="./img/Proveedores b_n/logo-014-1.png" alt="chungwa">
+                <img src="./img/Proveedores b_n/logo-015-1.png" alt="milenarios">
+                <img src="./img/Proveedores b_n/logo-016-1.png" alt="picurba">
+                <img src="./img/Proveedores b_n/logo-02.png" alt="kotra">
+                <img src="./img/Proveedores b_n/logo-03.png" alt="caciac">
+                <img src="./img/Proveedores b_n/logo-04.png" alt="centro cultural japones">
+                <img src="./img/Proveedores b_n/logo-05.png" alt="fujisan">
+                <img src="./img/Proveedores b_n/logo-06.png" alt="fundacion cultural arg japonesa">
+                <img src="./img/Proveedores b_n/logo-07.png" alt="nobiru">
+                <img src="./img/Proveedores b_n/logo-08.png" alt="miyako">
+                <img src="./img/Proveedores b_n/logo-09.png" alt="nipponmania">
+                <img src="./img/Proveedores b_n/logo-almacen-pizzas.png" alt="almacen de pizzas">
+                <img src="./img/Proveedores b_n/logo-walmart.png" alt="wallmart">
+            </div>
+            <p>Conseguí tu Melona en uno de nuestros <br>
+                queridos proveedores.</p>
+            <img src="./img/melona.svg" class="melona_prov" alt="melona">
+
+        </section>
         
+        <footer>
+            <p>© Todos los derechos reservados – NeoGeo SRL (+05411)
+                4672-1199
+            </p>
+            <a href="#index">
+                <div>
+                    <i class="fas fa-chevron-up"></i>
+                    <p class="top">TOP</p>
+                </div>
+            </a>
+            
+                
+        </footer>
 
 
         

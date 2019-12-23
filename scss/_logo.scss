@@ -1,67 +1,123 @@
 $color1: #95DF38;
 
-@media screen and (max-width:800px){
-    
-    .logo{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        height: 700px;
-        
-        img{
-            position: absolute;
-            width: 40%;
-            height: 350px;
-            
-            padding-left: 35%;
-            
-        }
-        .melon{
-            padding-top: 100px;
-            z-index: 3;
-        }
-        img:nth-child(2){
-            transform: scaleX(-1);
-            z-index: 2;
-            padding-right: 15%;
-            padding-top: 50px;
-            
-        }
-        h1{
-            z-index: 4;
-            margin-top: 100px;
-            text-align: center;
-            font-size: 5rem;
-           
-        }
-        @mixin fotos{
-            position: static;
-            margin:0;
-            padding: 0;
-            height: 200px;
-            width: 80%;
-        }
-        .foto{
-            display: grid;
-            margin-top: 150px;
-            grid-template-columns:auto auto auto;
-            height: 150px;
-            justify-items: center;
-            .abuela{
-                @include fotos;
+
+
+
+    .logo{    
+        .paletas{
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
             }
-            .pareja{
-                @include fotos;
+            .frutilla{
+                transform: scaleX(-1);
+                width: 30%;
+                height: 50%;
+                padding-left: 40px;
+            }
+            .melon{
+                width: 30%;
+                height: 50%;
+                padding-left: 60px;
+                padding-top: 30px;
+                z-index: 1;
+            }
+            h1{
+                font-size: 4rem;
+                position: absolute;
+                text-align: center;
+                width: 100%;
+                transform: translateY(50%);
+                z-index: 2;
+            }
+            @mixin fotos{
+                position: static;
+                margin:0;
+                padding: 0;
+                height: 50%;
+                width: 100%;
+            }
+            .foto{
+                display: grid;
+                grid-template-columns:auto auto auto;
                 
+                justify-items: center;
+                .abuela{
+                    @include fotos;
+                    align-self: flex-end;
+                }
+                .pareja{
+                    @include fotos;
+                    align-self: flex-end;
+                }
+                .niño{
+                    @include fotos;
+                    
+                    height: 30%;
+                    justify-self: baseline;
+                    align-self: end;
+                    transform: scaleX(1);
             }
-            .niño{
-                @include fotos;
-                height: 150px;
-                align-self: flex-end;
-                transform: scaleX(1);
+            
+            }
         }
         
-        }
         
+        
+        
+        
+    }
+
+
+@media screen and (min-width:500px){
+    .logo{
+        .paletas{
+            height: 250px;
+            .frutilla{
+                padding: 0;
+                width: 15%;
+                height: 100%;
+                align-self: center;
+                padding-left:30px;
+            }
+            .melon{
+                padding: 0;
+                width: 15%;
+                height: 100%;
+                align-self: center;
+                padding-left: 80px;
+                padding-top: 50px;
+            }
+            h1{
+                font-size: 4rem;
+                width: 65%;
+            }
+            .foto{
+                grid-template-columns:auto 50% auto;
+                .abuela{
+                    width: 60%;
+                    height: 50%;
+                    align-self: center;
+                    justify-self: self-start;
+                }
+                .pareja{
+                    width: 90%;
+                    height: 50%;
+                    align-self: flex-end;
+                    justify-self: self-end;
+                }
+                .niño{
+                    width: 30%;
+                    height: 50%;
+                    justify-self: flex-start;
+                }      
+            }
+        }
     }
 }

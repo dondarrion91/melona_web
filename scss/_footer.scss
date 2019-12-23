@@ -1,0 +1,23 @@
+$primary: #95DF38;
+
+@media screen and (max-width:800px){
+    footer{
+        text-align: center;
+        background: $primary;
+        
+        p{
+            font-size: 1rem;
+            color: white;
+            padding: 10px;
+        }
+        div{
+            i{
+                color: white;
+            }
+            .top{
+                padding: 0;
+                padding-bottom: 20px;;
+            }
+        }
+    }
+}
