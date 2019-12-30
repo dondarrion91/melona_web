@@ -74,7 +74,7 @@ $color1: #95DF38;
         
     }
 
-
+//celular acostado
 @media screen and (min-width:500px){
     .logo{
         .paletas{
@@ -116,6 +116,56 @@ $color1: #95DF38;
                     width: 30%;
                     height: 50%;
                     justify-self: flex-start;
+                }      
+            }
+        }
+    }
+}
+
+//Ipad 
+@media screen and (min-width:1000px){
+    .logo{
+        .paletas{
+            height: 1200px;
+            .frutilla{
+                width:30%;
+                padding-left: 200px;
+                bottom: 150px;
+            }
+            .melon{
+                width: 30%;
+                padding-left: 200px;
+                padding-top: 80px;
+                bottom: 100px;
+                
+            }
+            h1{
+                width: 40%;
+                font-size: 7rem;
+                top: 100px;
+            }
+            .foto{
+                width: 100%;
+                grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
+                .abuela{
+                    height: 50%;
+                    align-self: flex-end;
+                    object-fit: contain;
+                    width: 70%;
+                    justify-self: center;
+                }
+                .pareja{
+                    align-self: flex-end;
+                    height: 30%;
+                    width: 80%;
+                    object-fit: contain;
+                    justify-self: flex-start;
+                }
+                .niño{
+                    align-self: flex-end;
+                    height: 30%;
+                    width: 50%;
+                    object-fit: contain;
                 }      
             }
         }

@@ -1,22 +1,75 @@
-@media screen and (max-width:800px){
+.carrousel2{
+    h4{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bolder;
+        padding: 40px;
+    }
     .owl-carousel{
         
         height: 100%;
-        h4{
-            margin-top: 80px;
-            text-align: center;
-            font-size: 3rem;
+        .samanco{
+            width: 80%;
+            margin: auto;
         }
         h5{
             text-align: center;
             font-size: 2.5rem;
+            padding: 30px;
         }
         p{
             text-align: center;
             font-size: 1.3rem;
+            padding: 20px;
         }
-        .item{
-            height: 450px;
+        
+    }
+}
+    
+
+
+@media screen and (min-width:500px) and (max-width:1000px){
+    .carrousel2{
+        h4{
+            margin: 0;
+            font-size: 3rem;
+            padding: 20px;
+            font-weight: bolder;
+        }
+        .owl-carousel{
+            
+            h5{
+                font-size: 2rem;
+                padding: 0;
+            }
+            p{
+                width: 93%;
+                margin: auto;
+            }
+            .item{
+                
+                .samanco{
+                    width: 50%;
+                    margin: auto;
+                }
+            }
         }
     }
+    
+}
+
+@media screen and (min-width:1000px){
+    h4{
+        font-size: 4rem;
+    }
+    h5{
+        font-size: 3rem;
+    }
+    .item{
+        
+        img{
+            width: 100%;
+        }
+    }
+    
 }

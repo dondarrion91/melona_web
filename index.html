@@ -9,10 +9,21 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
+        <div class="datos">
+            <div class="direcciones">
+                <p><i class="fa fa-phone" aria-hidden="true"></i>(+05411) 4672-1199</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>sales@neogeo.com.ar</p>
+            </div>
+            <div class="redes">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            
+        </div>
         <div class="menu_bar">
             <h4><img src="./img/melona.svg" alt="logo melona"></h4>
             <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
@@ -21,11 +32,16 @@
 
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Inicio</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Melona</a></li>
+                <li><a href="#">Sabores</a></li>
+                <li class="medio_titulo">
+                    <a href="#"><img src="./img/melona.svg" alt="logo melona"></a href="#">
+                </li>
+                
+                <li><a href="#">Otros</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
             
         </nav>
@@ -50,9 +66,12 @@
         </section>
 
         <section class="seccion1">
-            <img src="./img/melon-pakaging.png" class="melon-pack" alt="melon packaging">
-            <h4>El helado que conquisto al mundo</h4>
-                <p>Desde hace años Melona es una 
+            <div>
+                <img src="./img/melon-pakaging.png" class="melon-pack" alt="melon packaging">
+                <h4>El helado que conquisto al mundo</h4>
+            </div>
+            
+            <p>Desde hace años Melona es una 
                     marca Top 5 a nivel mundial en el
                     exigente mercado de los helados
                     de consumo masivo y esto no ha
@@ -63,7 +82,8 @@
                     melón un helado, pero no uno
                     cualquiera sino el más rico, el más
                     frutal, el más cremoso y accesible
-                    que puedas probar.</p>
+                    que puedas probar.
+            </p>
         </section>
         
         <section class="seccion2">
@@ -74,45 +94,75 @@
             </article>
             <article>
                 <i class="fas fa-globe-americas"></i>
+                <h4>25 Paises</h4>
+                <p>en los que se vende</p>
+            </article>
+            <article>
+                <i class="fas fa-globe-americas"></i>
+                <h4>25 Paises</h4>
+                <p>en los que se vende</p>
+            </article>
+            <article>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                
                 <h4>Entre los Top 5</h4>
                 <p>a nivel mundial</p>
             </article>
         </section>
         
         <section class="carrousel">
+            <h4 style="margin: 0;">Sabores que
+                dan gusto
+            </h4>
             <div class="owl-carousel owl-theme">
                 <div class="item slide-0">
-                    <h4 style="margin: 0;">Sabores que
-                        dan gusto
-                    </h4>
+                    
                     <p>Cuatro gustos frutales, una 
                         característica común: El delicioso y 
                         único sabor Melona.
                     </p>
-                    <img src="./img/melona-verde.svg" class="fondo" alt="melona">
-                    <img src="./img/melon-paleta-packaging.png" class="helado"  alt="0">
+                    <figure>
+                        <img src="./img/melona-verde.svg" class="fondo" alt="melona">
+                        <img src="./img/melon-paleta-packaging.png" class="helado"  alt="0">
+                        <p>Melón</p>
+                    </figure>
+                    
+                    
+                    
+                    
                 </div>
                 <div class="item slide-1">
-                    <h4 style="margin: 0;">Sabores que 
-                        dan gusto
-                    </h4>
+                    
                     <p>Cuatro gustos frutales, una 
                         característica común: El delicioso y 
                         único sabor Melona.
                     </p>
-                    <img src="./img/melona-rosa.svg" class="fondo" alt="melona">
-                    <img src="./img/frutilla-paleta-packaging.png" class="helado" alt="1">
+                    <figure>
+                        <img src="./img/melona-rosa.svg" class="fondo" alt="melona">
+                        <img src="./img/frutilla-paleta-packaging.png" class="helado" alt="1">
+                        <p>Frutilla</p>
+                    </figure>
+                    
+                  
+                    
+                     
                 </div>
                 <div class="item slide-2">
-                    <h4 style="margin: 0;">Sabores que 
-                        dan gusto
-                    </h4>
+                    
                     <p>Cuatro gustos frutales, una 
                         característica común: El delicioso y 
                         único sabor Melona.
                     </p>
-                    <img src="./img/melona-amarillo.svg" class="fondo" alt="melona">
-                    <img src="./img/banana-paleta-packaging.png" class="helado" alt="2">
+                    <figure>
+                        <img src="./img/melona-amarillo.svg" class="fondo" alt="melona">
+                        <img src="./img/banana-paleta-packaging.png" class="helado" alt="2">
+                        <p>Banana</p>
+                    </figure>
+                    
+                    
+                    
+               
+                    
                 </div>
             </div>
         </section>
@@ -126,54 +176,61 @@
                 </p>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13618.729898799334!2d-64.18331629999999!3d-31.422873349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1576724251906!5m2!1sen!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            
 
             <div class="banner">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13618.729898799334!2d-64.18331629999999!3d-31.422873349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1576724251906!5m2!1sen!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 
-                <img src="./img/mario.jpg" alt="">
-                <article>
-                    <h4>Almacen de Mario</h4>
-                    <p>Dirección</p>
-                    <p>Dean Funes 163 Local 3</p>
-                    <p>Localidad</p>
-                    <p>Córdoba Capital</p>   
+
+                <article class="cero">    
+                    <img src="./img/mario.jpg" alt="">
+                    <div class="texto">
+                        <h4>Almacen de Mario</h4>
+                        <div class="uno">
+                            <p>Dirección</p>
+                            <p>Dean Funes 163 Local 3</p>
+                        </div>
+                        <div class="dos">
+                            <p>Localidad</p>
+                            <p>Córdoba Capital</p>
+                        </div>
+                    </div>
+                    
                 </article>
                     
             </div>
         </section>
 
-        <section>
+        <section class="carrousel2">
+            <h4>Más deliciosas 
+                creaciones
+            </h4>
             <div class="owl-carousel owl-theme">
+                
                 <div class="item">
-                    <h4>Más deliciosas <br>
-                        creaciones
-                    </h4>
-                    <img src="./img/sanguche.PNG" alt="">
+                    
+                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
                     <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta <br>
-                        sabor a poroto colorado y bizcocho dulce. Caja: <br>
+                    <p>Crema helada de vainilla recubierto con pasta
+                        sabor a poroto colorado y bizcocho dulce. Caja: 
                         150 gr x 30 unidades o 24 unidades.
                     </p>
                 </div>
                 <div class="item">
-                    <h4>Más deliciosas <br>
-                        creaciones
-                    </h4>
-                    <img src="./img/sanguche.PNG" alt="">
+                    
+                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
                     <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta <br>
-                        sabor a poroto colorado y bizcocho dulce. Caja: <br>
+                    <p>Crema helada de vainilla recubierto con pasta 
+                        sabor a poroto colorado y bizcocho dulce. Caja: 
                         150 gr x 30 unidades o 24 unidades.
                     </p>
                 </div>
                 <div class="item">
-                    <h4>Más deliciosas <br>
-                        creaciones
-                    </h4>
-                    <img src="./img/sanguche.PNG" alt="">
+                    
+                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
                     <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta <br>
-                        sabor a poroto colorado y bizcocho dulce. Caja: <br>
+                    <p>Crema helada de vainilla recubierto con pasta 
+                        sabor a poroto colorado y bizcocho dulce. Caja:
                         150 gr x 30 unidades o 24 unidades.
                     </p>
                 </div>
@@ -183,12 +240,14 @@
 
         <form action="#">
             <h4>Contactanos</h4>
-            <p>¡Queremos escucharte! <br>
+            <p>¡Queremos escucharte! 
                 Dejanos tu mensaje.
             </p>
-            <input type="text">
-            <input type="text">
-            <textarea name="texto" id="" cols="30" rows="10"></textarea>
+            <div class="input">
+                <input type="text" placeholder="Nombre:" required>
+                <input type="text" placeholder="Apellido:" required>
+            </div>
+            <textarea name="texto" id="" cols="30" rows="10">Escribe aqui tu consulta!</textarea>
             <button type="submit">Enviar</button>
         </form>
 
@@ -215,7 +274,7 @@
                 <img src="./img/Proveedores b_n/logo-almacen-pizzas.png" alt="almacen de pizzas">
                 <img src="./img/Proveedores b_n/logo-walmart.png" alt="wallmart">
             </div>
-            <p>Conseguí tu Melona en uno de nuestros <br>
+            <p>Conseguí tu Melona en uno de nuestros 
                 queridos proveedores.</p>
             <img src="./img/melona.svg" class="melona_prov" alt="melona">
 
@@ -248,11 +307,10 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script>
-    $('.owl-carousel').owlCarousel({
+    $('.carrousel .owl-carousel').owlCarousel({
         loop:true,
         margin:0,
         nav:false,
-        autoplay: 500,
         dots:true,
         responsive:{
             0:{
@@ -267,6 +325,25 @@
         }
     });
     </script>
+    <script>
+        $('.carrousel2 .owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        });
+        </script>
     <script src="./js/menu.js"></script>
     <script src="./js/app.js"></script>
 </html>

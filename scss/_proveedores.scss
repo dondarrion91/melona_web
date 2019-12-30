@@ -1,4 +1,4 @@
-@media screen and (max-width:800px){
+
     .proveedores{
         h4{
             text-align: center;
@@ -25,6 +25,40 @@
             width: 50%;
             height: 150px;
             transform: translateX(50%);
+        }
+    }
+
+@media screen and (min-width:500px) and (max-width:1000px){
+    .proveedores{
+        .melona_prov{
+            width: 20%;
+            display: block;
+            transform: translateX(0%);
+            margin: auto;
+        }
+    }
+    
+}
+
+@media screen and (min-width:1000px){
+    .proveedores{
+        h4{
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+        .cuadros{
+            grid-template-columns: 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668%;
+        }
+        p{
+            color: black;
+            font-size: 1rem;
+        }
+        .melona_prov{
+            width: 20%;
+            transform: translateX(0%);
+            margin: auto;
+            display: block;
+            padding: 30px;
         }
     }
 }

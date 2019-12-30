@@ -4,7 +4,7 @@ $melon: #96DE34;
     .mapa{
         height: 600px;
         width: 100%;
-        background: $melon;
+        
         
         .head{
             background: white;
@@ -14,7 +14,7 @@ $melon: #96DE34;
             flex-direction: column;
             justify-content: center;
             h4{
-                font-size: 4rem;
+                font-size: 4rem; 
             }
             p{
                 font-size: 1.5rem;
@@ -29,28 +29,45 @@ $melon: #96DE34;
 
         .banner{
             overflow: hidden;
-            img {   
-                width: 100%;
-                height: 100px;
-                border-radius: 20px 20px 0 0;
-            }
             background: white;
             text-align: left;
             color: gray;
             width: 90%;
             margin: auto;
-            margin-top: -30px;
             z-index: 1;
             position: relative;
             border-radius: 20px;
-            h4{
-                font-size: 2.5rem;
+            
+            .cero{
+                background-color: $melon;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                
+                img {   
+                    width: 100%;
+                    height: 100px;
+                    border-radius: 20px 20px 0 0;
+                    z-index: 1;
+                    margin-top: -100px;
+                }
+                .texto{
+                    background-color: white;
+                    border-radius: 0px 0px 20px 20px;
+                    padding: 20px;
+                    h4{
+                        font-size: 2.5rem;
+                    }
+                    p:nth-child(even){
+                        line-height: 30px;
+                        font-size: 1.5rem;
+                    } 
+                }
+                
             }
            
-            p:nth-child(even){
-                line-height: 30px;
-                font-size: 1.5rem;
-            }
+           
+            
         }
 
         
@@ -58,10 +75,49 @@ $melon: #96DE34;
     }
 
 
-@media screen and (min-width:500px){
-    .banner{
-        display: flex;
-        flex-direction: column;
+@media screen and (min-width:500px) and (max-width:1000px){
+    .mapa{
+        height: 580px;
+        .banner{
+            width: 80%;
+            margin-top: -40px;
+            display: flex;
+            flex-direction: column;
+            h4{
+                padding-top: 20px;
+            }
+            
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    .mapa{
+        height: 680px;
         
+        .head{
+            height: 300px;
+        }
+        .banner{
+            height: 400px;
+            width: 95%;
+            iframe{
+                flex-basis: 50%;
+            }
+            display: flex;
+            flex-direction: row-reverse;
+            .cero{
+                
+                flex-basis: 50%;
+                img{
+                    height: 50%;
+                    margin: 0;
+                }
+                .texto{
+                    height: 50%;
+                }
+            }
+        }
     }
 }

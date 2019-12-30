@@ -6,45 +6,90 @@ $secondary: #FAF2D1;
 
     .seccion1{
         background: white;
-        height: 600px;
-        .melon-pack{
-            display: block;
-            margin: auto;
-            margin-top: 30px;
-            width: 80%;
+        div{
+            .melon-pack{
+                display: block;
+                margin: auto;
+                margin-top: 30px;
+                width: 80%;
+            }
+            h4{
+                font-weight: bolder;
+                margin-top: 50px;
+                font-size: 3.5rem;
+                text-align: center;
+            }
         }
-        h4{
-            font-weight: bolder;
-            margin-top: 50px;
-            font-size: 3.5rem;
-            text-align: center;
-        }
+        
         p{
             text-align: center;
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             color: gray;
-            padding-top: 50px;
+            padding: 30px;
         }
     }
 
-@media screen and (min-width:500px){
+@media screen and (min-width:500px) and (max-width:1000px){
     .seccion1{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        .melon-pack{
-            margin: 0;
-            width: 50%;
+        div{
+            .melon-pack{
+                margin: auto;
+                padding: 40px;
+                width: 50%;
+            }
+            h4{
+                margin: 0;
+                font-size: 3rem;
+            }
         }
-        h4{
-            margin: 0;
-            width: 100%;
-            font-size: 3rem;
-        }
+        
         p{
-            padding:0;
+            
             width: 90%;
         }
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:1200px){
+    .seccion1{
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:space-evenly;
+            .melon-pack{
+                margin: 0;
+                width: 50%;
+                object-fit: scale-down;
+            }
+            h4{
+                width: 30%;
+                text-align: center;
+            }
+        }
+        p{
+            width: 81%;
+            padding: 50px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    .seccion1{
+        div{
+            flex-direction: column;
+            .melon-pack{
+                width: 50%;
+            }
+        }
+        p{
+            width: 50%;
+            margin: auto;
+        }
+          
     }
 }

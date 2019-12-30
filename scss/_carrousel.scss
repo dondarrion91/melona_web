@@ -2,74 +2,98 @@ $frutilla: #FF5F93;
 $melon: rgb(182, 228, 118);
 $banana: #FEDF46;
 
-
+    
     .carrousel{
+        h4{
+            text-align: center;
+            font-size: 3rem;
+            padding: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+        }
         width: 100%;
+        
+        .item{
+            figure{
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    object-fit: scale-down;
+                    position: absolute;
+                    z-index: 1;
+                }
+                .fondo{
+                    z-index: 0;
+                    height: 30%;
+                    object-fit: scale-down;
+                    
+                }
+                .helado{
+                    height: 200px;
+                    width: 70%;
+                    position: relative;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            
+                
+            
+        }
+    }
+    
+    
+@media screen and (min-width:500px) and (max-width:1000px){
+    .carrousel{
+        .item{
+            figure{
+                width:100%;
+                .helado{
+                    width: 40%;
+                    height: 250px;
+                    margin: auto;
+                    z-index: 2;
+                }
+                p{
+                    z-index: 2;
+                    position: relative;
+                }
+            }
+            
+            .fondo{
+                object-fit: cover;
+                width: 100%;
+                height: 70%;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width:1000px){
+    .carrousel{
         .owl-dots{
-            margin-top: -50px !important;
-            position: relative !important;
-        }
-        height: 600px;
-
-        .slide-0{
-            background: $melon;
-        }
-
-        .slide-1{
-            background: $frutilla;
+            margin-top: -250px ;
         }
         
-        .slide-2{
-            background: $banana;
-        }
-
-        .item{
-            height: 600px !important;
-            width: 100%;
-            
-            h4{
-                text-align: center;
-                font-size: 4rem;
-                padding-top: 30px !important;
-            }
-            p{
-                text-align: center;
-                font-size: 2rem;
-                margin-bottom: 30px;
-            }
-            .fondo{
-                position: absolute;
-                object-fit: cover;
-            }
-            img{
-                height: 300px;
-                width: 100%;
-                object-fit: scale-down;
-                position: relative;
-                z-index: 1;
-            }
-            
-        }
-    }
-    
-    
-@media screen and (min-width:500px){
-    .carrousel{
-        height: 450px !important;
-        .item{
-            height: 450px !important;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+        
+        figure{
             .helado{
-                width: 50%;
-                height: 50%;
-                margin: auto;
+                width: 80% ;
+                height: 550px ;
             }
+            
         }
     }
-}    
+}
     
     
 
