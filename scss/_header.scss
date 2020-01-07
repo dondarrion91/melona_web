@@ -15,7 +15,7 @@ header{
         left: -100%;
         width: 100%;
         max-width: 1000px;
-        margin: 20px auto;
+        margin: 15px auto;
         background: $header;
         top: 73px;
         display: flex;
@@ -30,8 +30,8 @@ header{
                 float: left;
                 a{
                     color: $letra;
-                    padding: 40px;
                     display: block;
+                    padding: 0px 50px;
                     text-decoration: none;
                     font-size: 1.5rem;
                     z-index: 99;
@@ -63,7 +63,16 @@ header{
 
 .menu_bar{
     display: none;
-}
+    .melona_titulo{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+        img{
+            width: 30%;
+        }
+    }
+
 
 @media screen and (max-width:750px){
     header{
@@ -74,7 +83,7 @@ header{
             height: 100%;
             margin: 0;
             position: fixed;
-            top: 74px;
+            top: 70px;
             display: flex;
             justify-content: flex-start;
             ul{
@@ -119,6 +128,16 @@ header{
 }
 
 @media screen and (min-width: 1200px){
+    nav{
+        margin: 0;
+        ul{
+            li{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
     .datos{
         font-size: 1.5rem;
         display: flex !important;

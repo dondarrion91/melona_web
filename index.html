@@ -8,6 +8,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -25,7 +29,7 @@
             
         </div>
         <div class="menu_bar">
-            <h4><img src="./img/melona.svg" alt="logo melona"></h4>
+            <h4 class="melona_titulo"><img src="./img/melona.svg" alt="logo melona"></h4>
             <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
         </div>
 
@@ -36,7 +40,7 @@
                 <li><a href="#">Melona</a></li>
                 <li><a href="#">Sabores</a></li>
                 <li class="medio_titulo">
-                    <a href="#"><img src="./img/melona.svg" alt="logo melona"></a href="#">
+                    <img src="./img/melona.svg" alt="logo melona">
                 </li>
                 
                 <li><a href="#">Otros</a></li>
@@ -179,20 +183,20 @@
             
 
             <div class="banner">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13618.729898799334!2d-64.18331629999999!3d-31.422873349999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1576724251906!5m2!1sen!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <div class="map" id="map"></div>
                 
 
                 <article class="cero">    
-                    <img src="./img/mario.jpg" alt="">
+                    <img src="./img/mario.jpg" alt="foto del proveedor" id="foto">
                     <div class="texto">
-                        <h4>Almacen de Mario</h4>
+                        <h4 id="titulo">Almacen de Mario</h4>
                         <div class="uno">
                             <p>Dirección</p>
-                            <p>Dean Funes 163 Local 3</p>
+                            <p id="uno">Dean Funes 163 Local 3</p>
                         </div>
                         <div class="dos">
                             <p>Localidad</p>
-                            <p>Córdoba Capital</p>
+                            <p id="dos">Córdoba Capital</p>
                         </div>
                     </div>
                     
@@ -248,7 +252,10 @@
                 <input type="text" placeholder="Apellido:" required>
             </div>
             <textarea name="texto" id="" cols="30" rows="10">Escribe aqui tu consulta!</textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="link-liquid">
+                <p class="enviar">Enviar</p>
+                <div class="liquid"></div>
+            </button>
         </form>
 
         <section class="proveedores">
@@ -304,46 +311,52 @@
 
     
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script>
     $('.carrousel .owl-carousel').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
-        dots:true,
-        responsive:{
-            0:{
-                items:1
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:1
+            600: {
+                items: 1
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
     });
-    </script>
-    <script>
-        $('.carrousel2 .owl-carousel').owlCarousel({
-            loop:true,
-            margin:0,
-            nav:false,
-            dots:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:1
-                },
-                1000:{
-                    items:2
-                }
+</script>
+<script>
+    $('.carrousel2 .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
             }
-        });
-        </script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/app.js"></script>
+        }
+    });
+</script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+<script src="./js/map.js"></script>
+<script src="./js/animation.js"></script>
+<script src="./js/menu.js"></script>
+<script src="./js/app.js"></script>
 </html>
