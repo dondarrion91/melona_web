@@ -8,21 +8,39 @@ $banana: #FEDF46;
             text-align: center;
             font-size: 3rem;
             padding: 30px;
+            padding-top: 50px;
+            padding-bottom: 10px;
         }
         p{
             text-align: center;
             font-size: 1.5rem;
             padding: 20px;
+            padding-top: 0px;
         }
         width: 100%;
+
+        $backgrounds: 0 "../img/melona-verde.svg", 1 "../img/melona-rosa.svg", 2 "../img/melona-amarillo.svg";
+
+        @each $number,$background in $backgrounds {
+            .slide-#{$number}{
+                height: 237px;
+                background-image: url($background);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-position-y: 0px;
+            }
+        }
+        
         
         .item{
             figure{
                 display: flex;
                 position: relative;
-                flex-direction: column;
+                flex-direction: row;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
+                height: 250px;
                 img{
                     width: 100%;
                     object-fit: scale-down;
@@ -37,8 +55,38 @@ $banana: #FEDF46;
                 }
                 .helado{
                     height: 200px;
-                    width: 70%;
+                    width: 50%;
                     position: relative;
+                }
+                .helado-verde{
+                    width: 50%;
+                    height: 200px;
+                    position: relative;
+                }
+                .helado-info{
+                    width:50%;
+                    height: 200px;
+                    background: rgb(245, 243, 243);
+                    margin: 20px 0px;
+                    margin-right: 20px;
+                    box-sizing: border-box;
+                    border-radius: 15px;
+                    h4{
+                        padding: 5px;
+                        font-size: 1.8rem;
+                    }
+                    h6{
+                        text-align: center;
+                        font-size: 1rem;
+                        width: 60%;
+                        margin: auto; 
+                        padding: 10px; 
+                        color: rgb(150, 148, 148);
+                    }
+                    p{
+                        font-size: 8px;
+                        color: rgb(150, 148, 148);
+                    }
                 }
                 p{
                     margin: 0;

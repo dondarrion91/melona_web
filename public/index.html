@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="datos">
             <div class="direcciones">
                 <p><i class="fa fa-phone" aria-hidden="true"></i>(+05411) 4672-1199</p>
@@ -61,7 +61,11 @@
                 <div class="foto">
                     <img src="./img/abuela.svg" class="abuela" alt="abuela bailando">
                     <img src="./img/niño.svg" class="niño" alt="niño con paleta">
-                    <img src="./img/pareja.svg" class="pareja" alt="pareja con helados"> 
+                    <figure>
+                        <img src="./img/pareja.svg" class="pareja" alt="pareja con helados">
+                        <img src="./img/sodio-gluten-calorias.svg" class="gluten" alt="">
+                    </figure>
+                     
                 </div>
             </div>
             
@@ -72,21 +76,21 @@
         <section class="seccion1">
             <div>
                 <img src="./img/melon-pakaging.png" class="melon-pack" alt="melon packaging">
-                <h4>El helado que conquisto al mundo</h4>
+                <h4>El helado <br> que conquisto <br> al mundo</h4>
             </div>
             
-            <p>Desde hace años Melona es una 
-                    marca Top 5 a nivel mundial en el
-                    exigente mercado de los helados
-                    de consumo masivo y esto no ha
-                    sido mera casualidad, la verdad e
-                    que hicimos algo que ninguna
-                    otra marca de helados nunca
-                    antes pudo hacer, hicimos del
-                    melón un helado, pero no uno
-                    cualquiera sino el más rico, el más
-                    frutal, el más cremoso y accesible
-                    que puedas probar.
+            <p>Desde hace años Melona es una
+                marca Top 5 a nivel mundial en el
+                exigente mercado de los helados
+                de consumo masivo y esto no ha
+                sido mera casualidad, la verdad es
+                que hicimos algo que ninguna
+                otra marca de helados nunca
+                antes pudo hacer, hicimos del
+                melón un helado, pero no uno
+                cualquiera sino el más rico, el más
+                frutal, el más cremoso y accesible
+                que puedas probar.
             </p>
         </section>
         
@@ -118,60 +122,56 @@
             <h4 style="margin: 0;">Sabores que
                 dan gusto
             </h4>
+            <p>Cuatro gustos frutales, una 
+                característica común: El delicioso y 
+                único sabor Melona.
+            </p>
             <div class="owl-carousel owl-theme">
                 <div class="item slide-0">
-                    
-                    <p>Cuatro gustos frutales, una 
-                        característica común: El delicioso y 
-                        único sabor Melona.
-                    </p>
                     <figure>
-                        <img src="./img/melona-verde.svg" class="fondo" alt="melona">
-                        <img src="./img/melon-paleta-packaging.png" class="helado"  alt="0">
-                        <p>Melón</p>
+                        <img src="./img/melon-paleta-packaging.png" class="helado-verde" alt="0">
+                        <div class="helado-info">
+                            <img src="" alt="">  
+                            <h4>Melón</h4>
+                            <h6>Delicioso sabor
+                                original Melona</h6>
+                            <p>Skim Milk, Liquid Sugar
+                                (Sugar, Water), Corn
+                                Syrup, Cream, Water,
+                                Melon Puree Syrup</p>
+                        </div>
                     </figure>
-                    
-                    
-                    
-                    
                 </div>
                 <div class="item slide-1">
-                    
-                    <p>Cuatro gustos frutales, una 
-                        característica común: El delicioso y 
-                        único sabor Melona.
-                    </p>
                     <figure>
-                        <img src="./img/melona-rosa.svg" class="fondo" alt="melona">
                         <img src="./img/frutilla-paleta-packaging.png" class="helado" alt="1">
-                        <p>Frutilla</p>
+                        <div class="helado-info">
+                            <h4>Melón</h4>
+                            <h6>Delicioso sabor
+                                original Melona</h6>
+                            <p>Skim Milk, Liquid Sugar
+                                (Sugar, Water), Corn
+                                Syrup, Cream, Water,
+                                Melon Puree Syrup</p>
+                        </div>
                     </figure>
-                    
-                  
-                    
-                     
                 </div>
                 <div class="item slide-2">
-                    
-                    <p>Cuatro gustos frutales, una 
-                        característica común: El delicioso y 
-                        único sabor Melona.
-                    </p>
                     <figure>
-                        <img src="./img/melona-amarillo.svg" class="fondo" alt="melona">
                         <img src="./img/banana-paleta-packaging.png" class="helado" alt="2">
-                        <p>Banana</p>
+                        <div class="helado-info">
+                            <h4>Melón</h4>
+                            <h6>Delicioso sabor
+                                original Melona</h6>
+                            <p>Skim Milk, Liquid Sugar
+                                (Sugar, Water), Corn
+                                Syrup, Cream, Water,
+                                Melon Puree Syrup</p>
+                        </div>
                     </figure>
-                    
-                    
-                    
-               
-                    
                 </div>
-            </div>
+                </div>
         </section>
-
-
         <section class="mapa">
             <div class="head">
                 <h4>Encontranos!</h4>
@@ -189,6 +189,7 @@
                 <article class="cero">    
                     <img src="./img/mario.jpg" alt="foto del proveedor" id="foto">
                     <div class="texto">
+                        <i class="fa fa-times" id="cross" aria-hidden="true"></i>
                         <h4 id="titulo">Almacen de Mario</h4>
                         <div class="uno">
                             <p>Dirección</p>
@@ -243,15 +244,16 @@
         
 
         <form action="#">
-            <h4>Contactanos</h4>
-            <p>¡Queremos escucharte! 
-                Dejanos tu mensaje.
-            </p>
-            <div class="input">
-                <input type="text" placeholder="Nombre:" required>
-                <input type="text" placeholder="Apellido:" required>
+            <div class="form-header">
+                <img src="./img/Niña-email-blanco.svg" alt="niña enviando email">
+                <h4>Contactanos</h4>
+                <p>¡Queremos escucharte!</p>
             </div>
-            <textarea name="texto" id="" cols="30" rows="10">Escribe aqui tu consulta!</textarea>
+            <div class="input">
+                <input type="email" placeholder="Email:" id="email" required>
+                <input type="text" placeholder="Asunto:" id="subject" required>
+            </div>
+            <textarea name="texto" id="text" cols="30" rows="10" placeholder="Mensaje"></textarea>
             <button type="submit" class="link-liquid">
                 <p class="enviar">Enviar</p>
                 <div class="liquid"></div>
@@ -355,8 +357,10 @@
 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
     crossorigin=""></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./js/map.js"></script>
 <script src="./js/animation.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/app.js"></script>
+<script src="./js/jmail.js"></script>
 </html>
