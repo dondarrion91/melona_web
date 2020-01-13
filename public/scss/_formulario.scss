@@ -4,6 +4,8 @@ $greyform: rgb(179, 177, 177);
 $formbackground: rgb(241, 238, 238);
 form{
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
     .form-header{
         text-align: center;
         display: flex;
@@ -28,44 +30,52 @@ form{
             padding: 5px;
         }
     }
-    input::placeholder{
-        color: $greyform;
-        font-size: 16px;
-    }
-    input{
-        height: 50px;
-        border-radius: 10px;
-        background: $formbackground;
-        border: none;
-        color: $greyform;
-        font-size: 2rem;
-        margin: 10px 25px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    textarea::placeholder{
-        color: $greyform;
-    }
-    textarea{
-        border-radius: 10px;
-        background: $formbackground;
-        border: none;
-        font-size: 16px;
-        margin: 10px 25px;
-        width: 245px;   
-        color: $greyform;
-        font-family: 'Montserrat', sans-serif;
-        padding-top: 15px;
-    }
-    button{
-        background-color: $formbackground;
-        height: 50px;
-        border-radius: 30px;
-        border: none;
-        color: $greyform;
-        font-size: 2rem;
-        margin: auto;
+    .form-body{
+        display: flex;
+        flex-direction: column;
         width: 80%;
+        margin: auto;
+        input::placeholder{
+            color: $greyform;
+            font-size: 16px;
+            padding: 15px;
+        }
+        input{
+            height: 50px;
+            border-radius: 10px;
+            background: $gris;
+            border: none;
+            margin: 10px 0px;
+            color: $greyform;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        textarea::placeholder{
+            color: $greyform;
+            padding: 15px;
+        }
+        textarea{
+            border-radius: 10px;
+            background: $gris;
+            border: none;
+            font-size: 16px;
+            color: $greyform;
+            margin: 10px 0px;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+        }
+        button{
+            background-color: $primary;
+            height: 50px;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            margin: 10px auto;
+            width: 80%;
+        }
     }
+    
 }
 
 @media screen and (min-width:500px) and (max-width:1000px){

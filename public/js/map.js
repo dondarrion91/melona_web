@@ -17,9 +17,9 @@ var contenido = [
     },
     {
         foto: "./img/Proveedores b_n/logo-01.png",
-        titulo: "Almacen de tu vieja",
+        titulo: "Test",
         direccion: "san martin 576",
-        lugar:"Felicidonia"
+        lugar:"Test"
     }
 ];
 
