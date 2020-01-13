@@ -1,9 +1,12 @@
 
     .proveedores{
+        display: flex;
+        flex-direction: column;
         h4{
             text-align: center;
             font-size: 3rem;
             margin-top: 100px;
+            font-weight: 900;
         }
         .cuadros{
             display: grid;
@@ -19,12 +22,14 @@
             text-align: center;
             color: gray;
             font-size: 1.5rem;
+            width: 80%;
+            margin: auto;
         }
         .melona_prov{
-            
-            width: 50%;
-            height: 150px;
-            transform: translateX(50%);
+            width: 40%;
+            align-self: center;
+            padding-top:70px;
+            padding-bottom: 40px;
         }
     }
 

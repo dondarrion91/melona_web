@@ -5,7 +5,6 @@ const sendMail = require("./public/js/mail.js");
 const log = console.log;
 const app = express();
 const path = require("path");
-const PORT = 3000;
 
 //chunk2
 //data parsing
@@ -36,6 +35,10 @@ app.get("/",(req,res)=>{
 //static files
 app.use(express.static(path.join(__dirname,"public")));
 
-app.listen(PORT,()=>log("server start in PORT ",PORT));
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 
 console.log(path.join(__dirname,"public","index.html"));

@@ -2,7 +2,10 @@ $frutilla: #FF5F93;
 $melon: rgb(182, 228, 118);
 $banana: #FEDF46;
 
-    
+@keyframes mov{
+    0%{background-position-x:0px}
+    100%{background-position-x:-500px}
+}
     .carrousel{
         h4{
             text-align: center;
@@ -29,7 +32,9 @@ $banana: #FEDF46;
                 background-position: center;
                 background-size: cover;
                 background-position-y: 0px;
-            }
+                animation: mov 10s infinite linear;
+                -webkit-animation: mov 10s infinite linear;
+}
         }
         
         
@@ -78,7 +83,7 @@ $banana: #FEDF46;
                     align-self: flex-end;
                     img{
                         width: 50px;
-                        margin-top: -130px;
+                        top: 20px;
 
                     }
                     h4{
