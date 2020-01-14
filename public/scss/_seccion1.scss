@@ -28,6 +28,7 @@ $secondary: #FAF2D1;
             line-height: 25px;
             color: gray;
             padding: 38px;
+            font-weight: 500;
         }
     }
 
@@ -47,6 +48,9 @@ $secondary: #FAF2D1;
             h4{
                 margin: 0;
                 font-size: 3rem;
+                br{
+                    display: none;
+                }
             }
         }
         
