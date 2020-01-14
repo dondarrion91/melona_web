@@ -112,9 +112,10 @@ $color1: #95DF38;
 }
             h1{
                 font-size: 4rem;
+                font-weight: 900;
                 position: absolute;
                 text-align: center;
-                width: 100%;
+                width:300px;
                 transform: translateY(50%);
                 z-index: 2;
                 -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -134,7 +135,9 @@ $color1: #95DF38;
                 .abuela{
                     @include fotos;
                     align-self: flex-end;
-                    height: 220px;
+                    @media screen and (max-width:450px){
+                        height: 220px;
+                    }
                 }
                 figure{
                     align-self: flex-end;
@@ -159,7 +162,9 @@ $color1: #95DF38;
                 
                 .niño{
                     @include fotos;
-                    height: 100px;
+                    @media screen and (max-width:450px){
+                        height: 100px;
+                    }
                     justify-self: baseline;
                     align-self: end;
                     transform: scaleX(1);
@@ -177,23 +182,30 @@ $color1: #95DF38;
 //celular acostado
 @media screen and (min-width:450px) and (max-width:1000px){
     @keyframes helado_melon_celular_acostado{
-        0% {transform: rotateZ(0deg);top:40px;left: 120px;}
-        25% {transform: rotateZ(15deg);top:50px;left: 70px;}
-        50% {transform: rotateZ(30deg);top:40px;left: 120px;}
-        75% {transform: rotateZ(-30deg);top:50px;left: 70px;}
-        100%{transform: rotate(0);top: 40px;left: 120px;}   
+        0% {transform: rotateZ(0deg);top:40px;left: 130px;}
+        25% {transform: rotateZ(15deg);top:50px;left: 80px;}
+        50% {transform: rotateZ(30deg);top:40px;left: 130px;}
+        75% {transform: rotateZ(-30deg);top:50px;left: 80px;}
+        100%{transform: rotate(0);top: 40px;left: 130px;}   
     }
     @keyframes helado_frutilla_celular_acostado{
-        0% {transform: rotateZ(0deg);top: 100px;right: 140px;}
-        25% {transform: rotateZ(-15deg);top: 80px;right: 110px;}
-        50% {transform: rotateZ(-30deg);top: 100px;right: 140px;}
-        75% {transform: rotateZ(30deg);top:80px;right: 110px;}
-        100%{transform: rotate(0);top: 100px;right: 140px;}
+        0% {transform: rotateZ(0deg);top: 100px;right: 150px;}
+        25% {transform: rotateZ(-15deg);top: 80px;right: 120px;}
+        50% {transform: rotateZ(-30deg);top: 100px;right: 150px;}
+        75% {transform: rotateZ(30deg);top:80px;right: 120px;}
+        100%{transform: rotate(0);top: 100px;right: 150px;}
     }
     .logo{
+        height: 700px;
         .foto{
+            width: 100%;
+
             .abuela{
                 width: 60%;
+                height: 310px;
+            }
+            .niño{
+                height: 150px;
             }
             figure{
                 display: grid;
@@ -201,20 +213,25 @@ $color1: #95DF38;
                 height: 100%;
                 .pareja{
                     grid-area: 2 / 1 / 2 / 2; 
-                    height: 110px;
+                    height: 290px;
                 }
                 .gluten{
                     grid-area: 1 / 1 / 2 / 2; 
                     height: 50px;
-                    width: 100%;
+                    width: 50%;
+                    margin-right: 20px;
                     position: relative;
                     justify-self: end;
                 }
             }
         }
         .paletas{
+            height: 100%;
             h1{
-                width:50%;
+                width:400px;
+                font-weight: 900;
+                font-size: 5.3rem;
+                margin-top: 50px;
             }
             .melon{
                 animation: helado_melon_celular_acostado 10s infinite linear;

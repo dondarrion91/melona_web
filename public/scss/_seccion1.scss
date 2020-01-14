@@ -18,18 +18,20 @@ $secondary: #FAF2D1;
                 margin-top: 50px;
                 font-size: 34px;
                 text-align: center;
+                font-weight: 900;
             }
         }
         
         p{
             text-align: center;
             font-size: 1.4rem;
+            line-height: 25px;
             color: gray;
             padding: 38px;
         }
     }
 
-@media screen and (min-width:500px) and (max-width:1000px){
+@media screen and (min-width:450px) and (max-width:1000px){
     .seccion1{
         display: flex;
         flex-direction: column;
@@ -38,8 +40,9 @@ $secondary: #FAF2D1;
         div{
             .melon-pack{
                 margin: auto;
-                padding: 40px;
-                width: 50%;
+                padding: 35px;
+                padding-top: 50px;
+                width: 60%;
             }
             h4{
                 margin: 0;
@@ -48,7 +51,6 @@ $secondary: #FAF2D1;
         }
         
         p{
-            
             width: 90%;
         }
     }

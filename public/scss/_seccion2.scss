@@ -49,19 +49,6 @@ $color2: #FAF1D4;
         }
     }
 
-@media screen and (min-width:500px){
-    .seccion2{
-        display: flex;
-        flex-direction: row;
-        article:nth-child(1){
-            width: 50%;
-        }
-        article:nth-child(2){
-            width: 50%;
-        }
-    }
-}
-
 
 @media screen and (min-width:1000px){
     .seccion2{
