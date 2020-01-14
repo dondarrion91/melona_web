@@ -129,11 +129,19 @@ $color1: #95DF38;
             }
             .foto{
                 display: grid;
-                grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
+                @media screen and (max-width:450px){
+                    grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
+                }
+                
                 
                 justify-items: center;
                 .abuela{
-                    @include fotos;
+                    position: static;
+                    margin:0;
+                    padding: 0;
+                    @media screen and (max-width:450px){
+                        width: 100%;
+                    }
                     align-self: flex-end;
                     @media screen and (max-width:450px){
                         height: 220px;
@@ -144,7 +152,10 @@ $color1: #95DF38;
                     .pareja{
                         @include fotos;
                         align-self: flex-end;
-                        padding: 20px 0px;
+                        @media screen and (max-width:450px){
+                            padding: 20px 0px;
+                        }
+                        
 
                     }
                     @media screen and (max-width:450px){
@@ -161,8 +172,11 @@ $color1: #95DF38;
                 }
                 
                 .niño{
-                    @include fotos;
+                    position: static;
+                    margin:0;
+                    padding: 0;
                     @media screen and (max-width:450px){
+                        width:100%;
                         height: 100px;
                     }
                     justify-self: baseline;
@@ -182,30 +196,32 @@ $color1: #95DF38;
 //celular acostado
 @media screen and (min-width:450px) and (max-width:1000px){
     @keyframes helado_melon_celular_acostado{
-        0% {transform: rotateZ(0deg);top:40px;left: 130px;}
-        25% {transform: rotateZ(15deg);top:50px;left: 80px;}
-        50% {transform: rotateZ(30deg);top:40px;left: 130px;}
-        75% {transform: rotateZ(-30deg);top:50px;left: 80px;}
-        100%{transform: rotate(0);top: 40px;left: 130px;}   
+        0% {transform: rotateZ(0deg);top:-40px;left: 130px;}
+        25% {transform: rotateZ(15deg);top:-30px;left: 80px;}
+        50% {transform: rotateZ(30deg);top:-40px;left: 130px;}
+        75% {transform: rotateZ(-30deg);top:-30px;left: 80px;}
+        100%{transform: rotate(0);top: -40px;left: 130px;}   
     }
     @keyframes helado_frutilla_celular_acostado{
-        0% {transform: rotateZ(0deg);top: 100px;right: 150px;}
-        25% {transform: rotateZ(-15deg);top: 80px;right: 120px;}
-        50% {transform: rotateZ(-30deg);top: 100px;right: 150px;}
-        75% {transform: rotateZ(30deg);top:80px;right: 120px;}
-        100%{transform: rotate(0);top: 100px;right: 150px;}
+        0% {transform: rotateZ(0deg);top: 20px;right: 150px;}
+        25% {transform: rotateZ(-15deg);top: 0px;right: 120px;}
+        50% {transform: rotateZ(-30deg);top: 20px;right: 150px;}
+        75% {transform: rotateZ(30deg);top:0px;right: 120px;}
+        100%{transform: rotate(0);top: 20px;right: 150px;}
     }
     .logo{
-        height: 700px;
+        height: 280px;
         .foto{
             width: 100%;
-
+            height: 100%;
+            grid-template-columns: 25% 50% 25%;
             .abuela{
-                width: 60%;
-                height: 310px;
+                width: 70%;
+                height: 50%;
             }
             .niño{
-                height: 150px;
+                width:50%;
+                height: 30%;
             }
             figure{
                 display: grid;
@@ -213,7 +229,7 @@ $color1: #95DF38;
                 height: 100%;
                 .pareja{
                     grid-area: 2 / 1 / 2 / 2; 
-                    height: 290px;
+                    padding: 0;
                 }
                 .gluten{
                     grid-area: 1 / 1 / 2 / 2; 
@@ -230,14 +246,15 @@ $color1: #95DF38;
             h1{
                 width:400px;
                 font-weight: 900;
-                font-size: 5.3rem;
-                margin-top: 50px;
+                font-size: 4.3rem;
             }
             .melon{
+                height: 70%;
                 animation: helado_melon_celular_acostado 10s infinite linear;
                 -webkit-animation: helado_melon_celular_acostado 10s infinite linear;
 }
             .frutilla{
+                height: 70%;
                 animation: helado_frutilla_celular_acostado 10s infinite linear;
                 -webkit-animation: helado_frutilla_celular_acostado 10s infinite linear;
 }
