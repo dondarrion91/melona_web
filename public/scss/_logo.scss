@@ -137,6 +137,8 @@ $color1: #95DF38;
                         align-self: flex-end;
                         height: 50%;
                     }
+                    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 1s;
+	                animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 1s;
                 }
                 figure{
                     display: flex;
@@ -150,7 +152,8 @@ $color1: #95DF38;
                             height: 50%;
                             align-self: flex-end;
                         }
-                        
+                        -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 2s;
+	                    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 2s;
 
                     }
                     @media screen and (max-width:450px){
@@ -177,6 +180,8 @@ $color1: #95DF38;
                     justify-self: center;
                     align-self: end;
                     transform: scaleX(1);
+                    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 3s;
+	                animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both 3s;
             }
             
             }
