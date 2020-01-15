@@ -4,7 +4,8 @@ $banana: #FEDF46;
 
 @keyframes mov{
     0%{background-position-x:0px}
-    100%{background-position-x:-500px}
+    50%{background-position-x:-500px}
+    100%{background-position-x:0px}
 }
     .carrousel{
         h4{
@@ -33,8 +34,8 @@ $banana: #FEDF46;
                 background-size: cover;
                 background-position-y: 0px;
                 animation: mov 10s infinite linear;
-                -webkit-animation: mov 10s infinite linear;
-}
+                -webkit-animation: mov 30s infinite linear;
+            }
         }
         
         
