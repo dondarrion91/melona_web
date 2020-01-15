@@ -15,6 +15,7 @@ $color2: #FAF1D4;
             h4{
                 font-size: 3rem;
                 padding: 0;
+                margin-top: 15px;
             }
             p{
                 font-size: 2rem;
@@ -26,7 +27,7 @@ $color2: #FAF1D4;
 
     .seccion2{
         article{
-            height: 200px;
+            height: 176px;
         }
         article:nth-child(1){
             @include bloques;
@@ -38,7 +39,6 @@ $color2: #FAF1D4;
             i{
                 color: $color1;
                 font-size: 3rem;
-                padding-bottom: 20px;
             }
         }
         article:nth-child(3){
