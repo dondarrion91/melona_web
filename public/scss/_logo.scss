@@ -1,23 +1,19 @@
 $color1: #95DF38;
 
 @keyframes helado_melon_celular{
-    0% {transform: rotateZ(0deg);top:-20px;left: 90px;}
-    25% {transform: rotateZ(15deg);top:0px;left: 20px;}
-    50% {transform: rotateZ(30deg);top:-20px;left: 90px;}
-    75% {transform: rotateZ(-30deg);top:0px;left: 20px;}
-    
-    100%{transform: rotate(0);top: -20px;left: 90px;}
-    
-    
+    0% {transform: rotateZ(0deg);top:-40px;left:100px}
+    25% {transform: rotateZ(15deg);top:-20px;left:140px}
+    50% {transform: rotateZ(30deg);top:-40px;left:100px}
+    75% {transform: rotateZ(-30deg);top:-20px;left:140px}
+    100%{transform: rotate(0);top:-40px;left:100px}
 }
 
 @keyframes helado_frutilla_celular{
-    0% {transform: rotateZ(0deg);top: 50px;right: 120px;}
-    25% {transform: rotateZ(-15deg);top: 10px;right: 80px;}
-    50% {transform: rotateZ(-30deg);top: 50px;right: 120px;}
-    75% {transform: rotateZ(30deg);top:10px;right: 80px;}
-    
-    100%{transform: rotate(0);top: 50px;right: 120px;}
+    0% {transform: rotateZ(0deg);top: -40px;right: 115px;}
+    25% {transform: rotateZ(-15deg);top: -20px;right: 135px;}
+    50% {transform: rotateZ(-30deg);top: -40px;right: 115px;}
+    75% {transform: rotateZ(30deg);top:-20px;right: 135px;}
+    100%{transform: rotate(0);top: -40px;right: 115px;}
     
 }
 
@@ -26,7 +22,6 @@ $color1: #95DF38;
     25% {transform: rotateZ(15deg);top:-120px;left:550px}
     50% {transform: rotateZ(30deg);top:-180px;left:650px}
     75% {transform: rotateZ(-30deg);top:-120px;left:650px}
-    
     100%{transform: rotate(0);top:-180px;left:500px}
     
     
@@ -37,7 +32,6 @@ $color1: #95DF38;
     25% {transform: rotateZ(-15deg);top: -30px;right:550px}
     50% {transform: rotateZ(-30deg);top: -60px;right:650px}
     75% {transform: rotateZ(30deg);top: -30px;right:650px}
-    
     100%{transform: rotate(0);top: -60px;;right:500px}
     
 }
@@ -82,9 +76,10 @@ $color1: #95DF38;
 
 
     .logo{    
+        height: 410px;
         .paletas{
             position: relative;
-            height: 400px;
+            height: 100%;
             display: flex;
             justify-content: center;
             img{
@@ -96,20 +91,17 @@ $color1: #95DF38;
             .frutilla{
                 transform: scaleX(-1);
                 width: 30%;
-                height: 50%;
-                padding-left: 40px;
+                height: 85%;
                 animation: helado_frutilla_celular 10s infinite linear;
                 -webkit-animation: helado_frutilla_celular 10s infinite linear;
-}
+            }
             .melon{
                 width: 30%;
-                height: 50%;
-                padding-left: 60px;
-                padding-top: 30px;
+                height: 85%;
                 z-index: 1;
                 animation: helado_melon_celular 10s infinite linear;
                 -webkit-animation: helado_melon_celular 10s infinite linear;
-}
+            }
             h1{
                 font-size: 4rem;
                 font-weight: 900;
@@ -118,6 +110,7 @@ $color1: #95DF38;
                 width:300px;
                 transform: translateY(50%);
                 z-index: 2;
+                top: 15px;
                 -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	            animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             }
@@ -132,7 +125,7 @@ $color1: #95DF38;
                 @media screen and (max-width:450px){
                     grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
                 }
-                
+                height: 100%;
                 
                 justify-items: center;
                 .abuela{
@@ -140,18 +133,22 @@ $color1: #95DF38;
                     margin:0;
                     padding: 0;
                     @media screen and (max-width:450px){
-                        width: 100%;
+                        width: 75%;
                         align-self: flex-end;
-                        height: 220px;
+                        height: 50%;
                     }
                 }
                 figure{
+                    display: flex;
                     align-self: flex-end;
+                    height: 100%;
                     .pareja{
                         @include fotos;
                         align-self: flex-end;
                         @media screen and (max-width:450px){
-                            padding: 20px 0px;
+                            width: 90%;
+                            height: 50%;
+                            align-self: flex-end;
                         }
                         
 
@@ -174,10 +171,10 @@ $color1: #95DF38;
                     margin:0;
                     padding: 0;
                     @media screen and (max-width:450px){
-                        width:100%;
-                        height: 100px;
+                        width:77%;
+                        height: 33%;
                     }
-                    justify-self: baseline;
+                    justify-self: center;
                     align-self: end;
                     transform: scaleX(1);
             }
