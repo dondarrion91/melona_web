@@ -12,14 +12,18 @@ $banana: #FEDF46;
             text-align: center;
             font-size: 3rem;
             padding: 30px;
-            padding-top: 50px;
-            padding-bottom: 10px;
+            padding-top: 70px;
+            padding-bottom: 0px;
         }
-        p{
+        .gustos-frutales{
             text-align: center;
-            font-size: 1.5rem;
-            padding: 20px;
-            padding-top: 0px;
+            font-size: 1.4rem;
+            line-height: 24px;
+            color: gray;
+            padding: 38px;
+            padding-top: 18px;
+            padding-bottom: 21px;
+            font-weight: 500;
         }
         width: 100%;
 
@@ -44,9 +48,9 @@ $banana: #FEDF46;
                 display: flex;
                 position: relative;
                 flex-direction: row;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: flex-start;
-                height: 250px;
+                height: 303px;
                 img{
                     width: 100%;
                     object-fit: scale-down;
@@ -60,33 +64,38 @@ $banana: #FEDF46;
                     
                 }
                 .helado{
-                    height: 200px;
-                    width: 50%;
-                    position: relative;
+                    height: 290px;
+                    width: 100%;
+                    position: absolute;
                     align-self: center;
+                    z-index: 0;
+                    right: 50px;
                 }
                 .helado-verde{
-                    width: 50%;
-                    height: 200px;
-                    position: relative;
+                    width: 100%;
+                    height: 290px;
+                    position: absolute;
                     align-self: center;
+                    z-index: 0;
+                    right: 50px;
                 }
                 .helado-info{
-                    width:50%;
-                    height: 160px;
+                    width:40%;
+                    height: 100px;
                     display: flex;
                     flex-direction: column;
-                    background: rgb(245, 243, 243);
+                    background: rgba(245, 243, 243,0.9);
                     margin: 25px 0px;
                     margin-right: 20px;
                     box-sizing: border-box;
                     border-radius: 15px;
-                    justify-content: flex-end;
+                    justify-content: center;
                     align-items: center;
                     align-self: flex-end;
+                    z-index: 0;
                     img{
                         width: 50px;
-                        top: 20px;
+                        top: 130px;
                     }
                     .helado-info-body{
                         height: 70%;
