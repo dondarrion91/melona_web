@@ -1,10 +1,20 @@
 $melon: #96DE34;
 
+@keyframes padding-anim{
+    0%{top: 10px;}
+    50%{top:15px}
+    100%{top:10px}
+}
 
+@keyframes padding-anim2{
+    0%{bottom: -5px;}
+    50%{bottom:0px}
+    100%{bottom:-5px}
+}
     .mapa{
         width: 100%;
         
-        
+    
         .head{
             background: white;
             text-align: center;
@@ -14,10 +24,16 @@ $melon: #96DE34;
             justify-content: center;
             h4{
                 font-size: 4rem; 
+                font-weight: 900;
+                position: relative;
+                animation: padding-anim 2.5s infinite linear;
+                padding-bottom: 16px;
             }
             p{
                 font-size: 1.5rem;
                 color: gray;
+                position: relative;
+                animation: padding-anim2 2.5s infinite linear;
             }
         }
 

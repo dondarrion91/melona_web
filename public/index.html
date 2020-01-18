@@ -30,7 +30,7 @@
             
         </div>
         <div class="menu_bar">
-            <h4 class="melona_titulo"><img src="./img/melona.svg" alt="logo melona"></h4>
+            <h4 class="melona_titulo"><img src="./img/melona.svg" class="animated heartBeat" alt="logo melona"></h4>
             <a href="#" class="bt-menu"><i class="fas fa-bars"></i></a>
         </div>
 
@@ -55,7 +55,7 @@
 
     <main id="index">
         <section class="logo">
-            <div class="paletas">
+            <div class="paletas animated zoomIn">
                 <img src="./img/melon-paleta.png" class="melon" alt="paleta de melon">
                 <img src="./img/frutilla-paleta.png" class="frutilla" alt="paleta de frutilla">
                 <h1>Un Melona para cada persona</h1>
@@ -76,8 +76,8 @@
 
         <section class="seccion1">
             <div>
-                <img src="./img/melon-pakaging.png" class="melon-pack" alt="melon packaging">
-                <h4>El helado <br> que conquisto <br> al mundo</h4>
+                <img src="./img/melon-pakaging.png" class="melon-pack animatable bounceIn" alt="melon packaging">
+                <h4 class="animatable fadeInDown">El helado <br> que conquisto <br> al mundo</h4>
             </div>
             
             <p>Desde hace años Melona es una
@@ -127,19 +127,23 @@
         </section>
         
         <section class="carrousel">
-            <h4 style="margin: 0;">Sabores que <br>
-                dan gusto
-            </h4>
-            <p class="gustos-frutales">Cuatro gustos frutales, una 
-                característica común: El delicioso y 
-                único sabor Melona.
-            </p>
+            <div class="gustos-frutales-cont">
+                <h4 class="gustos-frutales-h4">Sabores que <br>
+                    dan gusto
+                </h4>
+                <p class="gustos-frutales">Cuatro gustos frutales, una 
+                    característica común: El delicioso y 
+                    único sabor Melona.
+                </p>
+            </div>
+            
             <div class="owl-carousel owl-theme">
                 <div class="item slide-0">
                     <figure>
-                        <img src="./img/melon-paleta-packaging.png" class="helado-verde" alt="0">
+                        <img src="./img/melona-melon-packaging.png" class="helado-verde1" alt="0">
+                        <img src="./img/Melona-melon-paleta.png" class="helado-verde2" alt="0">
                         <div class="helado-info">
-                            <img src="./img/melon.png" alt="melon">
+                            <img src="./img/melon.png" id="melon-fruta" alt="melon">
                             <div class="helado-info-body">
                                 <h4>Melón</h4>
                                 <h6>Delicioso sabor
@@ -151,9 +155,10 @@
                 </div>
                 <div class="item slide-1">
                     <figure>
-                        <img src="./img/frutilla-paleta-packaging.png" class="helado" alt="1">
+                        <img src="./img/melona-frutilla-packaging.png" class="helado1" alt="1">
+                        <img src="./img/melona-frutilla-paleta.png" class="helado2" alt="1">
                         <div class="helado-info">
-                            <img src="./img/melon.png" alt="melon">
+                            <img src="./img/melon.png" id="frutilla-fruta" alt="melon">
                             <div class="helado-info-body">
                                 <h4>Melón</h4>
                                 <h6>Delicioso sabor
@@ -165,9 +170,10 @@
                 </div>
                 <div class="item slide-2">
                     <figure>
-                        <img src="./img/banana-paleta-packaging.png" class="helado" alt="2">
+                        <img src="./img/melona-banana-packaging.png" class="helado1" alt="2">
+                        <img src="./img/melona-banana-paleta.png" class="helado2" alt="1">
                         <div class="helado-info">
-                            <img src="./img/melon.png" alt="melon">
+                            <img src="./img/melon.png" id="banana-fruta" alt="melon">
                             <div class="helado-info-body">
                                 <h4>Melón</h4>
                                 <h6>Delicioso sabor
@@ -343,6 +349,37 @@
             }
         }
     });
+
+    var owl = $('.carrousel .owl-carousel');
+    owl.owlCarousel();
+
+
+        // Listen to owl events:
+    owl.on('changed.owl.carousel', function (event) {
+        var item = event.item.index - 2;
+        console.log($('.owl-item').not('.cloned').eq(item).find(".helado-info img"));
+        console.log($('.owl-item').not('.cloned').eq(item));
+        
+        // first removing animation for all captions
+        $('img').removeClass('animated bounceInDown');
+        $('.owl-item').not('.cloned').eq(item).find(".helado-info img").addClass('animated bounceInDown');
+        
+    });
+
+    // function callback(event){
+    //     animacion melon
+    //     console.log("funciona");
+    //     $("#melon-fruta").addClass("melon-anim");
+    //     //animacion frutilla
+    //     $("#frutilla-fruta").addClass("melon-anim");
+    //     //animacion banana
+    //     $("#banana-fruta").addClass("melon-anim");
+    //     var pages = event.page.count;
+    //     console.log(pages);
+    //     
+        
+    // }
+
 </script>
 <script>
     $('.carrousel2 .owl-carousel').owlCarousel({
