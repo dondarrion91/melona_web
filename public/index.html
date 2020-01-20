@@ -226,30 +226,61 @@
                 
                 <div class="item">
                     
-                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
-                    <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta
-                        sabor a poroto colorado y bizcocho dulce. Caja: 
-                        150 gr x 30 unidades o 24 unidades.
-                    </p>
+                    <div class="textos samanco-0">
+                        <img src="./img/Samanco.png" class="samanco" alt="samanco">
+                        <div class="tarjeta">
+                            <h5>Samanco</h5>
+                            
+                            <p id="parrafo-samanco">Crema helada de vainilla recubierto con pasta
+                                sabor a poroto colorado y bizcocho dulce. Caja:
+                                150 gr x 30 unidades o 24 unidades.
+                            </p>
+                            
+                            
+                            <div class="boton">
+                                <i class="fas fa-angle-down" id="btn-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="item">
                     
-                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
-                    <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta 
-                        sabor a poroto colorado y bizcocho dulce. Caja: 
-                        150 gr x 30 unidades o 24 unidades.
-                    </p>
+                    <div class="textos samanco-1">
+                        <img src="./img/Samanco.png" class="samanco" alt="samanco">
+                        <div class="tarjeta">
+                            <h5>Samanco</h5>
+                            
+                            
+                            <p id="parrafo-samanco">Crema helada de vainilla recubierto con pasta
+                                sabor a poroto colorado y bizcocho dulce. Caja:
+                                150 gr x 30 unidades o 24 unidades.
+                            </p>
+                            
+                            <div class="boton">
+                                <i class="fas fa-angle-down" id="btn-down"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="item">
-                    
-                    <img src="./img/sanguche.PNG" class="samanco" alt="samanco">
-                    <h5>Samanco</h5>
-                    <p>Crema helada de vainilla recubierto con pasta 
-                        sabor a poroto colorado y bizcocho dulce. Caja:
-                        150 gr x 30 unidades o 24 unidades.
-                    </p>
+                    <div class="textos samanco-2">
+                        <img src="./img/Samanco.png" class="samanco" alt="samanco">
+                        <div class="tarjeta">
+                            <h5>Samanco</h5>
+                            
+                            
+                            <p id="parrafo-samanco">Crema helada de vainilla recubierto con pasta
+                                sabor a poroto colorado y bizcocho dulce. Caja:
+                                150 gr x 30 unidades o 24 unidades.
+                            </p>
+                            <div class="boton">
+                                <i class="fas fa-angle-down" id="btn-down"></i>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
@@ -357,8 +388,7 @@
         // Listen to owl events:
     owl.on('changed.owl.carousel', function (event) {
         var item = event.item.index - 2;
-        console.log($('.owl-item').not('.cloned').eq(item).find(".helado-info img"));
-        console.log($('.owl-item').not('.cloned').eq(item));
+        console.log($('.owl-item').eq(item).find(".helado-info img"));
         
         // first removing animation for all captions
         $('img').removeClass('animated bounceInDown');
@@ -405,8 +435,8 @@
     crossorigin=""></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="./js/map.js"></script>
-<script src="./js/animation.js"></script>
 <script src="./js/menu.js"></script>
 <script src="./js/app.js"></script>
 <script src="./js/jmail.js"></script>
+<script src="./js/samanco-anim.js"></script>
 </html>

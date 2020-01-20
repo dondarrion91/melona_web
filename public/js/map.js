@@ -1,6 +1,8 @@
 var map = L.map('map', {
     center: [-31.410256,  -64.194538],
-    zoom: 1
+    zoom: 4,
+    dragging: !L.Browser.mobile,
+    touchZoom: true
 });
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
