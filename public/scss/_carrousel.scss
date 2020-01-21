@@ -20,37 +20,9 @@ $banana: #FEDF46;
     100%{top:50px}
 }
 
-@keyframes bounce{
-    0%{
-        top:50px
-    }
-    12.5%{
-        top:165px
-    }
-    25%{
-        top:140px
-    }
-    37.5%{
-        top:165px
-    }
-    50%{
-        top:145px
-    }
-    62.5%{
-        top:165px
-    }
-    75%{
-        top:150px
-    }
-    87.5%{
-        top:165px
-    }
-    
-}
 
-.anim{
-    animation: bounce 1s infinite ease-out;
-}
+
+
     .carrousel{
         .gustos-frutales-cont{
             height: 240px;
@@ -80,8 +52,8 @@ $banana: #FEDF46;
         
         width: 100%;
 
-        $backgrounds: 0 "../img/melona-verde.svg", 1 "../img/melona-rosa.svg", 2 "../img/melona-amarillo.svg";
-
+        $backgrounds: 0 "../img/melona-verde.svg", 1 "../img/melona-rosa.svg", 2 "../img/melona-amarillo.svg", 3 "../img/Logo-melona-naranja.svg" , 4 "../img/Logo-melona-celeste.svg";
+    
         @each $number,$background in $backgrounds {
             .slide-#{$number}{
                 height: 100%;
@@ -205,6 +177,20 @@ $banana: #FEDF46;
                         width: 50px;
                         top: 165px;
                         
+                    }
+
+                    $strings: "banana","mango","coco";
+    
+                    @each $string in $strings {
+                        ##{$string}-fruta{
+                            width: 85px;
+                            top:170px;
+                        }
+                    }
+
+                    #coco-fruta{
+                        width: 85px;
+                        top:185px;
                     }
                     
                     .helado-info-body{

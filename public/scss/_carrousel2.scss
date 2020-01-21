@@ -1,9 +1,20 @@
 $background1:#95DF38;
 
-@keyframes mov{
-    0%{background-position-x:0px}
-    50%{background-position-x:-500px}
-    100%{background-position-x:0px}
+@keyframes mov2{
+    0%{background-position-x:0px;background-position-y: 0px;}
+    50%{background-position-x:-500px;background-position-y: 250px;}
+    100%{background-position-x:0px;background-position-y: 0px;}
+}
+@keyframes helado-float{
+    0%{
+        top:15px;
+    }
+    50%{
+        top:30px;
+    }
+    100%{
+        top:15px;
+    }
 }
 .carrousel2{
     h4{
@@ -11,46 +22,53 @@ $background1:#95DF38;
         font-size: 3rem;
         font-weight: bolder;
         padding: 20px;
-        padding-top: 50px;
+        padding-top: 80px;
         font-weight: 900;
     }
     .owl-carousel{
         
-        $backgrounds: 0 "../img/melona-verde.svg", 1 "../img/melona-rosa.svg", 2 "../img/melona-amarillo.svg";
+        
+
+        $backgrounds: 0 "../img/Binggrae-B-B-Big.svg", 1 "../img/Binggrae-positivo.svg", 2 "../img/Binggrae-Metacone.svg", 3 "../img/Binggrae-Pangtoa.svg" , 4 "../img/Binggrae-PopTop.svg", 5 "../img/Binggrae-Samanco.svg" , 6 "../img/Binggrae-Summer-Crush.svg" , 7 "../img/Binggrae-Together.svg" , 8 "../img/Binggrae-Yomoite.svg";
 
         @each $number,$background in $backgrounds {
             .samanco-#{$number}{
                 height: 100%;
                 background-image: url($background);
                 background-repeat: repeat;
-                animation: mov 30s infinite linear;
-                -webkit-animation: mov 30s infinite linear;
+                animation: mov2 30s infinite linear;
+                -webkit-animation: mov2 30s infinite linear;
             }
         }
         
         .textos{ 
             // background-size: cover;
-            height: 400px;
+            
             display: flex;
             flex-direction: column;
             .samanco{
                 width: 67%;
+                height: 200px;
                 margin: auto;
+                position: relative;
+                padding-bottom: 35px;
                 -ms-transform: rotate(-10deg); /* IE 9 */
                 -webkit-transform: rotate(-10deg); /* Safari 3-8 */
                 transform: rotate(-10deg);
                 padding-top: 40px;
+                animation: helado-float 4s infinite linear;
             }
             .tarjeta{
-                background: rgba(245, 243, 243,0.9);
+                background: rgb(245, 243, 243);
                 border-radius: 20px;
-                margin: 15px 15px;
+                margin: 54px 40px;
                 display: flex;
                 flex-direction: column;
                 h5{
                     text-align: center;
-                    font-size: 2.5rem;
-                    padding-top:10px;
+                    font-size: 2.2rem;
+                    padding: 10px;
+                    padding-top:20px;
                     font-weight: 900;
                     color: rgb(105, 103, 103);
                 }
@@ -66,6 +84,7 @@ $background1:#95DF38;
                 }
                 
                 .boton{
+                    color: #696767;
                     align-self:center;
                     i{
                         font-size: 25px;
