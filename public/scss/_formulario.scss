@@ -2,6 +2,20 @@ $primary: #95DF38;
 $gris:rgb(223, 221, 221);
 $greyform: rgb(179, 177, 177);
 $formbackground: rgb(241, 238, 238);
+
+
+@keyframes form-mov{
+    0%{top: 0px;}
+    50%{top:8px}
+    100%{top:0px}
+}
+
+@keyframes form-mov2{
+    0%{top: 5px;}
+    50%{top:0px}
+    100%{top:5px}
+}
+
 form{
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -12,68 +26,87 @@ form{
         flex-direction: column;
         width: 100%;
         img{
-            width: 50%;
+            width: 160px;
             margin: auto;
             padding: 50px;
             padding-bottom: 10px;
+            position: relative;
+            animation: form-mov2 6s infinite linear;
         }
         h4{
             text-align: center;
             width: 100%;
             object-fit: scale-down;
             font-weight: 900;
-            font-size: 33px;
+            font-size: 30px;
+            position: relative;
+            animation: form-mov 4s infinite linear;
         }
         p{
-            font-size: 2rem;
+            font-size: 14px;
             color: gray;
             padding: 5px;
+            padding-bottom: 16px;
+            position: relative;
+            animation: form-mov2 4s infinite linear;
         }
     }
     .form-body{
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width:100%;
         margin: auto;
-        input::placeholder{
-            color: $greyform;
-            font-size: 16px;
-            padding: 15px;
+        align-items: center;
+        .input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 76%;
+            input::placeholder{
+                color: $greyform;
+                font-size: 14px;
+                
+            }
+            input{
+                height: 40px;
+                width: 100%;
+                border-radius: 10px;
+                background: $gris;
+                border: none;
+                margin: 8px 0px;
+                padding-left: 15px;
+                color: $greyform;
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+            }
         }
-        input{
-            height: 50px;
-            width: 100%;
-            border-radius: 10px;
-            background: $gris;
-            border: none;
-            margin: 10px 0px;
-            color: $greyform;
-            font-size: 2rem;
-            font-family: 'Montserrat', sans-serif;
-        }
+        
+        
         textarea::placeholder{
             color: $greyform;
             padding: 15px;
+            font-size: 14px;
         }
         textarea{
+            width: 80%;
             border-radius: 10px;
             background: $gris;
             border: none;
-            font-size: 16px;
+            font-size: 14px;
             color: $greyform;
-            margin: 10px 0px;
+            margin: 8px 0px;
             font-family: 'Montserrat', sans-serif;
-            width: 100%;
         }
         button{
             background-color: $primary;
             height: 50px;
+            width: 80%;
             border-radius: 30px;
             border: none;
             color: white;
             font-size: 2rem;
             margin: 10px auto;
-            width: 100%;
+            
             
         }
     }

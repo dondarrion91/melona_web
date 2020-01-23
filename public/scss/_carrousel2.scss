@@ -16,6 +16,12 @@ $background1:#95DF38;
         top:15px;
     }
 }
+
+@keyframes creaciones-mov{
+    0%{top:0px}
+    50%{top:-10px;}
+    100%{top:0px;}
+}
 .carrousel2{
     h4{
         text-align: center;
@@ -24,6 +30,8 @@ $background1:#95DF38;
         padding: 20px;
         padding-top: 80px;
         font-weight: 900;
+        position: relative;
+        animation: creaciones-mov 4s infinite linear;
     }
     .owl-carousel{
         
@@ -46,18 +54,60 @@ $background1:#95DF38;
             
             display: flex;
             flex-direction: column;
-            .samanco{
-                width: 67%;
-                height: 200px;
-                margin: auto;
-                position: relative;
-                padding-bottom: 35px;
-                -ms-transform: rotate(-10deg); /* IE 9 */
-                -webkit-transform: rotate(-10deg); /* Safari 3-8 */
-                transform: rotate(-10deg);
-                padding-top: 40px;
-                animation: helado-float 4s infinite linear;
+            figure{
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                .samanco{
+                    height: 200px;
+                    width: 75%;
+                    margin: auto;
+                    position: relative;
+                    padding-bottom: 35px;
+                    -ms-transform: rotate(-10deg); /* IE 9 */
+                    -webkit-transform: rotate(-10deg); /* Safari 3-8 */
+                    transform: rotate(-10deg);
+                    padding-top: 40px;
+                    animation: helado-float 4s infinite linear;
+                }
+                .big{
+                    height: 80px;
+                    width: 80%;
+                }
+                .cafe{
+                    height: 265px;
+                    width: 30%;
+                }
+                .cone{
+                    width: 25%;
+                    height: 270px;
+                }
+                .pangtoa{
+                    width: 75%;
+                }
+                .poptop{
+                    height: 250px;
+                    width: 50%;
+                    -ms-transform: rotate(15deg);
+                    -webkit-transform: rotate(15deg);
+                    transform: rotate(15deg);
+                }
+                .crush{
+                    height: 270px;
+                    width: 90%;
+                    -ms-transform: rotate(-10deg);
+                    -webkit-transform: rotate(-10deg);
+                    transform: rotate(2deg);
+                }
+                .yomoite{
+                    width: 220px;
+                    height: 250px;
+                    -ms-transform: rotate(20deg);
+                    -webkit-transform: rotate(20deg);
+                    transform: rotate(20deg);
+                }
             }
+            
             .tarjeta{
                 background: rgb(245, 243, 243);
                 border-radius: 20px;
@@ -100,7 +150,10 @@ $background1:#95DF38;
         
     }
 }
-    
+
+.owl-dots{
+    margin-top: 30px;
+}
 
 
 @media screen and (min-width:450px) and (max-width:768px){

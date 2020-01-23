@@ -109,7 +109,7 @@ $color1: #95DF38;
   }
   
 
-    
+  
     .logo{    
         height: 480px;
         
@@ -158,7 +158,7 @@ $color1: #95DF38;
             }
             .foto{
                 display: grid;
-                @media screen and (max-width:450px){
+                @media screen and (max-width:425px){
                     grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
                 }
                 height: 100%;
@@ -169,7 +169,7 @@ $color1: #95DF38;
                 .abuela{
                     margin:0;
                     padding: 0;
-                    @media screen and (max-width:450px){
+                    @media screen and (max-width:425px){
                         width: 75%;
                         align-self: flex-end;
                         height: 50%;
@@ -185,7 +185,7 @@ $color1: #95DF38;
                     .pareja{
                         @include fotos;
                         align-self: flex-end;
-                        @media screen and (max-width:450px){
+                        @media screen and (max-width:425px){
                             width: 90%;
                             height: 50%;
                             align-self: flex-end;
@@ -195,13 +195,13 @@ $color1: #95DF38;
 	                    animation: text-focus-in-up 6s infinite linear 1s;
 
                     }
-                    @media screen and (max-width:450px){
+                    @media screen and (max-width:425px){
                         .gluten{
                             height: 12%;
                         }
                     }
                     .gluten{
-                        @media screen and (max-width:450px){
+                        @media screen and (max-width:425px){
                             @include fotos;
                         }
                         
@@ -212,11 +212,12 @@ $color1: #95DF38;
                     position: relative;
                     margin:0;
                     padding: 0;
-                    @media screen and (max-width:450px){
+                    @media screen and (max-width:425px){
                         width:77%;
                         height: 33%;
+                        justify-self: center;
                     }
-                    justify-self: center;
+                
                     align-self: end;
                     transform: scaleX(1);
                     -webkit-animation: text-focus-in-up in 7s linear 2s;
@@ -233,23 +234,23 @@ $color1: #95DF38;
     }
 
 //celular acostado
-@media screen and (min-width:450px) and (max-width:1000px){
+@media screen and (min-width:426px) and (max-width:1000px){
     @keyframes helado_melon_celular_acostado{
-        0% {transform: rotateZ(0deg);top:0px;left: 190px;}
-        25% {transform: rotateZ(15deg);top:20px;left: 200px;}
-        50% {transform: rotateZ(30deg);top:0px;left: 190px;}
-        75% {transform: rotateZ(-30deg);top:20px;left: 200px;}
-        100%{transform: rotate(0);top: 0px;left: 190px;}   
+        0% {transform: rotateZ(0deg);top:0px;left: 45%;}
+        25% {transform: rotateZ(15deg);top:20px;left: 50%;}
+        50% {transform: rotateZ(30deg);top:0px;left: 45%;}
+        75% {transform: rotateZ(-30deg);top:20px;left: 50%;}
+        100%{transform: rotate(0);top: 0px;left: 45%;}   
     }
     @keyframes helado_frutilla_celular_acostado{
-        0% {transform: rotateZ(0deg);top:20px;right: 180px;}
-        25% {transform: rotateZ(-15deg);top:10px;right: 200px;}
-        50% {transform: rotateZ(-30deg);top: 20px;right: 180px;}
-        75% {transform: rotateZ(30deg);top:10px;right: 200px;}
-        100%{transform: rotate(0);top: 20px;right: 180px;}
+        0% {transform: rotateZ(0deg);top:20px;right: 35%;}
+        25% {transform: rotateZ(-15deg);top:10px;right: 40%;}
+        50% {transform: rotateZ(-30deg);top: 20px;right: 35%;}
+        75% {transform: rotateZ(30deg);top:10px;right: 40%;}
+        100%{transform: rotate(0);top: 20px;right: 35%;}
     }
     .logo{
-        height: 220px;
+        height: 240px;
         .foto{
             width: 100%;
             height: 100%;
@@ -262,6 +263,7 @@ $color1: #95DF38;
             .niño{
                 width:30%;
                 height: 40%;
+                justify-self: flex-start;
             }
             figure{
                 display: grid;

@@ -2,7 +2,11 @@ $primary: #95DF38;
 $secondary: #FAF2D1;
 
 
-
+@keyframes pack-mov{
+    0%{top:0px}
+    50%{top:10px}
+    100%{top:0px}
+}
 
     .seccion1{
         background: white;
@@ -12,6 +16,8 @@ $secondary: #FAF2D1;
                 margin: auto;
                 margin-top: 30px;
                 width: 80%;
+                position: relative;
+                animation: pack-mov 4s infinite linear;
             }
             h4{
                 font-weight: bolder;

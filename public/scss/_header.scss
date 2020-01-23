@@ -21,7 +21,7 @@ header{
         display: flex;
         justify-content: center;
         ul{
-            
+            width: 100%;
             list-style: none;
             display: flex;
             align-items: center;
@@ -89,12 +89,23 @@ header{
             ul{
                 display: flex;
                 flex-direction: column;
+                border-right: 1px solid rgba(0, 0, 0,0.1);
+                border-top: 1px solid rgba(0, 0, 0,0.1);
+                border-radius: 0px 20px 0px 0px;
                 li{
                     display: block;
                     float: none;
+                    width: 100%;
                     a{
-                        font-size: 1rem;
+                        font-size: 16px;
                         padding: 10px;
+                        padding-left: 25px;
+                        width: 200px;
+                        transition: color 0.5s;
+                        
+                    }
+                    a:hover{
+                        color: $bordernav;
                     }
                 }
                 .medio_titulo{
