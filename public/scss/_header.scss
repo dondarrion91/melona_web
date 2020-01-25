@@ -15,7 +15,7 @@ header{
         left: -100%;
         width: 100%;
         max-width: 1000px;
-        margin: 15px auto;
+        margin: 30px auto;
         background: $header;
         top: 73px;
         display: flex;
@@ -25,13 +25,12 @@ header{
             list-style: none;
             display: flex;
             align-items: center;
-            
+            justify-content: space-evenly;
             li{
-                float: left;
+                
                 a{
                     color: $letra;
                     display: block;
-                    padding: 0px 50px;
                     text-decoration: none;
                     font-size: 1.5rem;
                     z-index: 99;
@@ -45,7 +44,7 @@ header{
                 padding-left: 60px;
                 padding-right: 60px;
                 a{
-                    width: 150px;
+                    width: 110px;
                     
                     img{
                         width: 100%;
@@ -139,11 +138,14 @@ header{
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1025px){
     nav{
         margin: 0;
         ul{
             li{
+                a:hover{
+                    color:$bordernav;
+                }
                 img{
                     width: 200px;
                 }

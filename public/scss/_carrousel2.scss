@@ -111,12 +111,13 @@ $background1:#95DF38;
             .tarjeta{
                 background: rgb(245, 243, 243);
                 border-radius: 20px;
-                margin: 54px 40px;
+                margin: 54px 30px;
                 display: flex;
                 flex-direction: column;
+                font-size: 30px;
                 h5{
                     text-align: center;
-                    font-size: 2.2rem;
+                    font-size: 50%;
                     padding: 10px;
                     padding-top:20px;
                     font-weight: 900;
@@ -133,7 +134,16 @@ $background1:#95DF38;
                     color: rgb(105, 103, 103);
                 }
                 
-                .boton{
+                .boton1{
+                    color: #696767;
+                    align-self:center;
+                    i{
+                        font-size: 25px;
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .boton2{
                     color: #696767;
                     align-self:center;
                     i{
@@ -156,7 +166,7 @@ $background1:#95DF38;
 }
 
 
-@media screen and (min-width:450px) and (max-width:768px){
+@media screen and (min-width:426px) and (max-width:768px){
     .carrousel2{
         h4{
             margin: 0;
@@ -186,7 +196,8 @@ $background1:#95DF38;
     
 }
 
-@media screen and (min-width:768px){
+
+@media screen and (min-width:769px){
     h4{
         font-size: 4rem;
     }

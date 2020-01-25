@@ -139,6 +139,9 @@ $color1: #95DF38;
                 -webkit-animation: helado_melon_celular 10s infinite linear;
             }
             h1{
+                @media screen and (max-width: 425px){
+                    top: 15px;
+                }
                 font-size: 4rem;
                 font-weight: 900;
                 position: absolute;
@@ -146,15 +149,20 @@ $color1: #95DF38;
                 width:300px;
                 transform: translateY(50%);
                 z-index: 2;
-                top: 15px;
                 -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	            animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
             }
             @mixin fotos{
                 position: static;
-                margin:0;
+                @media screen and (max-width:768px){
+                    margin:0;
+                }
+                
                 padding: 0;
-                width: 100%;
+                @media screen and (max-width: 425px){
+                    width: 100%;
+                }
+                
             }
             .foto{
                 display: grid;
@@ -234,23 +242,26 @@ $color1: #95DF38;
     }
 
 //celular acostado
-@media screen and (min-width:426px) and (max-width:1000px){
+@media screen and (min-width:426px) and (max-width:768px){
     @keyframes helado_melon_celular_acostado{
-        0% {transform: rotateZ(0deg);top:0px;left: 45%;}
-        25% {transform: rotateZ(15deg);top:20px;left: 50%;}
-        50% {transform: rotateZ(30deg);top:0px;left: 45%;}
-        75% {transform: rotateZ(-30deg);top:20px;left: 50%;}
-        100%{transform: rotate(0);top: 0px;left: 45%;}   
+        0% {transform: rotateZ(0deg);top:0px;left: 40%;}
+        25% {transform: rotateZ(15deg);top:20px;left: 45%;}
+        50% {transform: rotateZ(30deg);top:0px;left: 40%;}
+        75% {transform: rotateZ(-30deg);top:20px;left: 45%;}
+        100%{transform: rotate(0);top: 0px;left: 40%;}   
     }
     @keyframes helado_frutilla_celular_acostado{
-        0% {transform: rotateZ(0deg);top:20px;right: 35%;}
-        25% {transform: rotateZ(-15deg);top:10px;right: 40%;}
-        50% {transform: rotateZ(-30deg);top: 20px;right: 35%;}
-        75% {transform: rotateZ(30deg);top:10px;right: 40%;}
-        100%{transform: rotate(0);top: 20px;right: 35%;}
+        0% {transform: rotateZ(0deg);top:20px;right: 40%;}
+        25% {transform: rotateZ(-15deg);top:10px;right: 45%;}
+        50% {transform: rotateZ(-30deg);top: 20px;right: 40%;}
+        75% {transform: rotateZ(30deg);top:10px;right: 45%;}
+        100%{transform: rotate(0);top: 20px;right: 40%;}
     }
     .logo{
         height: 240px;
+        h1{
+            top:-20px;
+        }
         .foto{
             width: 100%;
             height: 100%;
@@ -270,6 +281,7 @@ $color1: #95DF38;
                 grid-template-columns: auto;
                 height: 100%;
                 .pareja{
+                    width: 90%;
                     grid-area: 2 / 1 / 2 / 2; 
                     padding: 0;
                 }
@@ -307,27 +319,38 @@ $color1: #95DF38;
 }
 
 //Ipad 
-@media screen and (min-width:1000px){
-
+@media screen and (min-width:769px){
+    @keyframes helado_melon_tablet{
+        0% {transform: rotateZ(0deg);top:-10px;left: 40%;}
+        25% {transform: rotateZ(15deg);top:10px;left: 45%;}
+        50% {transform: rotateZ(30deg);top:-10px;left: 40%;}
+        75% {transform: rotateZ(-30deg);top:10px;left: 45%;}
+        100%{transform: rotate(0);top: -10px;left: 40%;}   
+    }
+    @keyframes helado_frutilla_tablet{
+        0% {transform: rotateZ(0deg);top:20px;right: 40%;}
+        25% {transform: rotateZ(-15deg);top:10px;right: 45%;}
+        50% {transform: rotateZ(-30deg);top: 20px;right: 40%;}
+        75% {transform: rotateZ(30deg);top:10px;right: 45%;}
+        100%{transform: rotate(0);top: 20px;right: 40%;}
+    }
     .logo{
+        height: 650px;
         .paletas{
-            height: 500px;
+            
             .frutilla{
-                width:10%;
-                
-                bottom: 150px;
-                padding-top: 0;
-                animation: helado_frutilla 10s infinite linear;
+                width:15%;
+                height: 60%;
+                animation: helado_frutilla_tablet 10s infinite linear;
             }
             .melon{
-                width: 10%;
-                padding-top: 80px;
-                bottom: 100px;
-                animation: helado_melon 10s infinite linear;
+                width: 15%;
+                height: 60%;
+                animation: helado_melon_tablet 10s infinite linear;
             }
             h1{
                 top: -10px;
-                width: 45%;
+                width: 500px;
                 font-size: 7rem;
                 
             }
@@ -335,25 +358,28 @@ $color1: #95DF38;
                 width: 100%;
                 grid-template-columns:33.333333333333336% 33.333333333333336% 33.333333333333336%;
                 .abuela{
-                    height: 50%;
+                    height: 24%;
                     align-self: start;
                     object-fit: contain;
                     width: 50%;
                     justify-self: center;
+                    align-self: flex-end;
+                    margin-bottom: 70px;
                 }
                 .pareja{
                     margin-left: 100px;
                     align-self:start;
                     height: 30%;
-                    width: 50%;
+                    width: 100%;
                     object-fit: contain;
                     justify-self: flex-start;
+                    margin-bottom: 70px;
                 }
                 .niño{
                     margin-top: 300px;
-                    align-self: start;
+                    align-self: flex-end;
                     height: 30%;
-                    width: 30%;
+                    width: 100%;
                     object-fit: contain;
                 }      
                 figure{
