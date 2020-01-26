@@ -2,7 +2,7 @@ var width = $("body").width();
 
 
 $(document).ready(function(){
-    console.log(width);
+    
 
     //segundo carrousel
     
@@ -14,10 +14,10 @@ $(document).ready(function(){
             $(".tarjeta #parrafo-samanco-0").slideDown("slow");
             $(".boton1 #btn-down").css("display","none");
             $(".boton1 #btn-up").css("display","block");
-            console.log($(".tarjeta #parrafo-samanco").css("display"));
+            
         
         }else if ($(".tarjeta p").css("display") == "block"){
-            console.log("works");
+            
             $(".tarjeta #parrafo-samanco-0").slideUp("slow");
             $(".boton1 #btn-down").css("display","block");
             $(".boton1 #btn-up").css("display","none");

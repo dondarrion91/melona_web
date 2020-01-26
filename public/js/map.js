@@ -6,7 +6,8 @@ var map = L.map('map', {
 });
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    noWrap: true
 }).addTo(map);
 
 
@@ -51,8 +52,10 @@ for(let i=0;i<contenido.length;i++){
                 document.getElementById("uno").innerHTML = contenido[i].direccion;
                 document.getElementById("dos").innerHTML = contenido[i].lugar;
             }else if($(".cero").css("display") == "none"){
-                $(".cero").slideToggle("slow");
+                $(".texto").slideDown("slow");
+                $(".cero").slideDown("slow");
                 $(".cero").css("display","flex");
+                $(".texto").css("display","flex");
                 document.getElementById("foto").src = contenido[i].foto;
                 document.getElementById("titulo").innerHTML = contenido[i].titulo;
                 document.getElementById("uno").innerHTML = contenido[i].direccion;
@@ -61,6 +64,7 @@ for(let i=0;i<contenido.length;i++){
         });
         $('#cross').click(function(){
             $(".cero").slideUp("slow");
+            $(".texto").slideUp("slow");
         });
       });
 }

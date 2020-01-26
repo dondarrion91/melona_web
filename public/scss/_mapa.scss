@@ -124,7 +124,7 @@ $melon: #96DE34;
     
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 769px){
     .mapa{
         height: 680px;
         
@@ -138,18 +138,22 @@ $melon: #96DE34;
             height: 400px;
             width: 95%;
             div{
-                flex-basis: 50%;
+                flex-basis: 100%;
             }
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: row;
             .cero{
-                
+                position: absolute;
                 flex-basis: 50%;
+                width: 35%;
+                padding-left: 50px;
+                height: 356px;
                 img{
                     height: 50%;
                     margin: 0;
                 }
                 .texto{
+                    display: none;
                     height: 50%;
                 }
             }

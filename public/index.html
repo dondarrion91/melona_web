@@ -37,16 +37,16 @@
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#melona">Melona</a></li>
-                <li><a href="#">Sabores</a></li>
+                <li><a href="index.html" class="a">Home</a></li>
+                <li><a href="#melona" class="a">Melona</a></li>
+                <li><a href="#sabores" class="a">Sabores</a></li>
                 <li class="medio_titulo">
                     <a href="index.html"><img src="./img/melona.svg" alt="logo melona"></a>
                 </li>
                 
-                <li><a href="#">Otros</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#otros" class="a">Otros</a></li>
+                <li><a href="#mapa-link" class="a">Mapa</a></li>
+                <li><a href="#contacto" class="a">Contacto</a></li>
             </ul>
             
         </nav>
@@ -76,8 +76,8 @@
 
         <section class="seccion1">
             <div>
-                <img src="./img/melon-pakaging.png" class="melon-pack animatable bounceIn" alt="melon packaging">
-                <h4 class="animatable fadeInDown" id="melona">El helado <br> que conquisto <br> al mundo</h4>
+                <img src="./img/melon-pakaging.png" id="melona" class="melon-pack animatable bounceIn" alt="melon packaging">
+                <h4 class="animatable fadeInDown" >El helado <br> que conquisto <br> al mundo</h4>
             </div>
             
             <p>Desde hace años Melona es una
@@ -127,7 +127,7 @@
         </section>
         
         <section class="carrousel">
-            <div class="gustos-frutales-cont">
+            <div class="gustos-frutales-cont" id="sabores">
                 <h4 class="gustos-frutales-h4">Sabores que <br>
                     dan gusto
                 </h4>
@@ -236,7 +236,7 @@
                 </div>
             </div>
         </section>
-        <section class="mapa">
+        <section class="mapa" id="mapa-link">
             <div class="head">
                 <h4>¡Encontranos!</h4>
                 <p>La ubicación de todos nuestros <br>
@@ -270,7 +270,7 @@
             </div>
         </section>
 
-        <section class="carrousel2">
+        <section class="carrousel2" id="otros">
             <h4>Más deliciosas 
                 creaciones
             </h4>
@@ -473,7 +473,7 @@
         </section>
         
 
-        <form action="#">
+        <form action="#" id="contacto">
             <div class="contactanos1">
                 <h4>Contactanos</h4>
                 <p>¡Queremos escucharte!</p>
@@ -571,9 +571,6 @@
         responsive: {
             0: {
                 items: 1
-            },
-            769: {
-                items: 2
             }
         }
     });

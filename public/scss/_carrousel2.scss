@@ -49,59 +49,70 @@ $background1:#95DF38;
             }
         }
         
+        .item{
+            height: 400px;
+        }
+
         .textos{ 
             // background-size: cover;
-            
+            height: 400px;
             display: flex;
             flex-direction: column;
             figure{
-                height: 300px;
+                height: 50%;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img{
+                    height: 50%;
+                }
                 .samanco{
                     height: 200px;
                     width: 75%;
-                    margin: auto;
                     position: relative;
-                    padding-bottom: 35px;
+                    
                     -ms-transform: rotate(-10deg); /* IE 9 */
                     -webkit-transform: rotate(-10deg); /* Safari 3-8 */
                     transform: rotate(-10deg);
-                    padding-top: 40px;
+                    
                     animation: helado-float 4s infinite linear;
                 }
                 .big{
-                    height: 80px;
+                    padding: 0;
                     width: 80%;
+                    height: 100px;
                 }
                 .cafe{
-                    height: 265px;
+                    padding: 0;
                     width: 30%;
+                    height: 200px;
                 }
                 .cone{
                     width: 25%;
-                    height: 270px;
+                    padding: 0;
                 }
                 .pangtoa{
                     width: 75%;
                 }
                 .poptop{
-                    height: 250px;
+                    
                     width: 50%;
                     -ms-transform: rotate(15deg);
                     -webkit-transform: rotate(15deg);
                     transform: rotate(15deg);
                 }
                 .crush{
-                    height: 270px;
+                    
                     width: 90%;
                     -ms-transform: rotate(-10deg);
                     -webkit-transform: rotate(-10deg);
                     transform: rotate(2deg);
                 }
                 .yomoite{
-                    width: 220px;
-                    height: 250px;
+                    padding: 0;
+                    height: 200px;
+                    width: 200px;;
                     -ms-transform: rotate(20deg);
                     -webkit-transform: rotate(20deg);
                     transform: rotate(20deg);
@@ -111,7 +122,8 @@ $background1:#95DF38;
             .tarjeta{
                 background: rgb(245, 243, 243);
                 border-radius: 20px;
-                margin: 54px 30px;
+                margin: auto;
+                width: 80%;
                 display: flex;
                 flex-direction: column;
                 font-size: 30px;

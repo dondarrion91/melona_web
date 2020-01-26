@@ -16,4 +16,14 @@ function main(){
             });
         }
     });
+
+
+    
+    $(".a").click(function () {
+        contador = 1;
+        $("nav").animate({
+            left: "-100%"
+        });
+    });
+
 }
