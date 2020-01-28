@@ -5,15 +5,15 @@ $background1:#95DF38;
     50%{background-position-x:-500px;background-position-y: 250px;}
     100%{background-position-x:0px;background-position-y: 0px;}
 }
-@keyframes helado-float{
+@keyframes helado-float-carrousel2{
     0%{
-        top:15px;
-    }
-    50%{
         top:30px;
     }
+    50%{
+        top:40px;
+    }
     100%{
-        top:15px;
+        top:30px;
     }
 }
 
@@ -76,35 +76,42 @@ $background1:#95DF38;
                     -webkit-transform: rotate(-10deg); /* Safari 3-8 */
                     transform: rotate(-10deg);
                     
-                    animation: helado-float 4s infinite linear;
+                    animation: helado-float-carrousel2 4s infinite linear;
                 }
                 .big{
                     padding: 0;
-                    width: 80%;
+                    width: 290px;
                     height: 100px;
                 }
                 .cafe{
                     padding: 0;
-                    width: 30%;
+                    width: 100px;
                     height: 200px;
                 }
                 .cone{
-                    width: 25%;
+                    width: 100px;
+                    height: 250px;
                     padding: 0;
+                    -ms-transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
                 }
                 .pangtoa{
-                    width: 75%;
+                    width: 270px;
+                    -ms-transform: rotate(-5deg);
+                    -webkit-transform: rotate(-5deg);
+                    transform: rotate(-5deg);
                 }
                 .poptop{
                     
-                    width: 50%;
+                    width: 150px;
                     -ms-transform: rotate(15deg);
                     -webkit-transform: rotate(15deg);
                     transform: rotate(15deg);
                 }
                 .crush{
                     
-                    width: 90%;
+                    width: 300px;
                     -ms-transform: rotate(-10deg);
                     -webkit-transform: rotate(-10deg);
                     transform: rotate(2deg);
@@ -164,6 +171,16 @@ $background1:#95DF38;
                         cursor: pointer;
                     }
                 }
+                .boton-yomoite{
+                    color: #696767;
+                    align-self:center;
+                    i{
+                        font-size: 25px;
+                        padding: 5px;
+                        cursor: pointer;
+                    }
+                }
+
             }
             
         }
@@ -182,9 +199,10 @@ $background1:#95DF38;
     .carrousel2{
         h4{
             margin: 0;
-            font-size: 3rem;
+            font-size: 30px;
             padding: 20px;
-            font-weight: bolder;
+            padding-bottom: 80px;
+            font-weight: 900;
         }
         .owl-carousel{
             
@@ -210,17 +228,11 @@ $background1:#95DF38;
 
 
 @media screen and (min-width:769px){
-    h4{
-        font-size: 4rem;
-    }
-    h5{
-        font-size: 3rem;
-    }
-    .item{
-        
-        img{
-            width: 100%;
+    .carrousel2{
+        h4{
+            font-size: 44px;
         }
     }
+    
     
 }

@@ -148,9 +148,16 @@ form{
         .contactanos1{
             display: flex;
             flex-direction: column;
+            margin-top: 35px;
             p{
                 align-self: center;
             }
+            
+            h4{
+                font-size: 34px;
+            }
+                
+            
         }
         display: flex;
         flex-direction:column;
@@ -158,15 +165,19 @@ form{
             flex-direction: row-reverse;
             .form-header{
                 width: 50%;
+                
                 .contactanos2{
                     display: none;
                 }
                 img{
                     padding: 0;
+                    width: 190px;
                 }
             }
             .form-body{
-                padding: 30px;
+                padding: 10px;
+                margin-left: 85px;
+                width: 60%;
                 .input{
                     width: 100%;
                     flex-direction: row;

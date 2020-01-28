@@ -38,7 +38,10 @@ $banana: #FEDF46;
             }
             .gustos-frutales{
                 text-align: center;
-                font-size: 1.4rem;
+                @media screen and (max-width:764px){
+                    font-size: 1.4rem;
+                }
+                
                 line-height: 24px;
                 color: gray;
                 padding: 38px;
@@ -75,7 +78,10 @@ $banana: #FEDF46;
                 flex-direction: row;
                 justify-content: flex-end;
                 align-items: flex-start;
-                height: 340px;
+                @media screen and (max-width:768px){
+                    height: 340px;
+                }
+                h
                 img{
                     width: 100%;
                     object-fit: scale-down;
@@ -101,85 +107,95 @@ $banana: #FEDF46;
                 }
                 @keyframes helado-float2{
                     0%{
-                        top:50px;
+                        top:45px;
                     }
                     50%{
                         top:35px;
                     }
                     100%{
-                        top:50px;
+                        top:45px;
                     }
                 }
                 .helado1{
-                    height: 290px;
-                    width: 130px;
+                    @media screen and (max-width:768px){
+                        width: 100px;
+                        height: 290px;
+                    }
                     position: absolute;
                     align-self: center;
                     z-index: 0;
-                    right: 225px;
+                    right: 270px;
                     @media screen and (max-width:375px){
                         right: 180px;
                     }
                     animation: helado-float1 5s infinite linear;
                 }
                 .helado2{
-                    height: 290px;
-                    width: 130px;
+                    @media screen and (max-width:768px){
+                        width: 100px;
+                        height: 290px;
+                    }
                     position: absolute;
                     align-self: center;
                     z-index: 0;
-                    right: 130px;
+                    right: 185px;
                     @media screen and (max-width:375px){
                         right: 100px;
                     }
                     animation: helado-float2 5s infinite linear;
                 }
                 .helado-verde1{
-                    width: 130px;
-                    height: 290px;
+                    @media screen and (max-width:768px){
+                        width: 100px;
+                        height: 290px;
+                    }
                     position: absolute;
                     align-self: center;
                     z-index: 0;
-                    right: 225px;
+                    right: 270px;
                     @media screen and (max-width:375px){
                         right: 180px;
                     }
                     animation: helado-float1 5s infinite linear;
                 }
                 .helado-verde2{
-                    width: 130px;
-                    height: 290px;
+                    @media screen and (max-width:768px){
+                        width: 100px;
+                        height: 290px;
+                    }
                     position: absolute;
                     align-self: center;
                     z-index: 0;
-                    right: 130px;
+                    right: 185px;
                     @media screen and (max-width:375px){
                         right: 100px;
                     }
                     animation: helado-float2 5s infinite linear;
                 }
                 .helado-info{
+                    @media screen and (max-width:425px){
+                        width: 40%;
+                        margin: 5% 5%;
+                    }
                     
-                    width: 40%;
                     display: flex;
                     flex-direction: column;
-                    background: rgba(245, 243, 243,0.9);
-                    margin: 2% 10%;
+                    background: rgba(245, 243, 243,0.95);
+                    
                     box-sizing: border-box;
                     border-radius: 15px;
                     justify-content: center;
                     align-items: center;
                     align-self: flex-end;
                     z-index: 0;
-                    @media screen and (max-width:425px){
-                        
-                    }
+                    
                     img{
-                        width: 50px;
+                        
                         @media screen and (max-width:425px){
                             position: relative;
-                            top: 0px;
+                            top: -10px;
                             margin-top: -30px;
+                            width: 50px;
                         }
                     }
 
@@ -191,7 +207,7 @@ $banana: #FEDF46;
                             @media screen and (max-width:425px){
                                 position: relative;
                                 margin-top: -30px;
-                            top: 0px;
+                            top: -10px;
                             }
                         }
                     }
@@ -201,13 +217,15 @@ $banana: #FEDF46;
                         
                         @media screen and (max-width:425px){
                             position: relative;
-                            top: 0px;
+                            top: -10px;
                             margin-top: -30px;
                         }
                     }
                     
                     .helado-info-body{
                         height: 70%;
+                        top: -5px;
+                        position: relative;
                         text-align: center;
                         display: flex;
                         flex-direction: column;
@@ -215,12 +233,17 @@ $banana: #FEDF46;
                         justify-content: flex-start;
                         h4{
                             padding: 0;
-                            font-size: 1.8rem;
+                            @media screen and (max-width:768px){
+                                font-size: 1.8rem;
+                            }
                             padding: 5px;
                         }
                         h6{
                             text-align: center;
-                            font-size: 1rem;
+                            @media screen and (max-width:768px){
+                                font-size: 1rem;
+                            }
+                            
                             width: 60%;
                             
                             color: rgb(150, 148, 148);
@@ -228,13 +251,20 @@ $banana: #FEDF46;
                         p{
                             font-size: 0px;
                             color: rgb(150, 148, 148);
-                            padding: 11px;
+                            @media screen and (max-width:1439px){
+                                padding: 11px;
+                                text-align: left;
+                            }
+                            
                             display: none;
-                            text-align: left;
+                            
                         }
                         .arrows{
                             i{
-                                font-size: 20px;
+                                @media screen and (max-width:1439px){
+                                    font-size: 20px;
+                                }
+                                
                                 padding-bottom: 5px;
                             }
                         }
@@ -257,29 +287,62 @@ $banana: #FEDF46;
         .item{
             figure{
                 width:100%;
-                height: 240px;
+                @media screen and (max-width:769px){
+                    height: 265px;
+                }
+                
                 .helado-verde1{
-                    left: 110px;
-                    height: 200px;
+                    
+                    
+                    @media screen and (min-width:651px) and (max-width:768px){
+                        left: 170px;
+                        height: 240px;
+                    }
+                    @media screen and (min-width:426px) and (max-width:650px){
+                        left: 30px;
+                        height: 240px;
+                    }
                 }
                 .helado-verde2{
-                    left: 175px;
-                    height: 200px;
+                    
+                    height: 240px;
+                    @media screen and (min-width:651px) and (max-width:768px){
+                        left: 235px;
+                        height: 240px;
+                    }
+                    @media screen and (min-width:426px) and (max-width:650px){
+                        left: 100px;
+                        height: 240px;
+                    }
                 }
                 .helado1{
-                    left: 110px;
-                    height: 200px;
+                    @media screen and (min-width:651px) and (max-width:768px){
+                        left: 170px;
+                        height: 240px;
+                    }
+                    @media screen and (min-width:426px) and (max-width:650px){
+                        left: 30px;
+                        height: 240px;
+                    }
+                  
                 }
                 .helado2{
-                    left: 175px;
-                    height: 200px;
+                    @media screen and (min-width:651px) and (max-width:768px){
+                        left: 235px;
+                        height: 240px;
+                    }
+                    @media screen and (min-width:426px) and (max-width:650px){
+                        left: 100px;
+                        height: 240px;
+                    }
+                    ;
                 }
                 p{
                     z-index: 2;
                     position: relative;
                 }
                 img{
-                    top:0px;
+                    top:-10px;
                     position: relative;
                     margin-top: -30px;
                 }
@@ -289,7 +352,7 @@ $banana: #FEDF46;
                     ##{$string}-fruta{
                             position: relative;
                             margin-top: -30px;
-                            top: 0px;
+                            top: -10px;
                         }
                     }
                 }
@@ -298,12 +361,24 @@ $banana: #FEDF46;
                     top:85px;
                 }
                 .helado-info{
-                    
-                    width: 30%;
+                    margin-right: 150px;
+                    @media screen and (min-width:651px) and (max-width:768px){
+                        width: 20%;
+                    }
+                    @media screen and (min-width:426px) and (max-width:650px){
+                        width:30%;
+                    }
+                    margin: 3% 18%;
                     justify-content: flex-end;
+                    img{
+                        width: 55px;
+                    }
+                    
+
                     .helado-info-body{
                         justify-content: flex-start;
                     }
+
                 }
             }
             
@@ -317,11 +392,11 @@ $banana: #FEDF46;
     }
 
 
-@media screen and (min-width:769px){
+@media screen and (min-width:769px) and (max-width:1024px){
     .carrousel{
         .gustos-frutales-cont{
             .gustos-frutales-h4{
-                font-size: 34px;
+                font-size: 44px;
                 br{
                     display: none;
                 }
@@ -333,23 +408,54 @@ $banana: #FEDF46;
         
         
         figure{
+            @media screen and (max-width:1439px){
+                height: 450px;
+            }
+            
             .helado-verde1{
-                left: 80px;
+                left: 200px;
+                width: 160px;
+                height: 380px;
             }
             .helado-verde2{
-                left: 160px;
+                left: 320px;
+                width: 160px;
+                height: 380px;
             }
             .helado1{
-                left: 80px;
+                left: 200px;
+                width: 160px;
+                height: 380px;
             }
             .helado2{
-                left: 160px;
+                left: 320px;
+                width: 160px;
+                height: 380px;
             }
             .helado-info{
+                margin: 30px;
+                margin-right: 10%;
+                width: 25%;
                 img{
-                    top:0px;
+                    top:-6px;
                     position: relative;
-                    margin-top: -30px;
+                    margin-top: -60px;
+                    width: 75px;
+                }
+
+                .helado-info-body{
+                    h4{
+                        font-size: 24px;
+                    }
+                    h6{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 16px;
+                        br{
+                            display:none;
+                        }
+                    }
                 }
                 $strings: "banana","mango","coco";
     
@@ -369,6 +475,72 @@ $banana: #FEDF46;
         }
     }
 
+@media screen and (min-width:1440px){
+.carrousel{
+    .gustos-frutales-cont{
+        .gustos-frutales-h4{
+            font-size: 60px;
+        }
+        .gustos-frutales{
+            font-size:22px
+        }
+    }
+    
+    figure{
+        height: 650px;
+        
+        .helado-verde1 {
+            left: 425px;
+            width: 265px;
+            height: 610px;
+        }
+        .helado-verde2 {
+            left: 600px;
+            width: 265px;
+            height: 610px;
+        }
+        .helado1 {
+            left: 425px;
+            width: 265px;
+            height: 610px;
+        }
+        .helado2 {
+            left: 600px;
+            width: 265px;
+            height: 610px;
+        }
+        .helado-info{
+            width: 20%;
+            margin-right: 28%;
+            
+            img{
+                width: 150px;
+                margin-top: -110px;
+            }
+            .helado-info-body{
+                h4{
+                    font-size: 44px;
+                    font-weight: 900;
+                }
+                h6{
+                    font-size: 28px;
+                }
+                p{
+                    padding: 20px;
+                    text-align: center;
+                }
+                .arrows{
+                    i{
+                        font-size: 44px;
+                    }
+                }
+            } 
+        } 
+    }
+    
+}
+
+}
     
     
 

@@ -154,7 +154,7 @@ $color1: #95DF38;
             }
             @mixin fotos{
                 position: static;
-                @media screen and (max-width:768px){
+                @media screen and (max-width:767px){
                     margin:0;
                 }
                 
@@ -215,22 +215,37 @@ $color1: #95DF38;
                         
                     }
                 }
-                
-                .niño{
-                    position: relative;
-                    margin:0;
-                    padding: 0;
-                    @media screen and (max-width:425px){
-                        width:77%;
-                        height: 33%;
-                        justify-self: center;
+                .medio{
+                    .lectora{
+                        @media screen and (max-width:425px){
+                            display: none;
+                            
+                        }
+                        @media screen and(min-width:768px){
+                            display: none;
+                        }
+                        -webkit-animation: text-focus-in-up in 7s linear 2s;
+                        animation: text-focus-in-up 7s infinite linear 2s;
+                        
+                        
                     }
+                    .niño{
+                        position: relative;
+                        margin:0;
+                        padding: 0;
+                        @media screen and (max-width:425px){
+                            width:77%;
+                            height: 33%;
+                            justify-self: center;
+                        }
+                    
+                        align-self: flex-end;
+                        transform: scaleX(1);
+                        -webkit-animation: text-focus-in-up in 7s linear 2s;
+                        animation: text-focus-in-up 7s infinite linear 2s;
+                }
+                }
                 
-                    align-self: end;
-                    transform: scaleX(1);
-                    -webkit-animation: text-focus-in-up in 7s linear 2s;
-	                animation: text-focus-in-up 7s infinite linear 2s;
-            }
             
             }
         }
@@ -242,7 +257,7 @@ $color1: #95DF38;
     }
 
 //celular acostado
-@media screen and (min-width:426px) and (max-width:768px){
+@media screen and (min-width:426px) and (max-width:767px){
     @keyframes helado_melon_celular_acostado{
         0% {transform: rotateZ(0deg);top:0px;left: 40%;}
         25% {transform: rotateZ(15deg);top:20px;left: 45%;}
@@ -271,11 +286,22 @@ $color1: #95DF38;
                 height: 50%;
                 align-self: center;
             }
-            .niño{
-                width:30%;
-                height: 40%;
-                justify-self: flex-start;
+            .medio{
+                width: 100%;
+                justify-content: space-between;
+                .niño{
+                    width:30%;
+                    height: 40%;
+                    justify-self: flex-start;
+                }
+                .lectora{
+                    width: 25%;
+                    height: 100px;
+                    position: relative;
+                    align-self: flex-end;
+                }
             }
+            
             figure{
                 display: grid;
                 grid-template-columns: auto;
@@ -304,13 +330,13 @@ $color1: #95DF38;
             }
             .melon{
                 padding: 0;
-                height: 80%;
+                height: 170px;
                 animation: helado_melon_celular_acostado 10s infinite linear;
                 -webkit-animation: helado_melon_celular_acostado 10s infinite linear;
 }
             .frutilla{
                 padding: 0;
-                height: 80%;
+                height: 170px;
                 animation: helado_frutilla_celular_acostado 10s infinite linear;
                 -webkit-animation: helado_frutilla_celular_acostado 10s infinite linear;
 }
@@ -319,20 +345,20 @@ $color1: #95DF38;
 }
 
 //Ipad 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
     @keyframes helado_melon_tablet{
-        0% {transform: rotateZ(0deg);top:-10px;left: 40%;}
-        25% {transform: rotateZ(15deg);top:10px;left: 45%;}
-        50% {transform: rotateZ(30deg);top:-10px;left: 40%;}
-        75% {transform: rotateZ(-30deg);top:10px;left: 45%;}
-        100%{transform: rotate(0);top: -10px;left: 40%;}   
+        0% {transform: rotateZ(0deg);top:30px;left: 40%;}
+        25% {transform: rotateZ(15deg);top:50px;left: 45%;}
+        50% {transform: rotateZ(30deg);top:30px;left: 40%;}
+        75% {transform: rotateZ(-30deg);top:50px;left: 45%;}
+        100%{transform: rotate(0);top: 30px;left: 40%;}   
     }
     @keyframes helado_frutilla_tablet{
-        0% {transform: rotateZ(0deg);top:20px;right: 40%;}
-        25% {transform: rotateZ(-15deg);top:10px;right: 45%;}
-        50% {transform: rotateZ(-30deg);top: 20px;right: 40%;}
-        75% {transform: rotateZ(30deg);top:10px;right: 45%;}
-        100%{transform: rotate(0);top: 20px;right: 40%;}
+        0% {transform: rotateZ(0deg);top:60px;right: 40%;}
+        25% {transform: rotateZ(-15deg);top:80px;right: 45%;}
+        50% {transform: rotateZ(-30deg);top: 60px;right: 40%;}
+        75% {transform: rotateZ(30deg);top:80px;right: 45%;}
+        100%{transform: rotate(0);top: 60px;right: 40%;}
     }
     .logo{
         height: 650px;
@@ -367,24 +393,55 @@ $color1: #95DF38;
                     margin-bottom: 70px;
                 }
                 .pareja{
-                    margin-left: 100px;
+                    margin-left: 0px;
                     align-self:start;
-                    height: 30%;
+                    height: 130px;
                     width: 100%;
                     object-fit: contain;
                     justify-self: flex-start;
-                    margin-bottom: 70px;
+                    margin-bottom: 90px;
                 }
-                .niño{
-                    margin-top: 300px;
-                    align-self: flex-end;
-                    height: 30%;
-                    width: 100%;
-                    object-fit: contain;
-                }      
+                .medio{
+                    .niño{
+                        margin-top: 300px;
+                        align-self: flex-end;
+                        height: 30%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    .lectora{
+                        @media screen and (min-width:769px) and (max-width:1023px){
+                            display: none;
+                        }
+                        
+                    }
+                }
+                   
                 figure{
                     .gluten{
                         position: relative;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    .logo{
+        .paletas{
+            .foto{
+                .medio{
+                    width: 100%;
+                    justify-content: space-between;
+                    .niño{
+                        height: 150px;
+                    }
+                    .lectora{
+                        
+                        height: 150px;
+                        position: relative;
+                        align-self: flex-end;
                     }
                 }
             }

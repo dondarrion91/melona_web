@@ -18,7 +18,7 @@ $melon: #96DE34;
         .head{
             background: white;
             text-align: center;
-            height: 200px;
+            height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -104,13 +104,13 @@ $melon: #96DE34;
 
 @media screen and (min-width:426px) and (max-width:768px){
     .mapa{
-        height: 580px;
+        height: 510px;
         .banner{
             .map{
                 height: 300px;
             }
             width: 80%;
-            margin-top: -40px;
+            
             display: flex;
             flex-direction: column;
             h4{
@@ -125,11 +125,28 @@ $melon: #96DE34;
 }
 
 @media screen and (min-width: 769px){
+    @keyframes padding-anim-769{
+        0% {
+            top: -10px;
+        }
+        
+        50% {
+            top: 0px;
+        }
+        100% {
+            top: -10px;
+        }
+    }
+    
     .mapa{
-        height: 680px;
+        height: 730px;
         
         .head{
             height: 300px;
+            h4{
+                font-size: 44px;
+                animation: padding-anim-769 2.5s infinite linear;
+            }
         }
         .banner{
             .map{

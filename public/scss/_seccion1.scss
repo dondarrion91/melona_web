@@ -65,6 +65,7 @@ $secondary: #FAF2D1;
         
         p{
             width: 90%;
+            padding: 20px;
         }
     }
 }
@@ -97,14 +98,19 @@ $secondary: #FAF2D1;
 @media screen and (min-width:1025px){
     .seccion1{
         div{
-            flex-direction: column;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            margin: 45px 0px;
             .melon-pack{
                 width: 50%;
+                margin: 0;
             }
         }
         p{
             width: 50%;
             margin: auto;
+            font-size: 16px;
         }
           
     }

@@ -22,14 +22,19 @@
             margin: 30px 30px;
             img{
                 object-fit: scale-down;
-                width: 88%;
+                width: 80%;
+                justify-self: center;
+                align-self: center;
             }
             
         }
         p{
             text-align: center;
             color: gray;
-            font-size: 1.5rem;
+            @media screen and (max-width:764px){
+                font-size: 1.5rem;
+            }
+            
             width: 80%;
             margin: auto;
         }
@@ -41,7 +46,7 @@
         }
     }
 
-@media screen and (min-width:500px) and (max-width:1000px){
+@media screen and (min-width:500px) and (max-width:764px){
     .proveedores{
         .melona_prov{
             width: 20%;
@@ -53,7 +58,7 @@
     
 }
 
-@media screen and (min-width:1000px){
+@media screen and (min-width:764px){
     .proveedores{
         h4{
             font-size: 4rem;
@@ -63,8 +68,8 @@
             grid-template-columns: 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668%;
         }
         p{
-            color: black;
-            font-size: 1rem;
+            
+            font-size: 16px;
         }
         .melona_prov{
             width: 20%;
