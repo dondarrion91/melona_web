@@ -392,7 +392,7 @@ $banana: #FEDF46;
     }
 
 
-@media screen and (min-width:769px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1439px){
     .carrousel{
         .gustos-frutales-cont{
             .gustos-frutales-h4{
@@ -408,7 +408,7 @@ $banana: #FEDF46;
         
         
         figure{
-            @media screen and (max-width:1439px){
+            @media screen and (min-width:769px) and (max-width:1439px){
                 height: 450px;
             }
             
@@ -440,7 +440,10 @@ $banana: #FEDF46;
                     top:-6px;
                     position: relative;
                     margin-top: -60px;
-                    width: 75px;
+                    
+                    @media screen and (min-width:769px) and (max-width:1439px){
+                        width: 75px;
+                    }
                 }
 
                 .helado-info-body{
