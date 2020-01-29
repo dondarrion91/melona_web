@@ -147,7 +147,7 @@
                         <img src="./img/melona-melon-packaging.png" class="helado-verde1" alt="0">
                         <img src="./img/Melona-melon-paleta.png" class="helado-verde2" alt="0">
                         <div class="helado-info">
-                            <img src="./img/melon.png" id="melon-fruta" alt="melon">
+                            <img src="./img/Fruta-melon.png" id="melon-fruta" alt="melon">
                             <div class="helado-info-body">
                                 <h4>Melón</h4>
                                 <h6>Delicioso sabor
@@ -588,12 +588,12 @@
         // Listen to owl events:
     owl.on('changed.owl.carousel', function (event) {
         var item = event.item.index - 2;
-        console.log(event.item.index);
         
-        console.log(item);
         
-        console.log($('.owl-item').not('.cloned').eq(item-1).find(".helado-info img"));
-        console.log($('.owl-item').eq(5).find(".helado-info img"));
+        
+        
+        
+        
         // first removing animation for all captions
         $('img').removeClass('animated bounceInDown');
         if(item == 6){
@@ -605,14 +605,14 @@
 
     // function callback(event){
     //     animacion melon
-    //     console.log("funciona");
+    
     //     $("#melon-fruta").addClass("melon-anim");
     //     //animacion frutilla
     //     $("#frutilla-fruta").addClass("melon-anim");
     //     //animacion banana
     //     $("#banana-fruta").addClass("melon-anim");
     //     var pages = event.page.count;
-    //     console.log(pages);
+    
     //     
         
     // }

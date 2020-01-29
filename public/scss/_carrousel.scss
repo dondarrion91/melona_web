@@ -203,8 +203,9 @@ $banana: #FEDF46;
     
                     @each $string in $strings {
                         ##{$string}-fruta{
-                            width: 85px;
+                            
                             @media screen and (max-width:425px){
+                                width: 85px;
                                 position: relative;
                                 margin-top: -30px;
                             top: -10px;
@@ -213,9 +214,10 @@ $banana: #FEDF46;
                     }
 
                     #coco-fruta{
-                        width: 85px;
+                        
                         
                         @media screen and (max-width:425px){
+                            width: 85px;
                             position: relative;
                             top: -10px;
                             margin-top: -30px;
@@ -242,16 +244,17 @@ $banana: #FEDF46;
                             text-align: center;
                             @media screen and (max-width:768px){
                                 font-size: 1rem;
+                                width: 60%;
                             }
                             
-                            width: 60%;
+                            
                             
                             color: rgb(150, 148, 148);
                         }
                         p{
                             font-size: 0px;
                             color: rgb(150, 148, 148);
-                            @media screen and (max-width:1439px){
+                            @media screen and (max-width:768px){
                                 padding: 11px;
                                 text-align: left;
                             }
@@ -295,11 +298,11 @@ $banana: #FEDF46;
                     
                     
                     @media screen and (min-width:651px) and (max-width:768px){
-                        left: 170px;
+                        left: 230px;
                         height: 240px;
                     }
                     @media screen and (min-width:426px) and (max-width:650px){
-                        left: 30px;
+                        left: 100px;
                         height: 240px;
                     }
                 }
@@ -307,32 +310,32 @@ $banana: #FEDF46;
                     
                     height: 240px;
                     @media screen and (min-width:651px) and (max-width:768px){
-                        left: 235px;
+                        left: 300px;
                         height: 240px;
                     }
                     @media screen and (min-width:426px) and (max-width:650px){
-                        left: 100px;
+                        left: 180px;
                         height: 240px;
                     }
                 }
                 .helado1{
                     @media screen and (min-width:651px) and (max-width:768px){
-                        left: 170px;
+                        left: 230px;
                         height: 240px;
                     }
                     @media screen and (min-width:426px) and (max-width:650px){
-                        left: 30px;
+                        left: 100px;
                         height: 240px;
                     }
                   
                 }
                 .helado2{
                     @media screen and (min-width:651px) and (max-width:768px){
-                        left: 235px;
+                        left: 300px;
                         height: 240px;
                     }
                     @media screen and (min-width:426px) and (max-width:650px){
-                        left: 100px;
+                        left: 180px;
                         height: 240px;
                     }
                     ;
@@ -369,6 +372,7 @@ $banana: #FEDF46;
                         width:30%;
                     }
                     margin: 3% 18%;
+                    margin-right: 25%;
                     justify-content: flex-end;
                     img{
                         width: 55px;
@@ -392,7 +396,7 @@ $banana: #FEDF46;
     }
 
 
-@media screen and (min-width:769px) and (max-width:1439px){
+@media screen and (min-width:1025px) and (max-width:1439px){
     .carrousel{
         .gustos-frutales-cont{
             .gustos-frutales-h4{
@@ -413,29 +417,123 @@ $banana: #FEDF46;
             }
             
             .helado-verde1{
-                left: 200px;
+                left: 30%;
                 width: 160px;
                 height: 380px;
             }
             .helado-verde2{
-                left: 320px;
+                left: 40%;
                 width: 160px;
                 height: 380px;
             }
             .helado1{
-                left: 200px;
+                left: 30%;
                 width: 160px;
                 height: 380px;
             }
             .helado2{
-                left: 320px;
+                left: 40%;
                 width: 160px;
                 height: 380px;
             }
             .helado-info{
                 margin: 30px;
-                margin-right: 10%;
+                margin-right: 30%;
+                width: 15%;
+                img{
+                    top:-6px;
+                    position: relative;
+                    margin-top: -60px;
+                    
+                    @media screen and (min-width:769px) and (max-width:1439px){
+                        width: 75px;
+                    }
+                }
+
+                .helado-info-body{
+                    h4{
+                        font-size: 24px;
+                    }
+                    h6{
+                        font-size: 16px;
+                        width: 80%;
+                    }
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                        padding: 20px;
+                    }
+                }
+                $strings: "banana","mango","coco";
+    
+                @each $string in $strings {
+                    ##{$string}-fruta{
+                            position: relative;
+                            margin-top: -30px;
+                            top: 0px;
+                            @media screen and (min-width:769px) and (max-width:1439px){
+                                width: 120px;
+                            }
+                        }
+                    }
+                }
+
+                #coco-fruta{
+                    top:85px;
+                    @media screen and (min-width:769px) and (max-width:1439px){
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .carrousel{
+        .gustos-frutales-cont{
+            .gustos-frutales-h4{
+                font-size: 44px;
+                br{
+                    display: none;
+                }
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        
+        
+        figure{
+            @media screen and (min-width:769px) and (max-width:1439px){
+                height: 450px;
+            }
+            
+            .helado-verde1{
+                left: 270px;
+                width: 160px;
+                height: 380px;
+            }
+            .helado-verde2{
+                left: 385px;
+                width: 160px;
+                height: 380px;
+            }
+            .helado1{
+                left: 270px;
+                width: 160px;
+                height: 380px;
+            }
+            .helado2{
+                left: 385px;
+                width: 160px;
+                height: 380px;
+            }
+            .helado-info{
+                margin: 30px;
+                margin-right: 25%;
                 width: 25%;
+                height: 35%;
                 img{
                     top:-6px;
                     position: relative;
@@ -455,9 +553,8 @@ $banana: #FEDF46;
                     }
                     p{
                         font-size: 16px;
-                        br{
-                            display:none;
-                        }
+                        text-align: center;
+                        padding: 20px;
                     }
                 }
                 $strings: "banana","mango","coco";
@@ -467,12 +564,18 @@ $banana: #FEDF46;
                             position: relative;
                             margin-top: -30px;
                             top: 0px;
+                            @media screen and (min-width:769px) and (max-width:1439px){
+                                width: 120px;
+                            }
                         }
                     }
                 }
 
                 #coco-fruta{
                     top:85px;
+                    @media screen and (min-width:769px) and (max-width:1439px){
+                        width: 120px;
+                    }
                 }
             }
         }
@@ -490,30 +593,35 @@ $banana: #FEDF46;
     }
     
     figure{
-        height: 650px;
+        height: 700px;
         
         .helado-verde1 {
-            left: 425px;
+            left: 37%;
             width: 265px;
             height: 610px;
         }
         .helado-verde2 {
-            left: 600px;
+            left: 45%;
             width: 265px;
             height: 610px;
         }
         .helado1 {
-            left: 425px;
+            left: 37%;
             width: 265px;
             height: 610px;
         }
         .helado2 {
-            left: 600px;
+            left: 45%;
             width: 265px;
             height: 610px;
         }
         .helado-info{
-            width: 20%;
+            @media screen and (max-width:1900px){
+                width: 20%;
+            }
+            
+            
+            margin: 30px;
             margin-right: 28%;
             
             img{
@@ -544,6 +652,13 @@ $banana: #FEDF46;
 }
 
 }
+
+.helado-info{
+    @media screen and (min-width:1901px){
+        width: 15%;
+    }
+}
+
     
     
 

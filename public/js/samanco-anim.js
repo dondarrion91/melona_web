@@ -1,20 +1,60 @@
 
 
-// $(window).resize(function(){
-//     let width = $("body").width();
-//     //cambio de ancho
-//     if (width > 425) {
-//         $(".helado-info").animate({
-//             width: '20%'
-//         }, "slow");
-//     } else if (width <= 425) {
+$(window).resize(function(){
+    let width = $("body").width();
+    console.log(width);
+    
+    //cambio de ancho
+    if(width>650 && width <= 768 && $(".helado-info-body p").css("display") == "none"){
+        $(".helado-info").css({
+            width: '20%'
+        },"slow");
 
 
-//         $(".helado-info").animate({
-//             width: '40%'
-//         }, "slow");
-//     }
-// });
+    }else if(width<=425 && $(".helado-info-body p").css("display") == "none"){
+        console.log("funciona");
+        
+        $(".helado-info").css({
+            width: '40%'
+        },"slow");
+
+        
+
+    }else if(width > 768 && width<1024 && $(".helado-info-body p").css("display") == "none"){
+        $(".helado-info").css({
+            width: '25%',
+            height:'35%'
+        },"slow");
+
+        
+    }else if(width >=1440 &&  width < 1900 && $(".helado-info-body p").css("display") == "none"){
+        $(".helado-info").animate({
+            width: '20%',
+            height:'55%'
+        },"slow");
+
+       
+    }else if(width>425 && width<=650 && $(".helado-info-body p").css("display") == "none"){
+        $(".helado-info").css({
+            width: '30%'
+        },"slow");
+    }else if(ancho>=1900){
+        $(".helado-info").animate({
+            width: '15%',
+            height: "40%"
+        },"slow");
+
+        
+    }else if (ancho >= 1024 && ancho < 1440 && $(".helado-info-body p").css("display") == "none"){
+        $(".helado-info").animate({
+            width: '15%',
+            height: "35%"
+        },"slow");
+
+       
+    }
+
+});
 
 $(document).ready(function(){
     
@@ -49,10 +89,10 @@ $(document).ready(function(){
             $(".tarjeta #parrafo-samanco-1").slideDown("slow");
             $(".boton2 #btn-down").css("display","none");
             $(".boton2 #btn-up").css("display","block");
-            console.log($(".tarjeta #parrafo-samanco").css("display"));
+            
         
         }else if ($(".tarjeta #parrafo-samanco-1").css("display") == "block"){
-            console.log("works");
+            
             $(".tarjeta #parrafo-samanco-1").slideUp("slow");
             $(".boton2 #btn-down").css("display","block");
             $(".boton2 #btn-up").css("display","none");
@@ -65,10 +105,10 @@ $(document).ready(function(){
             $(".tarjeta #parrafo-samanco-yomoite").slideDown("slow");
             $(".boton-yomoite #btn-down").css("display","none");
             $(".boton-yomoite #btn-up").css("display","block");
-            console.log($(".tarjeta #parrafo-samanco-yomoite").css("display"));
+            
         
         }else if ($(".tarjeta #parrafo-samanco-yomoite").css("display") == "block"){
-            console.log("works");
+            
             $(".tarjeta #parrafo-samanco-yomoite").slideUp("slow");
             $(".boton-yomoite #btn-down").css("display","block");
             $(".boton-yomoite #btn-up").css("display","none");
@@ -86,7 +126,7 @@ $(document).ready(function(){
 
             if(ancho>425 && ancho <= 768){
                 $(".helado-info").animate({
-                    width: '80%'
+                    width: '50%'
                 },"slow");
 
                 $(".helado-info-body p").animate({
@@ -103,9 +143,10 @@ $(document).ready(function(){
                     "font-size": "8px"
                 },"slow");
 
-            }else if(ancho > 768 && ancho<1440){
+            }else if(ancho > 768 && ancho<=1024){
                 $(".helado-info").animate({
-                    width: '40%'
+                    width: '50%',
+                    height:'90%'
                 },"slow");
 
                 $(".helado-info-body p").animate({
@@ -113,12 +154,21 @@ $(document).ready(function(){
                 },"slow");
             }else if(ancho >=1440){
                 $(".helado-info").animate({
-                    width: '40%',
-                    height: '600px'
+                    width: '45%',
+                    height: '90%'
                 },"slow");
 
                 $(".helado-info-body p").animate({
                     "font-size": "22px"
+                },"slow");
+            }else if (ancho > 1024 && ancho < 1440){
+                $(".helado-info").animate({
+                    width: '40%',
+                    height: "80%"
+                },"slow");
+
+                $(".helado-info-body p").animate({
+                    "font-size": "16px"
                 },"slow");
             }
 
@@ -134,13 +184,16 @@ $(document).ready(function(){
             
         
         }else if ($(".helado-info-body p").css("display") == "block"){
-            console.log("works");
+            
             $(".helado-info-body p").slideUp("slow");
             let ancho = $("body").width();
-            if(ancho>425 && ancho<=768){
+            console.log(ancho);
+            
+            if(ancho>650 && ancho<=768){
                 $(".helado-info").animate({
                     width: '20%'
                 },"slow");
+                
 
                 $(".helado-info img").animate({
                     "margin-top": "-30px"
@@ -154,22 +207,52 @@ $(document).ready(function(){
                 $(".helado-info img").animate({
                     "margin-top": "-30px"
                 },"slow");
-            }else if(ancho>768 && ancho<1440){
+            }else if(ancho>768 && ancho<1024){
                 $(".helado-info").animate({
-                    width: '25%'
+                    width: '25%',
+                    height:'35%'
                 },"slow");
 
                 $(".helado-info img").animate({
                     "margin-top": "-60px"
                 },"slow");
-            }else if(ancho >= 1440){
+            }else if(ancho >= 1440 && ancho < 1900){
                 $(".helado-info img").animate({
                     "margin-top": "-120px"
                 },"slow");
 
                 $(".helado-info").animate({
                     width: '20%',
-                    height: '300px'
+                    height: '50%'
+                },"slow");
+
+                
+            }else if(ancho>425 && ancho<=650){
+                $(".helado-info").animate({
+                    width: '30%'
+                },"slow");
+                
+
+                $(".helado-info img").animate({
+                    "margin-top": "-30px"
+                },"slow");
+            }else if(ancho>=1900){
+                $(".helado-info").animate({
+                    width: '15%',
+                    height: "40%"
+                },"slow");
+
+                $(".helado-info img").animate({
+                    "margin-top": "-120px"
+                },"slow");
+            }else if (ancho >= 1024 && ancho < 1440){
+                $(".helado-info").animate({
+                    width: '15%',
+                    height: "35%"
+                },"slow");
+
+                $(".helado-info img").animate({
+                    "margin-top": "-60px"
                 },"slow");
             }
 
