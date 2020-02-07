@@ -1,5 +1,5 @@
-$color1: #95DF38;
-$color2: #FAF1D4;
+$color1: #95DE33;
+$color2: #FFFFC9;
 
 
 @mixin bloques{
@@ -49,7 +49,7 @@ $color2: #FAF1D4;
         }
     }
 
-@media screen and (min-width:426px) and (max-width:768px){
+@media screen and (min-width:426px) and (max-width:767px){
     .seccion2{
         display: flex;
         flex-direction: row;
@@ -64,7 +64,7 @@ $color2: #FAF1D4;
 }
 
 
-@media screen and (min-width:769px){
+@media screen and (min-width:768px) and (max-width:1023px){
     .seccion2{
         height: 500px;
         display: grid;
@@ -105,4 +105,114 @@ $color2: #FAF1D4;
         
     }
     
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .seccion2{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: auto;
+        justify-items: center;
+        @for $i from 1 through 4 {
+            article:nth-child(#{$i}) {
+                @include bloques;
+                display: flex !important;
+                width: 95%;
+                height: 160px;
+                justify-self: center;
+                div{
+                    h4{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    i{
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+        
+        article:nth-child(2){
+            
+            background: $color2;
+            color: gray;
+            i{
+                color: $color1;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+        article:nth-child(3){
+            grid-area: 1/4/2/5;
+            background: $color2;
+            color: gray;
+            
+            i{
+                color: $color1;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+        
+        
+        
+    }
+}
+
+@media screen and (min-width:1440px){
+    .seccion2{
+        width: 82%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: auto;
+        justify-items: center;
+        @for $i from 1 through 4 {
+            article:nth-child(#{$i}) {
+                @include bloques;
+                display: flex !important;
+                width: 95%;
+                height: 160px;
+                justify-self: center;
+                div{
+                    h4{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    i{
+                        padding: 0px;
+                    }
+                }
+            }
+        }
+        
+        article:nth-child(2){
+            
+            background: $color2;
+            color: gray;
+            i{
+                color: $color1;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+        article:nth-child(3){
+            grid-area: 1/4/2/5;
+            background: $color2;
+            color: gray;
+            
+            i{
+                color: $color1;
+                font-size: 3rem;
+                padding-bottom: 20px;
+            }
+        }
+        
+        
+        
+    }
 }

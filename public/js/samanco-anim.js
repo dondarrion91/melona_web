@@ -18,7 +18,9 @@ $(window).resize(function(){
             width: '40%'
         },"slow");
 
-        
+        $(".helado-info img").animate({
+            "margin-top": "-30px"
+        },"slow");
 
     }else if(width > 768 && width<1024 && $(".helado-info-body p").css("display") == "none"){
         $(".helado-info").css({
@@ -29,8 +31,8 @@ $(window).resize(function(){
         
     }else if(width >=1440 &&  width < 1900 && $(".helado-info-body p").css("display") == "none"){
         $(".helado-info").animate({
-            width: '20%',
-            height:'55%'
+            width: '23%',
+            height:'40%'
         },"slow");
 
        
@@ -41,7 +43,7 @@ $(window).resize(function(){
     }else if(ancho>=1900){
         $(".helado-info").animate({
             width: '15%',
-            height: "40%"
+            height: "50%"
         },"slow");
 
         
@@ -126,7 +128,8 @@ $(document).ready(function(){
 
             if(ancho>425 && ancho <= 768){
                 $(".helado-info").animate({
-                    width: '50%'
+                    width: '50%',
+                    height: '85%'
                 },"slow");
 
                 $(".helado-info-body p").animate({
@@ -136,7 +139,8 @@ $(document).ready(function(){
             }else if(ancho<=425){
                 
                 $(".helado-info").animate({
-                    width: '100%'
+                    width: '100%',
+                    height: '70%'
                 },"slow");
 
                 $(".helado-info-body p").animate({
@@ -164,7 +168,7 @@ $(document).ready(function(){
             }else if (ancho > 1024 && ancho < 1440){
                 $(".helado-info").animate({
                     width: '40%',
-                    height: "80%"
+                    height: "85%"
                 },"slow");
 
                 $(".helado-info-body p").animate({
@@ -191,7 +195,8 @@ $(document).ready(function(){
             
             if(ancho>650 && ancho<=768){
                 $(".helado-info").animate({
-                    width: '20%'
+                    width: '20%',
+                    height: '50%'
                 },"slow");
                 
 
@@ -201,7 +206,8 @@ $(document).ready(function(){
             }else if(ancho<=425){
                 
                 $(".helado-info").animate({
-                    width: '40%'
+                    width: '40%',
+                    height: '40%'
                 },"slow");
 
                 $(".helado-info img").animate({
@@ -222,14 +228,15 @@ $(document).ready(function(){
                 },"slow");
 
                 $(".helado-info").animate({
-                    width: '20%',
-                    height: '50%'
+                    width: '23%',
+                    height:'40%'
                 },"slow");
 
                 
             }else if(ancho>425 && ancho<=650){
                 $(".helado-info").animate({
-                    width: '30%'
+                    width: '30%',
+                    height: '50%'
                 },"slow");
                 
 
@@ -248,7 +255,7 @@ $(document).ready(function(){
             }else if (ancho >= 1024 && ancho < 1440){
                 $(".helado-info").animate({
                     width: '15%',
-                    height: "35%"
+                    height: "40%"
                 },"slow");
 
                 $(".helado-info img").animate({

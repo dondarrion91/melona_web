@@ -427,10 +427,11 @@ $color1: #95DF38;
     }
 }
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) and (max-width:1439px){
     .logo{
         .paletas{
             .foto{
+                
                 .medio{
                     width: 100%;
                     justify-content: space-between;
@@ -442,6 +443,58 @@ $color1: #95DF38;
                         height: 150px;
                         position: relative;
                         align-self: flex-end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    .logo{
+        height: 700px;
+        .paletas{
+            .melon{
+                width: 200px;
+                height: 500px;
+            }
+            .frutilla{
+                width: 200px;
+                height: 500px;
+            }
+            h1{
+                font-size: 96px;
+                width: 50%;
+                margin-top:110px;
+            }
+            .foto{
+                grid-template-columns: 25% 50% 25%;
+                figure{
+                    .pareja{
+                        height: 250px;
+                        width: 300px;
+                        margin-bottom:200px;
+                    }
+                }
+                .abuela{
+                    height: 35%;
+                    margin-bottom:200px;
+                }
+                .medio{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 50% 50%;
+                    .lectora{
+                        position: relative;
+                        display: block;
+                        width:100px;
+                        height: 150px;
+                        align-self: flex-end;
+                        justify-self: end;
+                    }
+                    .niño{
+                        height: 200px;
+                        width: 200px;
                     }
                 }
             }
