@@ -1,6 +1,6 @@
 @keyframes familia-mov{
     0%{top:0px}
-    50%{top:10px}
+    50%{top:20px}
     100%{top:0px}
 }
 
@@ -14,7 +14,7 @@
             margin-top: 50px;
             font-weight: 900;
             position: relative;
-            animation: familia-mov 5s infinite linear;
+            animation: familia-mov 8s infinite linear;
         }
         .cuadros{
             display: grid;
@@ -61,8 +61,8 @@
 @media screen and (min-width:764px){
     .proveedores{
         h4{
-            font-size: 4rem;
-            font-weight: bolder;
+            font-size: 48px;
+            font-weight: 900;
         }
         .cuadros{
             grid-template-columns: 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668% 16.666666666666668%;

@@ -124,7 +124,7 @@ $melon: #96DE34;
     
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) and (max-width:1439px){
     @keyframes padding-anim-769{
         0% {
             top: -10px;
@@ -146,6 +146,61 @@ $melon: #96DE34;
             h4{
                 font-size: 44px;
                 animation: padding-anim-769 2.5s infinite linear;
+            }
+        }
+        .banner{
+            .map{
+                height: 100%;
+            }
+            height: 400px;
+            width: 95%;
+            div{
+                flex-basis: 100%;
+            }
+            display: flex;
+            flex-direction: row;
+            .cero{
+                position: absolute;
+                flex-basis: 50%;
+                width: 35%;
+                padding-left: 50px;
+                height: 356px;
+                img{
+                    height: 50%;
+                    margin: 0;
+                }
+                .texto{
+                    display: none;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px){
+    @keyframes padding-anim1-1440{
+        0%{top: -10px;}
+        50%{top:0px}
+        100%{top:-10px}
+    }
+    
+    @keyframes padding-anim2-1440{
+        0%{top: 15px;}
+        50%{top:0px;}
+        100%{top:15px;}
+    }
+    .mapa{
+        .head{
+            height: 250px;
+            h4{
+                padding: 0;
+                font-size:48px;
+                animation: padding-anim1-1440 4s infinite linear;
+            }
+            p{
+                font-size: 22px;
+                animation: padding-anim2-1440 4s infinite linear;
             }
         }
         .banner{

@@ -156,7 +156,7 @@ $(document).ready(function(){
                 $(".helado-info-body p").animate({
                     "font-size": "16px"
                 },"slow");
-            }else if(ancho >=1440){
+            }else if(ancho >=1440 && ancho < 1900){
                 $(".helado-info").animate({
                     width: '45%',
                     height: '90%'
@@ -173,6 +173,35 @@ $(document).ready(function(){
 
                 $(".helado-info-body p").animate({
                     "font-size": "16px"
+                },"slow");
+            }else if(ancho >=1900){
+                $(".helado-info").animate({
+                    width: '45%',
+                    height: '90%'
+                },"slow");
+
+                $(".helado-info-body p").animate({
+                    "font-size": "22px"
+                },"slow");
+
+                $(".helado-info #melon-fruta").animate({
+                    width: '193px'
+                },"slow");
+
+                $(".helado-info #frutilla-fruta").animate({
+                    width: '193px'
+                },"slow");
+
+                $(".helado-info #banana-fruta").animate({
+                    width: '325px'
+                },"slow");
+
+                $(".helado-info #mango-fruta").animate({
+                    width: '325px'
+                },"slow");
+
+                $(".helado-info #coco-fruta").animate({
+                    width: '415px'
                 },"slow");
             }
 
@@ -245,13 +274,35 @@ $(document).ready(function(){
                 },"slow");
             }else if(ancho>=1900){
                 $(".helado-info").animate({
-                    width: '15%',
-                    height: "40%"
+                    width: '21%',
+                    height: '277.922px'
+                },"slow");
+                
+                $(".helado-info #melon-fruta").animate({
+                    "margin-top": "-110px",
+                    width: "150px"
                 },"slow");
 
-                $(".helado-info img").animate({
-                    "margin-top": "-120px"
+                $(".helado-info #frutilla-fruta").animate({
+                    "margin-top": "-110px",
+                    width: "150px"
                 },"slow");
+
+                $(".helado-info #banana-fruta").animate({
+                    "margin-top": "-100px",
+                    width: '226px'
+                },"slow");
+
+                $(".helado-info #mango-fruta").animate({
+                    "margin-top": "-100px",
+                    width: '226px'
+                },"slow");
+
+                $(".helado-info #coco-fruta").animate({
+                    "margin-top": "-60px",
+                    width: '226px'
+                },"slow");
+
             }else if (ancho >= 1024 && ancho < 1440){
                 $(".helado-info").animate({
                     width: '15%',
