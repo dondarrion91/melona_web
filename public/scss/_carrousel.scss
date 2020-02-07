@@ -404,8 +404,6 @@ $banana: #FEDF46;
         }
     }
 
-
-@media screen and (min-width:1025px) and (max-width:1439px){
     @keyframes helado-float1-1025{
         0%{
             top:40px;
@@ -429,6 +427,9 @@ $banana: #FEDF46;
             top: 95px;
         }
     }
+@media screen and (min-width:1025px) and (max-width:1439px){
+    
+
     .carrousel{
         .gustos-frutales-cont{
             .gustos-frutales-h4{
