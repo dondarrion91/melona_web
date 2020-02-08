@@ -168,7 +168,7 @@ $color2: #FFFFC9;
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         margin: auto;
-        margin-bottom: 80px;
+        margin-bottom: 93px;
         justify-items: center;
         @for $i from 1 through 4 {
             article:nth-child(#{$i}) {

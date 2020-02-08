@@ -13,7 +13,7 @@ $melon: #96DE34;
 }
     .mapa{
         width: 100%;
-        
+        margin-top: 25px;
     
         .head{
             background: white;
@@ -143,6 +143,7 @@ $melon: #96DE34;
         
         .head{
             height: 300px;
+            
             h4{
                 font-size: 44px;
                 animation: padding-anim-769 2.5s infinite linear;
@@ -191,8 +192,12 @@ $melon: #96DE34;
         100%{top:15px;}
     }
     .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .head{
             height: 250px;
+            margin-bottom: 60px;
             h4{
                 padding: 0;
                 font-size:48px;
@@ -204,11 +209,12 @@ $melon: #96DE34;
             }
         }
         .banner{
+            margin: 0px 0px;
             .map{
                 height: 100%;
             }
             height: 400px;
-            width: 95%;
+            width: 85%;
             div{
                 flex-basis: 100%;
             }

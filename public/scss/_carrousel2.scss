@@ -28,7 +28,7 @@ $background1:#95DF38;
         font-size: 3rem;
         font-weight: bolder;
         padding: 20px;
-        padding-top: 80px;
+        padding-top: 40px;
         font-weight: 900;
         position: relative;
         animation: creaciones-mov 4s infinite linear;
@@ -50,12 +50,17 @@ $background1:#95DF38;
         }
         
         .item{
-            height: 400px;
+            @media screen and (max-width:1439px){
+                height: 400px;
+            }
         }
 
         .textos{ 
             // background-size: cover;
-            height: 400px;
+            @media screen and (max-width:1439px){
+                height: 400px;
+            }
+            
             display: flex;
             flex-direction: column;
             figure{
@@ -227,7 +232,7 @@ $background1:#95DF38;
 }
 
 
-@media screen and (min-width:769px){
+@media screen and (min-width:769px) and (max-width:1439px){
     .carrousel2{
         h4{
             font-size: 44px;
@@ -235,4 +240,19 @@ $background1:#95DF38;
     }
     
     
+}
+
+@media screen and (min-width:1440px){
+.carrousel2{
+    h4{
+        font-size:48px;
+        padding: 60px 80px;
+    }
+    .item{
+        height: 850px;
+        .textos{
+            height: 850px;
+        }
+    }
+}
 }

@@ -1,6 +1,6 @@
 var map = L.map('map', {
     center: [-31.410256,  -64.194538],
-    zoom: 4,
+    zoom: 5,
     dragging: !L.Browser.mobile,
     touchZoom: true
 });
@@ -16,19 +16,34 @@ var contenido = [
         foto: "./img/mario.jpg",
         titulo: "El almacen de mario",
         direccion: "Dean Funes 163 Local 3",
-        lugar:"Cordoba Capital"
+        lugar:"Cordoba Capital",
+        coord: [-31.410256,  -64.194538]
     },
     {
         foto: "./img/Proveedores b_n/logo-01.png",
         titulo: "Test",
         direccion: "san martin 576",
-        lugar:"Test"
+        lugar:"Test",
+        coord: [-32.410256,  -65.194538]
+    },
+    {
+        foto: "./img/Proveedores b_n/logo-01.png",
+        titulo: "Testaaaaa",
+        direccion: "san martin 576",
+        lugar:"Test",
+        coord: [-29.410256,  -65.194538]
     }
 ];
 
-
+var marker = [];
 //marcadores
-var marker = [L.marker([-31.410256,  -64.194538]).addTo(map),L.marker([-32.410256,  -65.194538]).addTo(map)] 
+for(let i=0;i<contenido.length;i++){
+    var coordenada;
+    coordenada = L.marker(contenido[i].coord).addTo(map);
+    marker.push(coordenada);
+}
+ 
+
 
 
 
