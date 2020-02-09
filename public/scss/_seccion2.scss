@@ -15,7 +15,7 @@ $color2: #FFFFC9;
             h4{
                 font-size: 3rem;
                 padding: 0;
-                margin-top: 15px;
+                
             }
             p{
                 font-size: 2rem;
@@ -31,6 +31,9 @@ $color2: #FFFFC9;
         }
         article:nth-child(1){
             @include bloques;
+            i{
+                margin-bottom: 15px;
+            }
         }
         article:nth-child(2){
             @include bloques;
@@ -39,13 +42,30 @@ $color2: #FFFFC9;
             i{
                 color: $color1;
                 font-size: 3rem;
+                margin-bottom: 10px;
             }
         }
         article:nth-child(3){
             display: none;
+            i{
+                img{
+                    width:30px;
+                    height: 30px;
+                    color: #FFFFC9;
+                    margin-bottom: 6px;
+                }
+            }
         }
         article:nth-child(4){
             display: none;
+            i{
+                img{
+                    width:30px;
+                    height: 30px;
+                    color: #FFFFC9;
+                    margin-bottom: 6px;
+                }
+            }
         }
     }
 

@@ -81,7 +81,7 @@ $banana: #FEDF46;
                 @media screen and (max-width:768px){
                     height: 340px;
                 }
-                h
+                
                 img{
                     width: 100%;
                     object-fit: scale-down;
@@ -118,7 +118,7 @@ $banana: #FEDF46;
                 }
                 .helado1{
                     @media screen and (max-width:768px){
-                        width: 100px;
+                        width: 116px;
                         height: 290px;
                     }
                     position: absolute;
@@ -128,14 +128,14 @@ $banana: #FEDF46;
                     @media screen and (max-width:375px){
                         right: 180px;
                     }
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width:768px){
                         animation: helado-float1 5s infinite linear;
                     }
                     
                 }
                 .helado-coco{
                     @media screen and (max-width:768px){
-                        width: 100px;
+                        width: 116px;
                         height: 290px;
                     }
                     position: absolute;
@@ -145,7 +145,7 @@ $banana: #FEDF46;
                     @media screen and (max-width:375px){
                         right: 100px;
                     }
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width:768px){
                         animation: helado-float2 5s infinite linear;
                     }
                 }
@@ -161,13 +161,13 @@ $banana: #FEDF46;
                     @media screen and (max-width:375px){
                         right: 100px;
                     }
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width:768px){
                         animation: helado-float2 5s infinite linear;
                     }
                 }
                 .helado-verde1{
                     @media screen and (max-width:1025px){
-                        width: 100px;
+                        width: 116px;
                         height: 290px;
                     }
                     position: absolute;
@@ -177,7 +177,7 @@ $banana: #FEDF46;
                     @media screen and (max-width:375px){
                         right: 180px;
                     }
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width:768px){
                         animation: helado-float1 5s infinite linear;
                     }
                 }
@@ -193,13 +193,13 @@ $banana: #FEDF46;
                     @media screen and (max-width:375px){
                         right: 100px;
                     }
-                    @media screen and (max-width:767px){
+                    @media screen and (max-width:768px){
                         animation: helado-float2 5s infinite linear;
                     }
                 }
                 .helado-info{
                     @media screen and (max-width:425px){
-                        width: 40%;
+                        width: 50%;
                         margin: 5% 5%;
                     }
                     
@@ -224,7 +224,7 @@ $banana: #FEDF46;
                         }
                     }
 
-                    $strings: "banana","mango","coco";
+                    $strings: "coco";
     
                     @each $string in $strings {
                         ##{$string}-fruta{
@@ -233,11 +233,22 @@ $banana: #FEDF46;
                                 width: 85px;
                                 position: relative;
                                 margin-top: -30px;
-                            top: -10px;
+                                top: -10px;
                             }
                         }
                     }
-
+                    #mango-fruta{
+                        width: 80px;
+                        position: relative;
+                        margin-top: -30px;
+                        top: -10px;
+                    }
+                    #banana-fruta{
+                        width: 80px;
+                        position: relative;
+                        margin-top: -30px;
+                        top: -10px;
+                    }
                     #coco-fruta{
                         
                         
@@ -268,8 +279,8 @@ $banana: #FEDF46;
                         h6{
                             text-align: center;
                             @media screen and (max-width:768px){
-                                font-size: 1rem;
-                                width: 60%;
+                                font-size: 12px;
+                                width: 100%;
                             }
                             
                             
@@ -310,7 +321,7 @@ $banana: #FEDF46;
     }
     
     
-@media screen and (min-width:426px) and (max-width:767px){
+@media screen and (min-width:426px) and (max-width:768px){
     .carrousel{
         .item{
             figure{
@@ -456,7 +467,7 @@ $banana: #FEDF46;
     }
 
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
     @keyframes helado-float1-768{
         0%{
             top:10px;
@@ -489,34 +500,34 @@ $banana: #FEDF46;
                 }
                 
                 .helado-verde1{
-                    height: 217px;
-                    width: 103px;
-                    left: 28%;
+                    height: 400px;
+                    width: 154px;
+                    left: 24%;
                     animation: helado-float1-768 5s infinite linear;
                 }
                 .helado-verde2{
                     
-                    height: 208px;
-                    width: 82px;
-                    left:39%;
+                    height: 360px;
+                    width: 122px;
+                    left:36%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 .helado1{
-                    height: 217px;
-                    width: 103px;
-                    left: 28%;
+                    height: 400px;
+                    width: 154px;
+                    left: 24%;
                     animation: helado-float1-768 5s infinite linear;
                 }
                 .helado2{
-                    height: 208px;
-                    width: 82px;
-                    left:39%;
+                    height: 360px;
+                    width: 122px;
+                    left:36%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 .helado-coco{
-                    height: 208px;
-                    width: 82px;
-                    left:39%;
+                    height: 360px;
+                    width: 122px;
+                    left:36%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 p{
