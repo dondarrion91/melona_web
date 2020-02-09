@@ -489,34 +489,34 @@ $banana: #FEDF46;
                 }
                 
                 .helado-verde1{
-                    height: 415px;
-                    width: 160px;
-                    left: 19%;
+                    height: 217px;
+                    width: 103px;
+                    left: 28%;
                     animation: helado-float1-768 5s infinite linear;
                 }
                 .helado-verde2{
                     
-                    height: 360px;
-                    width:136px;
-                    left:34%;
+                    height: 208px;
+                    width: 82px;
+                    left:39%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 .helado1{
-                    height: 415px;
-                    width: 160px;
-                    left: 19%;
+                    height: 217px;
+                    width: 103px;
+                    left: 28%;
                     animation: helado-float1-768 5s infinite linear;
                 }
                 .helado2{
-                    height: 360px;
-                    width:136px;
-                    left:34%;
+                    height: 208px;
+                    width: 82px;
+                    left:39%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 .helado-coco{
-                    height: 360px;
-                    width:150px;
-                    left:34%;
+                    height: 208px;
+                    width: 82px;
+                    left:39%;
                     animation: helado-float2-768 5s infinite linear;
                 }
                 p{
@@ -527,8 +527,16 @@ $banana: #FEDF46;
                     top:-10px;
                     position: relative;
                     margin-top: -55px;
+                    width: 70px;
+                }
+
+                #frutilla-fruta{
+                    top:-10px;
+                    position: relative;
+                    margin-top: -60px;
                     width: 75px;
                 }
+
                 $strings: "banana","mango","coco";
     
                 @each $string in $strings {
@@ -541,7 +549,7 @@ $banana: #FEDF46;
                     }
                 }
                 #banana-fruta{
-                    margin-top:-60px;
+                    margin-top:-20px;
                 }
                 #coco-fruta{
                     top:85px;
@@ -552,7 +560,7 @@ $banana: #FEDF46;
                     margin: 3% 18%;
                     margin-right: 25%;
                     justify-content: flex-end;
-                    
+                    height: 143.953px;
                     
 
                     .helado-info-body{
