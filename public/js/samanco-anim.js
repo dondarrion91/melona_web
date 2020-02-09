@@ -359,23 +359,23 @@ $(document).ready(function(){
                 },"slow");
 
                 $(".helado-info #melon-fruta").animate({
-                    width: '193px'
+                    width: '165px'
                 },"slow");
 
                 $(".helado-info #frutilla-fruta").animate({
-                    width: '193px'
+                    width: '165px'
                 },"slow");
 
                 $(".helado-info #banana-fruta").animate({
-                    width: '325px'
+                    width: '245px'
                 },"slow");
 
                 $(".helado-info #mango-fruta").animate({
-                    width: '325px'
+                    width: '305px'
                 },"slow");
 
                 $(".helado-info #coco-fruta").animate({
-                    width: '415px'
+                    width: '385px'
                 },"slow");
             }
 
