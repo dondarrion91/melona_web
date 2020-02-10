@@ -322,27 +322,27 @@ $(document).ready(function(){
 
                 $(".helado-info #melon-fruta").animate({
                     
-                    width: "100px"
+                    width: "65px"
                 },"slow");
 
                 $(".helado-info #frutilla-fruta").animate({
                     
-                    width: "112px"
+                    width: "65px"
                 },"slow");
 
                 $(".helado-info #banana-fruta").animate({
                     
-                    width: '185px'
+                    width: '115px'
                 },"slow");
 
                 $(".helado-info #mango-fruta").animate({
                     
-                    width: '215px'
+                    width: '115px'
                 },"slow");
 
                 $(".helado-info #coco-fruta").animate({
                     
-                    width: '245px'
+                    width: '145px'
                 },"slow");
 
                 $(".helado-info-body p").animate({
