@@ -310,8 +310,9 @@ $banana: #FEDF46;
         }
     }
     
+
     
-@media screen and (min-width:426px) and (max-width:767px){
+@media screen and (min-width:426px) and (max-width:768px){
     .carrousel{
         .item{
             figure{
@@ -320,62 +321,34 @@ $banana: #FEDF46;
                     height: 265px;
                 }
                 
-                .helado-verde1{
-                    
-                    
-                    @media screen and (min-width:651px) and (max-width:768px){
-                        left: 230px;
+                .helado-verde1{ 
+                        left: 26%;
                         height: 240px;
-                    }
-                    @media screen and (min-width:426px) and (max-width:650px){
-                        left: 100px;
-                        height: 240px;
-                    }
+                        animation: helado-float1-1025 5s infinite linear;
                 }
                 .helado-verde2{
+                        left: 37%;
+                        height: 200px;
+                        width: 70px;
+                        animation: helado-float2-1025 5s infinite linear;
                     
-                    height: 240px;
-                    @media screen and (min-width:651px) and (max-width:768px){
-                        left: 300px;
-                        height: 240px;
-                    }
-                    @media screen and (min-width:426px) and (max-width:650px){
-                        left: 180px;
-                        height: 240px;
-                    }
                 }
                 .helado1{
-                    @media screen and (min-width:651px) and (max-width:768px){
-                        left: 230px;
-                        height: 240px;
-                    }
-                    @media screen and (min-width:426px) and (max-width:650px){
-                        left: 100px;
-                        height: 240px;
-                    }
-                  
+                    left: 26%;
+                    height: 240px;
+                    animation: helado-float1-1025 5s infinite linear;
                 }
                 .helado2{
-                    @media screen and (min-width:651px) and (max-width:768px){
-                        left: 300px;
-                        height: 240px;
-                    }
-                    @media screen and (min-width:426px) and (max-width:650px){
-                        left: 180px;
-                        height: 240px;
-                    }
-                    
+                    left: 37%;
+                    height: 200px;
+                    width: 70px;
+                    animation: helado-float2-1025 5s infinite linear;
                 }
                 .helado-coco{
-                    @media screen and (min-width:651px) and (max-width:768px){
-                        left: 300px;
-                        height: 240px;
-                    }
-                    @media screen and (min-width:426px) and (max-width:650px){
-                        left: 180px;
-                        height: 240px;
-                    }
-                    
+                    left: 37%;
+                    height: 200px;
+                    width: 70px;
+                    animation: helado-float2-1025 5s infinite linear;
                 }
                 p{
                     z-index: 2;
@@ -445,19 +418,19 @@ $banana: #FEDF46;
     }
     @keyframes helado-float2-1025{
         0% {
-            top: 95px;
+            top: 75px;
         }
         
         50% {
-            top: 75px;
+            top: 45px;
         }
         100% {
-            top: 95px;
+            top: 75px;
         }
     }
 
 
-@media screen and (min-width:768px) and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
     @keyframes helado-float1-768{
         0%{
             top:10px;
