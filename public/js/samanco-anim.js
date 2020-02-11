@@ -320,6 +320,7 @@ $(document).ready(function(){
                     height: "85%"
                 },"slow");
 
+
                 $(".helado-info #melon-fruta").animate({
                     
                     width: "65px"

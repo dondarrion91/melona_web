@@ -156,7 +156,7 @@ $background1:#95DF38;
             
             .tarjeta{
                 background: rgb(245, 243, 243);
-                border-radius: 20px;
+                border-radius: 8px;
                 margin: auto;
                 width: 80%;
                 display: flex;
@@ -168,7 +168,7 @@ $background1:#95DF38;
                     padding: 10px;
                     padding-top:20px;
                     font-weight: 900;
-                    color: rgb(105, 103, 103);
+                    color: black;
                 }
                 
                     
@@ -184,7 +184,7 @@ $background1:#95DF38;
 
                 @for $i from 1 through 8 {
                 .boton#{$i} {
-                    color: #696767;
+                    color: black;
                     align-self:center;
                     i{
                         font-size: 25px;

@@ -12,9 +12,12 @@ $melon: #96DE34;
     100%{bottom:-5px}
 }
     .mapa{
-        width: 100%;
-        margin-top: 25px;
-    
+        width: 95%;
+        margin:  25px auto;
+        
+        iframe{
+            border-radius: 15px;
+        }
         .head{
             background: white;
             text-align: center;

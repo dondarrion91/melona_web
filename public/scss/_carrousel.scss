@@ -795,6 +795,7 @@ $banana: #FEDF46;
 }
 .carrousel{
     .gustos-frutales-cont{
+        height: 200px;
         .gustos-frutales-h4{
             font-size: 48px;
             animation: padding-anim1-1440 4s infinite linear;
@@ -803,7 +804,7 @@ $banana: #FEDF46;
             }
         }
         .gustos-frutales{
-            width:575px;
+            width:100%;
             margin: auto;
             font-size:22px;
             padding: 0;
@@ -817,8 +818,8 @@ $banana: #FEDF46;
         
         .helado-verde1 {
             left: 29%;
-            width: 265px;
-            height: 610px;
+            width: 245px;
+            height: 568px;
             animation: helado-float1-1440 5s infinite linear;
         }
         .helado-verde2 {
@@ -829,8 +830,8 @@ $banana: #FEDF46;
         }
         .helado1 {
             left: 29%;
-            width: 265px;
-            height: 610px;
+            width: 245px;
+            height: 568px;
             animation: helado-float1-1440 5s infinite linear;
         }
         .helado2 {
@@ -920,7 +921,7 @@ $banana: #FEDF46;
 @media screen and (min-width:1901px){
     .owl-theme{
         .owl-dots{
-            margin-top: 35px;
+            margin-top: 35px !important ;
             .owl-dot{
                 span {
                     width: 20px;
