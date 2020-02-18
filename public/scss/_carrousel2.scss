@@ -81,7 +81,10 @@ $background1:#95DF38;
                         transform: rotate(-10deg);
                     }
                     
-                    position: relative;
+                    @media screen and (max-width:1440px){
+                        position: relative;
+                    }
+                    
                     
                     
                     
@@ -391,9 +394,11 @@ $background1:#95DF38;
         .textos{
             height: 700px;
             .tarjeta{
-                width: 70%;
+                
                 border-radius: 8px;
                 h5{
+                    padding: 0;
+                    padding: 20px;
                     font-size: 30px;
                     color: black;
                 }
@@ -402,6 +407,13 @@ $background1:#95DF38;
                     color: gray;
                     font-weight: 500;
                 }
+            }
+            img{
+                position:relative; 
+                
+            }
+            figure{
+                height:65%;
             }
             .big{
                 width:375px;

@@ -215,7 +215,7 @@ form{
             p{
                 align-self: center;
                 padding: 0;
-                font-size: 22px;
+                font-size: 16px;
                 animation: padding-anim2-1440 4s infinite linear;
             }
             
@@ -229,7 +229,8 @@ form{
         display: flex;
         flex-direction:column;
         .form{
-            
+            width: 80%;
+            align-self: center;
             flex-direction: row-reverse;
             .form-header{
                 width: 50%;
@@ -240,6 +241,7 @@ form{
                 img{
                     padding: 0;
                     width: 450px;
+                    margin-left:200px;
                 }
             }
             .form-body{

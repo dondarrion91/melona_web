@@ -4,7 +4,9 @@ $primary: #95DF38;
     footer{
         text-align: center;
         background: $primary;
-        
+        img{
+            margin:18px;
+        }
         p{
             font-size: 16px;
             color: white;

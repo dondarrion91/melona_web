@@ -90,9 +90,15 @@
             grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
             width: 80%;
             margin: 45px auto;
+            img{
+                margin: 45px auto;
+            }
         }
         p{
             font-size: 16px;
+        }
+        .melona_prov{
+            width: 150px;
         }
     }
 }

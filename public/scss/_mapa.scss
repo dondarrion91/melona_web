@@ -40,89 +40,15 @@ $melon: #96DE34;
             }
         }
 
-        
-        
-
-        .banner{
-            overflow: hidden;
-            background: white;
-            text-align: left;
-            color: gray;
-            width: 90%;
-            margin: auto;
-            z-index: 1;
-            position: relative;
-            border-radius: 20px;
-            .map{
-                height: 300px;
-                z-index: 0;
-            }
-            .cero{
-                padding: 20px;
-                display: none;
-                flex-direction: column;
-                overflow: visible !important;
-                img {   
-                    width: 100%;
-                    height: 100px;
-                    border-radius: 20px 20px 0 0;
-                    box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.1);
-                    z-index: 1;
-                    margin-top: -200px;
-                }
-                .texto{
-                    background-color: white;
-                    border-radius: 0px 0px 20px 20px;
-                    padding: 20px;
-                    display: flex;
-                    flex-direction: column;
-                    box-shadow: 1px 5px 10px 5px rgba(0,0,0,0.1);
-                    z-index: 1;
-                    i{
-                        align-self: flex-end;
-                        font-size: 20px;
-                        cursor: pointer;
-                        
-                    }
-                    
-                    h4{
-                        font-size: 2.5rem;
-                    }
-                    p:nth-child(even){
-                        line-height: 30px;
-                        font-size: 1.5rem;
-                    } 
-                }
-                
-            }
-           
-           
-            
-        }
-
-        
-        
     }
+        
 
+        
 
 @media screen and (min-width:426px) and (max-width:768px){
     .mapa{
         height: 510px;
-        .banner{
-            .map{
-                height: 300px;
-            }
-            width: 80%;
-            
-            display: flex;
-            flex-direction: column;
-            h4{
-                padding-top: 20px;
-            }
-            .cero{
-                padding: 75px;
-            }
-        }
+        
     }
     
 }
@@ -152,33 +78,7 @@ $melon: #96DE34;
                 animation: padding-anim-769 2.5s infinite linear;
             }
         }
-        .banner{
-            .map{
-                height: 100%;
-            }
-            height: 400px;
-            width: 95%;
-            div{
-                flex-basis: 100%;
-            }
-            display: flex;
-            flex-direction: row;
-            .cero{
-                position: absolute;
-                flex-basis: 50%;
-                width: 35%;
-                padding-left: 50px;
-                height: 356px;
-                img{
-                    height: 50%;
-                    margin: 0;
-                }
-                .texto{
-                    display: none;
-                    height: 50%;
-                }
-            }
-        }
+        
     }
 }
 
@@ -201,6 +101,7 @@ $melon: #96DE34;
         .head{
             height: 250px;
             margin-bottom: 60px;
+            width:100%;
             h4{
                 padding: 0;
                 font-size:48px;
@@ -209,35 +110,12 @@ $melon: #96DE34;
             p{
                 font-size: 22px;
                 animation: padding-anim2-1440 4s infinite linear;
-            }
-        }
-        .banner{
-            margin: 0px 0px;
-            .map{
-                height: 100%;
-            }
-            height: 400px;
-            width: 85%;
-            div{
-                flex-basis: 100%;
-            }
-            display: flex;
-            flex-direction: row;
-            .cero{
-                position: absolute;
-                flex-basis: 50%;
-                width: 35%;
-                padding-left: 50px;
-                height: 356px;
-                img{
-                    height: 50%;
-                    margin: 0;
-                }
-                .texto{
+                width:100%;
+                br{
                     display: none;
-                    height: 50%;
                 }
             }
         }
+        
     }
 }
