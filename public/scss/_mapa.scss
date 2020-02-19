@@ -45,13 +45,7 @@ $melon: #96DE34;
 
         
 
-@media screen and (min-width:426px) and (max-width:768px){
-    .mapa{
-        height: 510px;
-        
-    }
-    
-}
+
 
 @media screen and (min-width: 769px) and (max-width:1439px){
     @keyframes padding-anim-769{
@@ -68,7 +62,7 @@ $melon: #96DE34;
     }
     
     .mapa{
-        height: 490px;
+        
         
         .head{
             height: 300px;

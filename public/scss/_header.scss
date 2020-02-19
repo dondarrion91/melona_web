@@ -76,6 +76,25 @@ header{
         }
     }
 
+    .direcciones{
+        p{
+            a{
+                color: #bbb;
+                text-decoration: none;
+            }
+            a:hover{
+                color:$bordernav;
+            }
+        }
+    }
+
+    .redes{
+        a{
+            i:hover{
+                color:$bordernav;
+            }
+        }
+    }
 
 @media screen and (max-width:767px){
     header{
@@ -168,9 +187,11 @@ header{
             p{
                 color: rgb(187, 187, 187);
                 padding: 7px;
+                
                 i{
                     padding: 7px;
                 }
+                
             }
         }
         .redes{

@@ -229,7 +229,7 @@ form{
         display: flex;
         flex-direction:column;
         .form{
-            width: 80%;
+            width: 100%;
             align-self: center;
             flex-direction: row-reverse;
             .form-header{
@@ -240,8 +240,8 @@ form{
                 }
                 img{
                     padding: 0;
-                    width: 450px;
-                    margin-left:200px;
+                    width: 350px;
+                    margin-left:auto;
                 }
             }
             .form-body{
@@ -272,3 +272,17 @@ form{
     }
 }
 
+@media screen and (min-width:1440px){
+    form{
+        .form{
+            width:80%;
+            .form-header{
+                img{
+                    padding: 0;
+                    width: 450px;
+                    margin-left:200px;
+                }
+            }
+        }
+    }
+}
