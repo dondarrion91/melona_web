@@ -112,7 +112,7 @@ form{
             
             textarea::placeholder{
                 color: $greyform;
-                padding: 15px;
+                
                 font-size: 14px;
             }
             textarea{
@@ -124,11 +124,13 @@ form{
                 color: $greyform;
                 margin: 8px 0px;
                 font-family: 'Montserrat', sans-serif;
+                padding: 15px;
+                box-sizing: border-box;
             }
             button{
                 background-color: $primary;
                 height: 50px;
-                width: 80%;
+                width: 100%;
                 border-radius: 30px;
                 border: none;
                 color: white;

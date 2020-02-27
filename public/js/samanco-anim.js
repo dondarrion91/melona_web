@@ -174,28 +174,28 @@ $(window).resize(function(){
         },"slow");
 
         $(".helado-info #melon-fruta").animate({
-            "margin-top": "-80px",
+            "margin-top": "-100px",
             width: "100px"
         },"slow");
 
         $(".helado-info #frutilla-fruta").animate({
-            "margin-top": "-90px",
+            "margin-top": "-66px",
             width: "100px"
         },"slow");
 
         $(".helado-info #banana-fruta").animate({
             "margin-top": "-60px",
-            width: '140px'
+            width: '100px'
         },"slow");
 
         $(".helado-info #mango-fruta").animate({
             "margin-top": "-60px",
-            width: '140px'
+            width: '100px'
         },"slow");
 
         $(".helado-info #coco-fruta").animate({
             "margin-top": "-60px",
-            width: '160px'
+            width: '100px'
         },"slow");
 
     }else if(width>1900 && $(".helado-info-body p").css("display") == "none"){
@@ -696,28 +696,28 @@ $(document).ready(function(){
                 },"slow");
 
                 $(".helado-info #melon-fruta").animate({
-                    "margin-top": "-80px",
+                    "margin-top": "-100px",
                     width: "100px"
                 },"slow");
 
                 $(".helado-info #frutilla-fruta").animate({
-                    "margin-top": "-90px",
+                    "margin-top": "-66px",
                     width: "100px"
                 },"slow");
 
                 $(".helado-info #banana-fruta").animate({
                     "margin-top": "-60px",
-                    width: '140px'
+                    width: '100px'
                 },"slow");
 
                 $(".helado-info #mango-fruta").animate({
                     "margin-top": "-60px",
-                    width: '140px'
+                    width: '100px'
                 },"slow");
 
                 $(".helado-info #coco-fruta").animate({
                     "margin-top": "-60px",
-                    width: '160px'
+                    width: '100px'
                 },"slow");
 
                 
