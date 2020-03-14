@@ -464,35 +464,50 @@ $(document).ready(function(){
                 },"slow");
 
                 $(".helado-info-body p").animate({
-                    "font-size": "22px"
+                    "font-size": "20px",
+                    "font-weight": "400",
+                    "paddingTop":"20px",
+                    "marginBottom":"80px"
+                },"slow");
+
+                $(".helado-info h4").animate({
+                    "paddingTop":"19px",
+                    "font-size": "40px",
+                    "font-weight": "800"
+                },"slow");
+
+                $(".helado-info h6").animate({
+                    "paddingTop":"24px",
+                    "font-size": "34px",
+                    "font-weight": "700"
                 },"slow");
 
                 $(".helado-info #melon-fruta").animate({
-                    width: '165px'
+                    "marginTop":"138px"
                 },"slow");
 
                 $(".helado-info #frutilla-fruta").animate({
-                    width: '165px'
+                    "marginTop":"138px"
                 },"slow");
 
                 $(".helado-info #banana-fruta").animate({
-                    width: '245px'
+                    "marginTop": "138px"
                 },"slow");
 
                 $(".helado-info #mango-fruta").animate({
-                    width: '305px'
+                    "marginTop":"138px"
                 },"slow");
 
                 $(".helado-info #coco-fruta").animate({
-                    width: '385px'
+                    "marginTop":"138px"
                 },"slow");
+
+                
             }
 
 
 
-            $(".helado-info img").animate({
-                "margin-top": "0px"
-            },"slow");
+           
 
 
             $(".arrows .fa-angle-down").css("display","none");
@@ -664,6 +679,18 @@ $(document).ready(function(){
                     height: '277.922px'
                 },"slow");
                 
+                $(".helado-info h4").animate({
+                    "padding":"5px",
+                    "font-size": "40px",
+                    "font-weight": "900"
+                },"slow");
+
+                $(".helado-info h6").animate({
+                    "paddingTop":"0px",
+                    "font-size": "16px",
+                    "font-weight": "500"
+                },"slow");
+
                 $(".helado-info #melon-fruta").animate({
                     "margin-top": "-120px",
                     width: "150px"

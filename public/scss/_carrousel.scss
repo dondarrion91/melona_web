@@ -384,20 +384,20 @@ $paragraph: #848484;
                 #frutilla-fruta{
                     position: relative;
                     margin-top: -43px;
-                    width: 96px;
+                    width: 75px;
                     top: -10px;
                 }
 
                 #banana-fruta{
                     position: relative;
                     margin-top: -46px;
-                    width: 100px;
+                    width: 75px;
                     top: -10px;
                 }
                 #mango-fruta{
                     position: relative;
                     margin-top: -51px;
-                    width: 90px;
+                    width: 75px;
                     top: -10px;
                 }
                 
@@ -405,7 +405,7 @@ $paragraph: #848484;
                 #coco-fruta{
                     position: relative;
                     margin-top: -49px;
-                    width: 90px;
+                    width: 75px;
                     top: -10px;
                 }
                 .helado-info{
@@ -535,33 +535,33 @@ $paragraph: #848484;
                     top:-10px;
                     position: relative;
                     margin-top: -75px;
-                    width: 75px;
+                    width: 140px;
                 }
                 #frutilla-fruta{
                     top:-10px;
                     position: relative;
                     margin-top: -55px;
-                    width: 95px;
+                    width: 140px;
                 }
                 
                 #banana-fruta{
                     top:-10px;
                     position: relative;
                     margin-top: -51px;
-                    width: 85px;
+                    width: 140px;
                 }
 
                 #mango-fruta{
                     top:-10px;
                     position: relative;
                     margin-top: -55px;
-                    width: 75px;
+                    width: 140px;
                 }
                 #coco-fruta{
                     top:-10px;
                     position: relative;
                     margin-top: -55px;
-                    width: 100px;
+                    width: 140px;
                 }
                 .helado-info{
                     margin-right: 150px;
@@ -701,12 +701,12 @@ $paragraph: #848484;
                 }
                 #melon-fruta{
                     margin-left: 12px;
-                    width:100px;
+                    width: 100px;
                     margin-top: -100px;
                 }
                 #frutilla-fruta{
                     margin-left: -22px;
-                    width:100px;
+                    width: 100px;
                     margin-top: -66px;
                 }
                 #coco-fruta{
@@ -858,36 +858,36 @@ $paragraph: #848484;
     }
     
     figure{
-        height: 654px;
+        height: 800px;
         
         .helado-verde1 {
             left: 29%;
-            width: 245px;
-            height: 568px;
+            width: 300px;
+            height: 650px;
             animation: helado-float1-1440 5s infinite linear;
         }
         .helado-verde2 {
             left: 41%;
-            width: 165px;
-            height: 480px;
+            width: 215px;
+            height: 590px;
             animation: helado-float2-1440 5s infinite linear ;
         }
         .helado1 {
             left: 29%;
-            width: 245px;
-            height: 568px;
+            width: 300px;
+            height: 650px;
             animation: helado-float1-1440 5s infinite linear;
         }
         .helado2 {
             left: 41%;
-            width: 165px;
-            height: 480px;
+            width: 215px;
+            height: 590px;
             animation: helado-float2-1440 5s infinite linear ;
         }
         .helado-coco{
             left: 41%;
-            width: 165px;
-            height: 480px;
+            width: 215px;
+            height: 590px;
             animation: helado-float2-1440 5s infinite linear;
         }
         .helado-info{
@@ -906,28 +906,32 @@ $paragraph: #848484;
                 position: relative;
                 margin-top: -120px;
                 top: 0px;
-                width: 150px;
+                width:140px;
+                
             }
             #frutilla-fruta{
                 margin-left: 0px;
                 position: relative;
                 margin-top: -102px;
                 top: 0px;
-                width: 205px;
+                width:140px;
+                
             }
             #banana-fruta{
                 margin-left: 20px;
                 position: relative;
                 margin-top: -59px;
                 top: 0px;
-                width: 150px;
+                width:140px;
+                
             }
             #mango-fruta{
                 margin-left: 20px;
                 position: relative;
                 margin-top: -80px;
                 top: 0px;
-                width: 150px;
+                width:140px;
+                
             }
             
             #coco-fruta{
@@ -938,7 +942,8 @@ $paragraph: #848484;
                 }
                 
                 top: 0px;
-                width: 150px;
+                width:140px;
+                
             }
             .helado-info-body{
                 h4{
