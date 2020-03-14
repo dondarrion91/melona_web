@@ -23,12 +23,26 @@ $background1:#95DF38;
     100%{top:0px;}
 }
 .carrousel2{
+    @media screen and (min-width:1901px){
+        .owl-theme{
+            .owl-dots{
+                margin-top: 46px !important ;
+                .owl-dot{
+                    span {
+                        width: 22.5px;
+                        height: 22.5px;
+                        margin: 5px 10px;
+                    }
+                } 
+        } 
+    }
+    }
     h4{
         text-align: center;
         font-size: 3rem;
         font-weight: bolder;
-        padding: 20px;
-        padding-top: 40px;
+        padding: 50px;
+        padding-top: 191px;
         font-weight: 900;
         position: relative;
         animation: creaciones-mov 4s infinite linear;
@@ -307,8 +321,7 @@ $background1:#95DF38;
     .carrousel2{
         h4{
             font-size: 44px;
-            padding-bottom: 85px;
-            padding-top: 85px;
+            
         }
         .item{
             height: 650px;

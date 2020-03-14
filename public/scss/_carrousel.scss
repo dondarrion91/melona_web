@@ -599,7 +599,29 @@ $paragraph: #848484;
 
 @media screen and (min-width:1025px) and (max-width:1439px){
     
-
+    @keyframes helado-float1-1025{
+        0%{
+            top:40px;
+        }
+        50%{
+            top:50px;
+        }
+        100%{
+            top:40px;
+        }
+    }
+    @keyframes helado-float2-1025{
+        0% {
+            top: 75px;
+        }
+        
+        50% {
+            top: 45px;
+        }
+        100% {
+            top: 75px;
+        }
+    }
     .carrousel{
         .gustos-frutales-cont{
             .gustos-frutales-h4{
@@ -978,11 +1000,11 @@ $paragraph: #848484;
 @media screen and (min-width:1901px){
     .owl-theme{
         .owl-dots{
-            margin-top: 35px !important ;
+            margin-top: 46px !important ;
             .owl-dot{
                 span {
-                    width: 20px;
-                    height: 20px;
+                    width: 22.5px;
+                    height: 22.5px;
                     margin: 5px 10px;
                 }
             } 
