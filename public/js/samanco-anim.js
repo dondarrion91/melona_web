@@ -262,7 +262,7 @@ $(document).ready(function(){
         
                 $(".carrouselContainerBlockFruta").animate(
                     {
-                        top: "138px",
+                        top: "70px",
                         width:"140px"
                     }
                 );
@@ -1101,3 +1101,143 @@ $(document).ready(function(){
         
     });
 });
+
+$(document).ready(function(){
+    
+    
+
+
+    //segundo carrousel
+    for(let i=1;i<9;i++){
+        $(`.boton${i} #btn-up`).css("display","none");
+    }
+   
+
+    $(".boton1").click(function(){
+        if($(".tarjeta #parrafo-samanco-1").css("display") == "none"){
+            
+            $(".tarjeta #parrafo-samanco-1").slideDown("slow");
+            $(".boton1 #btn-down").css("display","none");
+            $(".boton1 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-1").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-1").slideUp("slow");
+            $(".boton1 #btn-down").css("display","block");
+            $(".boton1 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton2").click(function(){
+        if($(".tarjeta #parrafo-samanco-2").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-2").slideDown("slow");
+            $(".boton2 #btn-down").css("display","none");
+            $(".boton2 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-2").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-2").slideUp("slow");
+            $(".boton2 #btn-down").css("display","block");
+            $(".boton2 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton3").click(function(){
+        if($(".tarjeta #parrafo-samanco-3").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-3").slideDown("slow");
+            $(".boton3 #btn-down").css("display","none");
+            $(".boton3 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-3").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-3").slideUp("slow");
+            $(".boton3 #btn-down").css("display","block");
+            $(".boton3 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton4").click(function(){
+        if($(".tarjeta #parrafo-samanco-4").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-4").slideDown("slow");
+            $(".boton4 #btn-down").css("display","none");
+            $(".boton4 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-4").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-4").slideUp("slow");
+            $(".boton4 #btn-down").css("display","block");
+            $(".boton4 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton5").click(function(){
+        if($(".tarjeta #parrafo-samanco-5").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-5").slideDown("slow");
+            $(".boton5 #btn-down").css("display","none");
+            $(".boton5 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-5").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-5").slideUp("slow");
+            $(".boton5 #btn-down").css("display","block");
+            $(".boton5 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton6").click(function(){
+        if($(".tarjeta #parrafo-samanco-6").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-6").slideDown("slow");
+            $(".boton6 #btn-down").css("display","none");
+            $(".boton6 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-6").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-6").slideUp("slow");
+            $(".boton6 #btn-down").css("display","block");
+            $(".boton6 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton7").click(function(){
+        if($(".tarjeta #parrafo-samanco-7").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-7").slideDown("slow");
+            $(".boton7 #btn-down").css("display","none");
+            $(".boton7 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-7").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-7").slideUp("slow");
+            $(".boton7 #btn-down").css("display","block");
+            $(".boton7 #btn-up").css("display","none");
+        }
+    });
+
+    $(".boton8").click(function(){
+        if($(".tarjeta #parrafo-samanco-8").css("display") == "none"){
+        
+            $(".tarjeta #parrafo-samanco-8").slideDown("slow");
+            $(".boton8 #btn-down").css("display","none");
+            $(".boton8 #btn-up").css("display","block");
+            
+        
+        }else if ($(".tarjeta #parrafo-samanco-8").css("display") == "block"){
+            
+            $(".tarjeta #parrafo-samanco-8").slideUp("slow");
+            $(".boton8 #btn-down").css("display","block");
+            $(".boton8 #btn-up").css("display","none");
+        }
+    });
+})
