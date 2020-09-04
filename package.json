@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dondarrion91/melona_web#readme",
   "devDependencies": {
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "animate.css": "^3.7.2",
